@@ -1,0 +1,1 @@
+execute as @a[tag=fireparticles] at @s run particle minecraft:flame ~ ~0.1 ~ 0.2 0 0.2 0 3

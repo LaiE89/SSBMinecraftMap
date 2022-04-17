@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+	  	{
+          "type": "item",
+          "name": "minecraft:player_head",
+          "weight": 1000,
+          "quality": -1000,
+          "functions": [
+          {
+			"function": "minecraft:fill_player_head",
+			"entity": "this"
+          },
+		  {
+			"function": "minecraft:set_name",
+			"name": [{"text":"Here Lies ","color":"white","bold":true},{"selector":"@s","color":"white","bold":true}],
+			"entity": "this"
+		  }
+          ]
+        }
+      ]
+    }
+  ]
+}

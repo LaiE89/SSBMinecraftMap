@@ -1,0 +1,9 @@
+data modify entity @e[type=minecraft:chest_minecart,tag=lobbymenu,limit=1,sort=nearest] Items insert 0 value {Slot:11b,id:"minecraft:paper",Count:1b,tag:{display:{Name:"[{\"text\":\"Quest\",\"italic\":false}]",Lore:["[{\"text\":\"\",\"italic\":false}]","[{\"text\":\"...\",\"italic\":false}]","[{\"text\":\"\",\"italic\":false}]","[{\"text\":\"Reward:\",\"italic\":false}]"]},isMenu:1b,page:2,selection:1}}
+data modify entity @e[type=minecraft:chest_minecart,tag=lobbymenu,limit=1,sort=nearest] Items insert 0 value {Slot:13b,id:"minecraft:paper",Count:1b,tag:{display:{Name:"[{\"text\":\"Quest\",\"italic\":false}]",Lore:["[{\"text\":\"\",\"italic\":false}]","[{\"text\":\"...\",\"italic\":false}]","[{\"text\":\"\",\"italic\":false}]","[{\"text\":\"Reward:\",\"italic\":false}]"]},isMenu:1b,page:2,selection:2}}
+data modify entity @e[type=minecraft:chest_minecart,tag=lobbymenu,limit=1,sort=nearest] Items insert 0 value {Slot:15b,id:"minecraft:paper",Count:1b,tag:{display:{Name:"[{\"text\":\"Quest\",\"italic\":false}]",Lore:["[{\"text\":\"\",\"italic\":false}]","[{\"text\":\"...\",\"italic\":false}]","[{\"text\":\"\",\"italic\":false}]","[{\"text\":\"Reward:\",\"italic\":false}]"]},isMenu:1b,page:2,selection:3}}
+
+data modify entity @e[type=minecraft:chest_minecart,tag=lobbymenu,limit=1,sort=nearest] Items insert 0 value {Slot:18b,id:"minecraft:arrow",Count:1b,tag:{display:{Name:"[{\"text\":\"Back\",\"italic\":false}]"},isMenu:1b,page:2,selection:4}}
+
+function datapack:lobby_functions/menu/page2/gettingstats
+
+# {Slot:18b,id:"minecraft:red_wool",Count:1b,tag:{isMenu:1b,page:2,selection:4}}

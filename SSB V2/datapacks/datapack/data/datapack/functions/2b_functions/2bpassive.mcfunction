@@ -1,0 +1,3 @@
+#execute as @p[gamemode=!spectator,tag=2B,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:'[{"text":"Pod 042","italic":false}]'}}}}] at @s run function datapack:2b_functions/summoningpod
+execute if entity @p[tag=2B,scores={Death=1..}] run kill @e[type=armor_stand,tag=2BPod]
+execute as @p[gamemode=!spectator,tag=2B] at @s run function datapack:2b_functions/summoningpod

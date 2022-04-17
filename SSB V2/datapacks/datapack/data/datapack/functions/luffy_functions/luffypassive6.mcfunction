@@ -1,0 +1,2 @@
+particle dust 0.8 0.5 0.5 1 ~ ~ ~ 0 0 0 1 1
+execute positioned ~ ~-1.35 ~ unless entity @e[distance=..1.5,type=armor_stand,tag=LuffyPistolAngle] positioned ^ ^ ^1 positioned ~ ~1.35 ~ run function datapack:luffy_functions/luffypassive6

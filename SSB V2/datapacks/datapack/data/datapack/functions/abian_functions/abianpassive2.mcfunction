@@ -1,0 +1,15 @@
+execute as @e[type=armor_stand,tag=AbianOverflux,scores={Timer=1}] at @s run tp @s ~ ~0.06 ~
+execute as @e[type=armor_stand,tag=AbianOverflux,scores={Timer=2}] at @s run tp @s ~ ~0.04 ~
+execute as @e[type=armor_stand,tag=AbianOverflux,scores={Timer=3}] at @s run tp @s ~ ~0.04 ~
+execute as @e[type=armor_stand,tag=AbianOverflux,scores={Timer=4..18}] at @s run tp @s ~ ~0.1 ~
+execute as @e[type=armor_stand,tag=AbianOverflux,scores={Timer=19}] at @s run tp @s ~ ~0.06 ~
+execute as @e[type=armor_stand,tag=AbianOverflux,scores={Timer=20..22}] at @s run tp @s ~ ~0.04 ~
+execute as @e[type=armor_stand,tag=AbianOverflux,scores={Timer=23..30}] at @s run tp @s ~ ~0.02 ~
+execute as @e[type=armor_stand,tag=AbianOverflux,scores={Timer=31}] at @s run tp @s ~ ~-0.02 ~
+execute as @e[type=armor_stand,tag=AbianOverflux,scores={Timer=32}] at @s run tp @s ~ ~-0.06 ~
+execute as @e[type=armor_stand,tag=AbianOverflux,scores={Timer=33}] at @s run tp @s ~ ~-0.04 ~
+execute as @e[type=armor_stand,tag=AbianOverflux,scores={Timer=34}] at @s run tp @s ~ ~-0.04 ~
+execute as @e[type=armor_stand,tag=AbianOverflux,scores={Timer=35..49}] at @s run tp @s ~ ~-0.1 ~
+execute as @e[type=armor_stand,tag=AbianOverflux,scores={Timer=50}] at @s run tp @s ~ ~-0.06 ~
+execute as @e[type=armor_stand,tag=AbianOverflux,scores={Timer=51..53}] at @s run tp @s ~ ~-0.04 ~
+execute as @e[type=armor_stand,tag=AbianOverflux,scores={Timer=54..60}] at @s run tp @s ~ ~-0.02 ~

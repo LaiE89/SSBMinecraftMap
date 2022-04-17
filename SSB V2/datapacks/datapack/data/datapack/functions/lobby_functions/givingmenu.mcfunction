@@ -1,0 +1,3 @@
+kill @e[type=item,nbt={Item:{id:"minecraft:nether_star"}},distance=..2]
+clear @s minecraft:nether_star{display:{Name:"[{\"text\":\"Lobby Menu\",\"italic\":false}]",Lore:["[{\"text\":\"Right click to use\",\"italic\":false,\"color\":\"yellow\"}]"]},Unbreakable:1}
+replaceitem entity @s hotbar.8 minecraft:nether_star{display:{Name:"[{\"text\":\"Lobby Menu\",\"italic\":false}]",Lore:["[{\"text\":\"Right click to use\",\"italic\":false,\"color\":\"yellow\"}]"]},Unbreakable:1} 1

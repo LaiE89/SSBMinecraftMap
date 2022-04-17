@@ -1,0 +1,16 @@
+scoreboard players add @s RaycastTimer 1
+execute unless block ~ ~ ~ air run scoreboard players set @s RaycastTimer 3333
+execute if entity @e[distance=..2,type=!experience_orb,type=!area_effect_cloud,type=!armor_stand,type=!egg,type=!leash_knot,type=!painting,type=!#arrows,type=!snowball,type=!fireball,type=!small_fireball,type=!ender_pearl,type=!eye_of_ender,type=!experience_bottle,type=!item_frame,type=!item,type=!tnt,type=!falling_block,type=!firework_rocket,type=!shulker_bullet,type=!dragon_fireball,type=!evoker_fangs,type=!minecart,type=!chest_minecart,type=!furnace_minecart,type=!tnt_minecart,type=!hopper_minecart,type=!spawner_minecart,type=!llama_spit,tag=!Kiryu,tag=!InLabyrinth] run scoreboard players set @s RaycastTimer 2222
+
+# Bike Smash
+execute if entity @s[scores={Timer2=..9}] at @s[scores={RaycastTimer=2222}] run playsound minecraft:entity.player.attack.knockback neutral @a[distance=..20] ~ ~ ~ 10 0 1
+execute if entity @s[scores={Timer2=..9}] at @s[scores={RaycastTimer=2222}] run particle minecraft:sweep_attack ^ ^1.5 ^2
+execute if entity @s[scores={Timer2=..9}] as @s[scores={RaycastTimer=2222}] positioned ^ ^ ^ run summon armor_stand ~ ~3 ~ {Tags:["KiryuBike"],Invisible:1b,Invulnerable:1b,NoBasePlate:1b,DisabledSlots:2039583,ShowArms:1b,ArmorItems:[{id:"leather_boots",Count:1b,tag:{display:{color:0}}},{id:"leather_leggings",Count:1b,tag:{display:{color:0}}},{id:"iron_chestplate",Count:1b},{id:"player_head",Count:1b,tag:{SkullOwner:{Id:[I;-1620253083,1948861092,-1515577044,1369749555],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGRmZTVhOTYzODY5NDE1MzQwZDJjZWMwZjgyZDA4ZGY3M2RjYjE2ODQyODQ4N2I1MTRhYThkNGVjMTlmZTJjIn19fQ=="}]}}}}],HandItems:[{id:"netherite_hoe",Count:1b},{id:"netherite_hoe",Count:1b}],Pose:{Body:[180f,0f,181f],Head:[94f,0f,94f],LeftLeg:[70f,180f,0f],RightLeg:[70f,180f,0f],LeftArm:[198f,26f,360f],RightArm:[195f,331f,0f]}}
+
+# Wall Crush
+execute if entity @s[scores={Timer2=10..}] as @s[scores={RaycastTimer=2222}] positioned ^ ^ ^ run execute as @e[distance=..2,limit=1,sort=nearest,type=!experience_orb,type=!area_effect_cloud,type=!armor_stand,type=!egg,type=!leash_knot,type=!painting,type=!#arrows,type=!snowball,type=!fireball,type=!small_fireball,type=!ender_pearl,type=!eye_of_ender,type=!experience_bottle,type=!item_frame,type=!item,type=!tnt,type=!falling_block,type=!firework_rocket,type=!shulker_bullet,type=!dragon_fireball,type=!evoker_fangs,type=!minecart,type=!chest_minecart,type=!furnace_minecart,type=!tnt_minecart,type=!hopper_minecart,type=!spawner_minecart,type=!llama_spit,tag=!Kiryu,tag=!InLabyrinth] at @s run function datapack:kiryu_functions/wallcrushgrab
+execute if entity @s[scores={Timer2=10..}] at @s[scores={RaycastTimer=2222}] run scoreboard players set @s[scores={Timer2=10..}] Timer2 0
+
+execute as @s[scores={RaycastTimer=2222}] positioned ^ ^ ^ run scoreboard players set @s Ability1CD 0
+
+execute as @s[scores={RaycastTimer=..9}] positioned ^ ^ ^0.5 run function datapack:kiryu_functions/kiryupassive2

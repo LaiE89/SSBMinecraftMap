@@ -1,0 +1,5 @@
+effect give @s minecraft:weakness 1 9 true
+effect give @s minecraft:mining_fatigue 1 9 true
+particle minecraft:dust 0.8 0.5 0.5 3 ^ ^1.5 ^2 1 0.3 1 0 1
+playsound minecraft:entity.player.attack.crit neutral @a[distance=..20] ~ ~ ~ 2 2 1
+execute at @s positioned ^ ^1.5 ^2 as @e[distance=..3,type=!experience_orb,type=!area_effect_cloud,type=!armor_stand,type=!egg,type=!leash_knot,type=!painting,type=!#arrows,type=!snowball,type=!fireball,type=!small_fireball,type=!ender_pearl,type=!eye_of_ender,type=!experience_bottle,type=!item_frame,type=!item,type=!tnt,type=!falling_block,type=!firework_rocket,type=!shulker_bullet,type=!dragon_fireball,type=!evoker_fangs,type=!minecart,type=!chest_minecart,type=!furnace_minecart,type=!tnt_minecart,type=!hopper_minecart,type=!spawner_minecart,type=!llama_spit,tag=!Brad,tag=!InLabyrinth] at @s run function datapack:damage1

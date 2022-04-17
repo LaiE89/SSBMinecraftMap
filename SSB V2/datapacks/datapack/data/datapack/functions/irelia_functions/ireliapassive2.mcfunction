@@ -1,0 +1,14 @@
+scoreboard players add @s RaycastTimer 1
+execute unless block ~ ~ ~ air run scoreboard players set @s RaycastTimer 3333
+execute if entity @e[distance=..2,type=!experience_orb,type=!area_effect_cloud,type=!armor_stand,type=!egg,type=!leash_knot,type=!painting,type=!#arrows,type=!snowball,type=!fireball,type=!small_fireball,type=!ender_pearl,type=!eye_of_ender,type=!experience_bottle,type=!item_frame,type=!item,type=!tnt,type=!falling_block,type=!firework_rocket,type=!shulker_bullet,type=!dragon_fireball,type=!evoker_fangs,type=!minecart,type=!chest_minecart,type=!furnace_minecart,type=!tnt_minecart,type=!hopper_minecart,type=!spawner_minecart,type=!llama_spit,tag=!Irelia,tag=!InLabyrinth] run scoreboard players set @s RaycastTimer 2222
+execute as @s[scores={RaycastTimer=2222}] positioned ^ ^ ^ run tag @e[distance=..2,limit=1,sort=nearest,type=!experience_orb,type=!area_effect_cloud,type=!armor_stand,type=!egg,type=!leash_knot,type=!painting,type=!#arrows,type=!snowball,type=!fireball,type=!small_fireball,type=!ender_pearl,type=!eye_of_ender,type=!experience_bottle,type=!item_frame,type=!item,type=!tnt,type=!falling_block,type=!firework_rocket,type=!shulker_bullet,type=!dragon_fireball,type=!evoker_fangs,type=!minecart,type=!chest_minecart,type=!furnace_minecart,type=!tnt_minecart,type=!hopper_minecart,type=!spawner_minecart,type=!llama_spit,tag=!Irelia,tag=!InLabyrinth] add IreliaBladesurge
+execute as @s[scores={RaycastTimer=2222}] positioned ^ ^ ^ run scoreboard players set @s RaycastTimer2 0
+execute as @s[scores={RaycastTimer=2222}] positioned ^ ^ ^ run function datapack:irelia_functions/ireliapassive7
+execute as @s[scores={RaycastTimer=2222}] run execute at @s run playsound minecraft:item.trident.throw neutral @a[distance=..10] ~ ~ ~ 3 1 1
+execute as @s[scores={RaycastTimer=2222}] run tag @s add IreliaBladesurging
+execute as @s[scores={RaycastTimer=2222}] run effect give @s minecraft:instant_health
+execute as @s[scores={RaycastTimer=2222}] run effect give @s minecraft:resistance 1 9 true
+execute as @s[scores={RaycastTimer=2222}] run execute unless entity @e[tag=IreliaBladesurge,tag=IreliaMarked] run scoreboard players set @s Ability1CD 1
+execute as @s[scores={RaycastTimer=2222}] run execute if entity @e[tag=IreliaBladesurge,tag=IreliaMarked] run scoreboard players set @s Ability1CD 85
+execute as @s[scores={RaycastTimer=2222}] run execute if entity @e[tag=IreliaBladesurge,tag=IreliaMarked2] run scoreboard players set @s Ability1CD 85
+execute as @s[scores={RaycastTimer=..19}] positioned ^ ^ ^0.5 run function datapack:irelia_functions/ireliapassive2

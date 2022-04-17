@@ -1,0 +1,9 @@
+execute at @s positioned ^ ^1.25 ^2 run execute as @e[distance=1.6..5,type=!experience_orb,type=!area_effect_cloud,type=!armor_stand,type=!egg,type=!leash_knot,type=!painting,type=!#arrows,type=!snowball,type=!fireball,type=!small_fireball,type=!ender_pearl,type=!eye_of_ender,type=!experience_bottle,type=!item_frame,type=!item,type=!tnt,type=!falling_block,type=!firework_rocket,type=!shulker_bullet,type=!dragon_fireball,type=!evoker_fangs,type=!minecart,type=!chest_minecart,type=!furnace_minecart,type=!tnt_minecart,type=!hopper_minecart,type=!spawner_minecart,type=!llama_spit,tag=!Guts,tag=!InLabyrinth] at @s run function datapack:damage1
+execute at @s positioned ^ ^1.25 ^2 run execute as @e[distance=..1.5,type=!experience_orb,type=!area_effect_cloud,type=!armor_stand,type=!egg,type=!leash_knot,type=!painting,type=!#arrows,type=!snowball,type=!fireball,type=!small_fireball,type=!ender_pearl,type=!eye_of_ender,type=!experience_bottle,type=!item_frame,type=!item,type=!tnt,type=!falling_block,type=!firework_rocket,type=!shulker_bullet,type=!dragon_fireball,type=!evoker_fangs,type=!minecart,type=!chest_minecart,type=!furnace_minecart,type=!tnt_minecart,type=!hopper_minecart,type=!spawner_minecart,type=!llama_spit,tag=!Guts,tag=!InLabyrinth] at @s run function datapack:damage2
+particle minecraft:explosion_emitter ^ ^1.25 ^2
+playsound minecraft:entity.generic.explode neutral @a[distance=..20] ~ ~ ~ 10 0.5 1
+execute at @s[nbt={OnGround:0b}] run particle minecraft:sweep_attack ~ ~1 ~ 0.5 0.5 0.5 0 10
+scoreboard players set @s[nbt={OnGround:0b}] RaycastTimer3 0
+execute at @s[nbt={OnGround:0b}] positioned ~ ~1.5 ~ run function datapack:guts_functions/gutspassive4
+tag @s add GutsPivotSwing
+scoreboard players set @s Ability2CD 0
