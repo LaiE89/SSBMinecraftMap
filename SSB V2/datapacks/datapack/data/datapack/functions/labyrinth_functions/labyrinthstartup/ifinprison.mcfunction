@@ -1,2 +1,0 @@
-execute if entity @e[type=zombie,tag=labyrinthnightmare] run function datapack:labyrinth_functions/labyrinthmobabilities/labyrinthprisonnightmare
-execute if entity @e[type=zombie,tag=labyrinthcrawler] run function datapack:labyrinth_functions/labyrinthmobabilities/labyrinthprisoncrawler

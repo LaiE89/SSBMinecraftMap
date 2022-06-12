@@ -1,0 +1,3 @@
+execute as @e[distance=..3,type=!experience_orb,type=!area_effect_cloud,type=!armor_stand,type=!egg,type=!leash_knot,type=!trident,type=!painting,type=!#arrows,type=!snowball,type=!fireball,type=!small_fireball,type=!ender_pearl,type=!eye_of_ender,type=!experience_bottle,type=!item_frame,type=!item,type=!tnt,type=!falling_block,type=!firework_rocket,type=!shulker_bullet,type=!dragon_fireball,type=!evoker_fangs,type=!minecart,type=!chest_minecart,type=!furnace_minecart,type=!tnt_minecart,type=!hopper_minecart,type=!spawner_minecart,type=!llama_spit,tag=!Saber,tag=!InLabyrinth] at @s run function datapack:damage2
+particle minecraft:dust 0.5 2 1 2 ~ ~1 ~ 1 0 1 0.05 20
+particle minecraft:soul_fire_flame ~ ~1 ~ 1 0 1 0.05 10

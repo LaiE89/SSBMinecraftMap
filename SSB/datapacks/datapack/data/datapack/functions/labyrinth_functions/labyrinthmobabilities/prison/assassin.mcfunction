@@ -1,0 +1,2 @@
+scoreboard players add @e[type=zombie,tag=prisonassassin] Timer 1
+execute as @e[type=zombie,tag=prisonassassin] at @s run function datapack:labyrinth_functions/labyrinthmobabilities/prison/assassinabilities

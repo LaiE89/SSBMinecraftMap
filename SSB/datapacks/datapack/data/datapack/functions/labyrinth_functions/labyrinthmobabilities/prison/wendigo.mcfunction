@@ -1,0 +1,2 @@
+scoreboard players add @e[type=zombie,tag=wendigo] Timer 1
+execute as @e[type=zombie,tag=wendigo,scores={Timer=50..}] at @s run function datapack:labyrinth_functions/labyrinthmobabilities/prison/wendigojump

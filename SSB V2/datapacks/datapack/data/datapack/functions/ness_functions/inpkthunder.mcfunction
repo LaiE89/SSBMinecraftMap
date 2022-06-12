@@ -1,2 +1,0 @@
-clear @s minecraft:light_blue_glazed_terracotta
-replaceitem entity @s armor.head minecraft:light_blue_glazed_terracotta

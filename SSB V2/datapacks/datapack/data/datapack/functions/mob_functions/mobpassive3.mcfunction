@@ -1,9 +1,0 @@
-scoreboard players add @s RaycastTimer2 1
-execute if entity @e[distance=..2,type=!experience_orb,type=!area_effect_cloud,type=!armor_stand,type=!egg,type=!leash_knot,type=!painting,type=!#arrows,type=!snowball,type=!fireball,type=!small_fireball,type=!ender_pearl,type=!eye_of_ender,type=!experience_bottle,type=!item_frame,type=!item,type=!tnt,type=!falling_block,type=!firework_rocket,type=!shulker_bullet,type=!dragon_fireball,type=!evoker_fangs,type=!minecart,type=!chest_minecart,type=!furnace_minecart,type=!tnt_minecart,type=!hopper_minecart,type=!spawner_minecart,type=!llama_spit,tag=!Mob,tag=!InLabyrinth] run scoreboard players set @s RaycastTimer2 2222
-execute as @s[scores={RaycastTimer2=2222..}] positioned ^ ^ ^ run execute as @e[distance=..2,limit=1,sort=nearest,type=!experience_orb,type=!area_effect_cloud,type=!armor_stand,type=!egg,type=!leash_knot,type=!painting,type=!#arrows,type=!snowball,type=!fireball,type=!small_fireball,type=!ender_pearl,type=!eye_of_ender,type=!experience_bottle,type=!item_frame,type=!item,type=!tnt,type=!falling_block,type=!firework_rocket,type=!shulker_bullet,type=!dragon_fireball,type=!evoker_fangs,type=!minecart,type=!chest_minecart,type=!furnace_minecart,type=!tnt_minecart,type=!hopper_minecart,type=!spawner_minecart,type=!llama_spit,tag=!Mob,tag=!InLabyrinth] at @s run function datapack:mob_functions/mobliftdamage
-
-execute as @s[scores={RaycastTimer2=2222..}] run particle minecraft:dust 0 1 1 1 ~ ~ ~ 0.4 1 0.4 0 100
-execute as @s[scores={RaycastTimer2=2222..}] run playsound minecraft:entity.generic.explode neutral @a[distance=..20] ~ ~ ~ 10 0.5 1
-execute as @s[scores={RaycastTimer2=2222..}] run scoreboard players set @s Ability3CD 0
-
-execute as @s[scores={RaycastTimer2=..1111}] positioned ^ ^ ^0.5 run function datapack:mob_functions/mobpassive3

@@ -1,5 +1,0 @@
-particle minecraft:smoke ~ ~1.4 ~ 1.2 0 1.2 0 10
-execute as @e[type=armor_stand,tag=forceedge,scores={Timer=..5}] at @s run scoreboard players set @s RaycastTimer2 0
-execute as @e[type=armor_stand,tag=forceedge,scores={Timer=..5}] at @s positioned ~ ~1.5 ~ run function datapack:vergil_functions/vergilpassive5
-execute as @e[distance=..3,type=!experience_orb,type=!area_effect_cloud,type=!armor_stand,type=!egg,type=!leash_knot,type=!painting,type=!#arrows,type=!snowball,type=!fireball,type=!small_fireball,type=!ender_pearl,type=!eye_of_ender,type=!experience_bottle,type=!item_frame,type=!item,type=!tnt,type=!falling_block,type=!firework_rocket,type=!shulker_bullet,type=!dragon_fireball,type=!evoker_fangs,type=!minecart,type=!chest_minecart,type=!furnace_minecart,type=!tnt_minecart,type=!hopper_minecart,type=!spawner_minecart,type=!llama_spit,tag=!Vergil,tag=!InLabyrinth] at @s run function datapack:vergil_functions/forceedgedamage
-execute as @s[scores={Timer=7..}] if entity @p[tag=Vergil,distance=..3] run function datapack:vergil_functions/forceedgepickup

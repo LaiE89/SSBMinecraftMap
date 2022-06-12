@@ -1,5 +1,0 @@
-execute at @e[type=area_effect_cloud,tag=BruceMarker,distance=..10,sort=nearest,limit=1] run tp @s ~ ~ ~ facing entity @e[limit=1,sort=nearest,type=!experience_orb,type=!area_effect_cloud,type=!armor_stand,type=!egg,type=!leash_knot,type=!painting,type=!#arrows,type=!snowball,type=!fireball,type=!small_fireball,type=!ender_pearl,type=!eye_of_ender,type=!experience_bottle,type=!item_frame,type=!item,type=!tnt,type=!falling_block,type=!firework_rocket,type=!shulker_bullet,type=!dragon_fireball,type=!evoker_fangs,type=!minecart,type=!chest_minecart,type=!furnace_minecart,type=!tnt_minecart,type=!hopper_minecart,type=!spawner_minecart,type=!llama_spit,tag=!Brucelee,tag=!InLabyrinth]
-tag @s add BruceIronWill
-effect give @s minecraft:absorption 2 1 true
-playsound minecraft:entity.player.attack.sweep neutral @a[distance=..20] ~ ~ ~ 10 0 1
-scoreboard players set @s Ability2CD 0

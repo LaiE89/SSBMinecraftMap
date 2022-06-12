@@ -1,6 +1,0 @@
-function datapack:labyrinth_functions/labyrinthmobabilities/labyrinthschoolgeneric
-function datapack:labyrinth_functions/labyrinthbosses/pyramidhead/labyrinthgym
-execute if entity @e[type=zombie,tag=labyrinthschoolteacher] run function datapack:labyrinth_functions/labyrinthmobabilities/labyrinthschoolteachers
-execute if entity @e[type=skeleton,tag=labyrinthschoolbaldi] run function datapack:labyrinth_functions/labyrinthmobabilities/labyrinthschoolbaldi
-execute if entity @e[type=zombie,tag=labyrinthschoolheadless] run function datapack:labyrinth_functions/labyrinthmobabilities/labyrinthschoolheadless
-execute if entity @e[type=skeleton,tag=labyrinthschoolartist] run function datapack:labyrinth_functions/labyrinthmobabilities/labyrinthschoolartist

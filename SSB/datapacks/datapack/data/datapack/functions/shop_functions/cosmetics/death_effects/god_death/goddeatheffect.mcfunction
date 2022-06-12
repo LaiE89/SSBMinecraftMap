@@ -1,0 +1,3 @@
+execute at @a[tag=goddeatheffect,scores={Basic_Death=1..}] run playsound minecraft:ui.toast.challenge_complete neutral @a[distance=..20] ~ ~ ~ 3 2 1
+execute at @a[tag=goddeatheffect,scores={Basic_Death=1..}] run summon armor_stand ~ ~ ~ {Tags:["goddeatheffectstand","cosmetics"],DisabledSlots:2039583,Glowing:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,Marker:1b,ShowArms:1b,ArmorItems:[{},{},{id:"leather_chestplate",Count:1b,tag:{display:{color:16777215}}},{id:"white_concrete",Count:1b}],HandItems:[{},{}],Pose:{Head:[341f,0f,0f],LeftLeg:[0f,0f,344f],RightLeg:[0f,0f,16f],LeftArm:[0f,0f,200f],RightArm:[0f,0f,158f]}}
+function datapack:shop_functions/cosmetics/death_effects/god_death/risingrecursion

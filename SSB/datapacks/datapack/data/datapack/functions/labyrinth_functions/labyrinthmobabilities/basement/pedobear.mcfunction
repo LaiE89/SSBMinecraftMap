@@ -1,0 +1,2 @@
+execute as @e[type=zombie,tag=pedobear,tag=!pedobeargrab] at @s if entity @a[gamemode=!spectator,distance=..2] run function datapack:labyrinth_functions/labyrinthmobabilities/basement/pedobearpathfinding
+execute as @e[type=wandering_trader,tag=pedobearstand] at @s run function datapack:labyrinth_functions/labyrinthmobabilities/basement/pedobeargrab

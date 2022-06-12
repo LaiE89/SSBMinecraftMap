@@ -1,0 +1,1 @@
+execute as @a[tag=gravedeatheffect,scores={Basic_Death=1..}] at @s run function datapack:shop_functions/cosmetics/death_effects/grave_death/summoningmarker
