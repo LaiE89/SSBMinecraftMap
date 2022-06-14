@@ -1,0 +1,14 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "items": [
+          "minecraft:diamond_hoe"
+        ],
+        "nbt": "{display:{Name:'[{\"text\":\"Friede\\'s Great Scythe\",\"italic\":false,\"color\":\"dark_aqua\"}]'}}"
+      }
+    }
+  }
+}

@@ -1,0 +1,2 @@
+data merge entity @e[type=arrow,nbt={crit:1b},distance=..3,limit=1,sort=nearest] {Tags:["AbianLifesteal"]}
+data merge entity @e[type=arrow,nbt={crit:1b},distance=..3,limit=1,sort=nearest] {PierceLevel:1b}

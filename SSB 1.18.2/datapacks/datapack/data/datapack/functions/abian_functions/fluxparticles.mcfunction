@@ -1,0 +1,14 @@
+particle minecraft:enchant ^ ^-0.2 ^-20 0 0 0 0 2
+particle minecraft:enchant ^ ^-0.2 ^20 0 0 0 0 2
+particle minecraft:enchant ^1 ^-0.2 ^-20 0 0 0 0 2
+particle minecraft:enchant ^1 ^-0.2 ^20 0 0 0 0 2
+particle minecraft:enchant ^-1 ^-0.2 ^-20 0 0 0 0 2
+particle minecraft:enchant ^-1 ^-0.2 ^20 0 0 0 0 2
+particle minecraft:enchant ^2 ^-0.2 ^-20 0 0 0 0 2
+particle minecraft:enchant ^2 ^-0.2 ^20 0 0 0 0 2
+particle minecraft:enchant ^-2 ^-0.2 ^-20 0 0 0 0 2
+particle minecraft:enchant ^-2 ^-0.2 ^20 0 0 0 0 2
+particle minecraft:enchant ^3 ^-0.2 ^-20 0 0 0 0 2
+particle minecraft:enchant ^3 ^-0.2 ^20 0 0 0 0 2
+particle minecraft:enchant ^-3 ^-0.2 ^-20 0 0 0 0 2
+particle minecraft:enchant ^-3 ^-0.2 ^20 0 0 0 0 2
