@@ -1,0 +1,17 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+"components": {
+  "minecraft:custom_data": {
+    "Inventory": [
+      {
+        "tag": {
+          "Molester": 1
+        }
+      }
+    ]
+  }
+}
+  }
+}

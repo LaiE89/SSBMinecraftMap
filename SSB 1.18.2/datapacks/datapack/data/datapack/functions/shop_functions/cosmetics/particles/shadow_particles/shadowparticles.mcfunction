@@ -1,1 +1,0 @@
-execute as @a[tag=shadowparticles] at @s run particle minecraft:smoke ~ ~0.1 ~ 0.2 0 0.2 0 3

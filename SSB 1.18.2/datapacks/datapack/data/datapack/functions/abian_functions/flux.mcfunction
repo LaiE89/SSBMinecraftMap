@@ -1,4 +1,0 @@
-summon armor_stand ^ ^-0.5 ^1.5 {CustomName:"\"Overflux\"",CustomNameVisible:1,Tags:["AbianOverflux"],Invisible:1,NoGravity:1b,Marker:1b,Invulnerable:1,ArmorItems:[{},{},{},{id:"minecraft:player_head",tag:{SkullOwner:{Id:[I;90327587,-1561246023,-1641618333,-2057370175],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ4NTlkMGFkZmM5M2JlMTliYjQ0MWU2ZWRmZDQzZjZiZmU2OTEyNzIzMDMzZjk2M2QwMDlhMTFjNDgyNDUxMCJ9fX0="}]}}},Count:1b}],DisabledSlots:2039583}
-particle minecraft:dust 0.5 0 0 1 ^ ^-0.5 ^2 1 1 1 0 100
-playsound minecraft:block.beacon.activate neutral @a[distance=..50] ~ ~ ~ 2 1 1
-scoreboard players set @s Ability2CD 0

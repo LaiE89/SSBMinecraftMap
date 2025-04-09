@@ -1,0 +1,23 @@
+# Death symbol
+particle dust{color:[1.000,0.000,0.000],scale:1} ^-0.125 ^0.75 ^0 0 0 0 0 1 force
+particle dust{color:[1.000,0.000,0.000],scale:1} ^-0.375 ^0 ^0 0 0 0 0 1 force
+particle dust{color:[1.000,0.000,0.000],scale:1} ^-0.375 ^0.25 ^0 0 0 0 0 1 force
+particle dust{color:[1.000,0.000,0.000],scale:1} ^-0.375 ^0.75 ^0 0 0 0 0 1 force
+particle dust{color:[1.000,0.000,0.000],scale:1} ^-0.625 ^-0.25 ^0 0 0 0 0 1 force
+particle dust{color:[1.000,0.000,0.000],scale:1} ^-0.625 ^0.25 ^0 0 0 0 0 1 force
+particle dust{color:[1.000,0.000,0.000],scale:1} ^-0.625 ^0.5 ^0 0 0 0 0 1 force
+particle dust{color:[1.000,0.000,0.000],scale:1} ^-0.625 ^0.75 ^0 0 0 0 0 1 force
+particle dust{color:[1.000,0.000,0.000],scale:1} ^-0.875 ^-0.5 ^0 0 0 0 0 1 force
+particle dust{color:[1.000,0.000,0.000],scale:1} ^-0.875 ^0 ^0 0 0 0 0 1 force
+particle dust{color:[1.000,0.000,0.000],scale:1} ^-0.875 ^0.75 ^0 0 0 0 0 1 force
+particle dust{color:[1.000,0.000,0.000],scale:1} ^0.125 ^-0.25 ^0 0 0 0 0 1 force
+particle dust{color:[1.000,0.000,0.000],scale:1} ^0.125 ^0 ^0 0 0 0 0 1 force
+particle dust{color:[1.000,0.000,0.000],scale:1} ^0.125 ^0.25 ^0 0 0 0 0 1 force
+particle dust{color:[1.000,0.000,0.000],scale:1} ^0.125 ^0.5 ^0 0 0 0 0 1 force
+particle dust{color:[1.000,0.000,0.000],scale:1} ^0.125 ^0.75 ^0 0 0 0 0 1 force
+particle dust{color:[1.000,0.000,0.000],scale:1} ^0.375 ^-0.5 ^0 0 0 0 0 1 force
+particle dust{color:[1.000,0.000,0.000],scale:1} ^0.375 ^0 ^0 0 0 0 0 1 force
+particle dust{color:[1.000,0.000,0.000],scale:1} ^0.375 ^0.75 ^0 0 0 0 0 1 force
+particle dust{color:[1.000,0.000,0.000],scale:1} ^0.625 ^-0.5 ^0 0 0 0 0 1 force
+particle dust{color:[1.000,0.000,0.000],scale:1} ^0.625 ^0.25 ^0 0 0 0 0 1 force
+particle dust{color:[1.000,0.000,0.000],scale:1} ^0.625 ^0.75 ^0 0 0 0 0 1 force

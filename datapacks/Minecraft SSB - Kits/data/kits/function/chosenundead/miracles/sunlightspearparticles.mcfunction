@@ -1,0 +1,9 @@
+particle dust{color:[1.000,1.000,0.000],scale:0.5} ^ ^ ^-2 0.09 0.09 0.09 0 10 force
+particle dust{color:[1.000,1.000,0.000],scale:0.5} ^ ^ ^-1.5 0.09 0.09 0.09 0 10 force
+particle dust{color:[1.000,1.000,0.000],scale:0.5} ^ ^ ^-1 0.09 0.09 0.09 0 10 force
+particle dust{color:[1.000,1.000,0.000],scale:0.5} ^ ^ ^-0.5 0.09 0.09 0.09 0 10 force
+particle dust{color:[1.000,1.000,0.000],scale:0.5} ^ ^ ^0 0.09 0.09 0.09 0 10 force
+particle dust{color:[1.000,1.000,0.000],scale:0.5} ^ ^ ^0.5 0.09 0.09 0.09 0 10 force
+particle dust{color:[1.000,1.000,0.000],scale:0.5} ^ ^ ^1 0.09 0.09 0.09 0 10 force
+particle dust{color:[1.000,1.000,0.000],scale:0.5} ^ ^ ^1.5 0.09 0.09 0.09 0 10 force
+particle dust{color:[1.000,1.000,0.000],scale:0.5} ^ ^ ^2 0.09 0.09 0.09 0 10 force

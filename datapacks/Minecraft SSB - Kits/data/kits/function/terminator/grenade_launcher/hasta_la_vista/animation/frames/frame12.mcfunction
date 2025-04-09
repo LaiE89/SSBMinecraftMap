@@ -1,0 +1,54 @@
+## Fire Spiral Animation Frame #12
+# Fire particles
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-7.932 ^-2.947 ^8.462 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-8.128 ^-2.462 ^8.492 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-8.294 ^-1.965 ^8.523 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-8.429 ^-1.456 ^8.554 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-8.533 ^-0.938 ^8.585 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-8.605 ^-0.413 ^8.615 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-8.645 ^0.117 ^8.646 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-8.652 ^0.651 ^8.677 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-8.627 ^1.186 ^8.708 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-8.567 ^1.720 ^8.738 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-8.475 ^2.252 ^8.769 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-8.350 ^2.779 ^8.800 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-8.192 ^3.298 ^8.831 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-8.001 ^3.809 ^8.862 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-7.779 ^4.309 ^8.892 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-7.525 ^4.796 ^8.923 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-7.241 ^5.267 ^8.954 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-6.927 ^5.722 ^8.985 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-6.584 ^6.158 ^9.015 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-6.214 ^6.574 ^9.046 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-5.818 ^6.967 ^9.077 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-5.396 ^7.337 ^9.108 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-4.952 ^7.681 ^9.138 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-4.485 ^7.997 ^9.169 0 0 0 0 1 force
+particle dust{color:[1.000,0.753,0.000],scale:1.5} ^-3.998 ^8.286 ^9.200 0 0 0 0 1 force
+
+# Smoke particles
+particle campfire_cosy_smoke ^-7.932 ^-2.947 ^8.462 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-8.128 ^-2.462 ^8.492 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-8.294 ^-1.965 ^8.523 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-8.429 ^-1.456 ^8.554 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-8.533 ^-0.938 ^8.585 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-8.605 ^-0.413 ^8.615 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-8.645 ^0.117 ^8.646 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-8.652 ^0.651 ^8.677 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-8.627 ^1.186 ^8.708 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-8.567 ^1.720 ^8.738 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-8.475 ^2.252 ^8.769 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-8.350 ^2.779 ^8.800 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-8.192 ^3.298 ^8.831 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-8.001 ^3.809 ^8.862 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-7.779 ^4.309 ^8.892 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-7.525 ^4.796 ^8.923 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-7.241 ^5.267 ^8.954 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-6.927 ^5.722 ^8.985 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-6.584 ^6.158 ^9.015 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-6.214 ^6.574 ^9.046 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-5.818 ^6.967 ^9.077 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-5.396 ^7.337 ^9.108 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-4.952 ^7.681 ^9.138 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-4.485 ^7.997 ^9.169 0 0 0 0 1 force
+particle campfire_cosy_smoke ^-3.998 ^8.286 ^9.200 0 0 0 0 1 force

@@ -1,0 +1,15 @@
+scoreboard players set @s kits.id 39
+tag @s add Laieth
+item replace entity @s armor.head with player_head[custom_name="The Man, The Myth, The Legend",custom_data={KitItem:1b},attribute_modifiers=[{id:"armor.head.laieth",type:"armor",amount:2,operation:"add_value",slot:"head"}],profile={id:[I;458845636,-812560638,-1311904742,1082091047],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmY5YjllNTgyM2M3NzVmYjMwYjFhYjc1ZmY0MzVmNTY1ZTljZmEzYmUxMDAwZTJhNWVhZmMxYTNjZTllMWMxMCJ9fX0="}]}] 1
+item replace entity @s armor.chest with leather_chestplate[custom_name={"color":"dark_aqua","italic":false,"text":"Child Prodigy\'s Clothes"},lore=[{"italic":false,"text":"Only the gucciest of the gangs can wear this million rack fabric"}],unbreakable={},custom_data={KitItem:1b},attribute_modifiers=[{id:"armor.chest.laieth",type:"armor",amount:13,operation:"add_value",slot:"chest"}],dyed_color=2636890] 1
+item replace entity @s armor.legs with netherite_leggings[custom_name={"color":"dark_aqua","italic":false,"text":"Child Prodigy\'s Clothes"},lore=[{"italic":false,"text":"Only the gucciest of the gangs can wear this million rack fabric"}],unbreakable={},custom_data={KitItem:1b},attribute_modifiers=[{id:"tough.legs.laieth",type:"armor_toughness",amount:10,operation:"add_value",slot:"legs"}]] 1
+item replace entity @s armor.feet with leather_boots[custom_name={"color":"dark_aqua","italic":false,"text":"Child Prodigy\'s Clothes"},lore=[{"italic":false,"text":"Only the gucciest of the gangs can wear this million rack fabric"}],unbreakable={},custom_data={KitItem:1b},attribute_modifiers=[{id:"speed.feet.laieth",type:"movement_speed",amount:0.03,operation:"add_value",slot:"feet"}],dyed_color=1908001] 1
+
+give @s iron_sword[custom_name={"color":"gold","italic":false,"text":"Sword of Sitrouille"},lore=[[""],[{"color":"dark_aqua","italic":false,"text":"Sitrouille Speed:"},{"color":"dark_purple","text":" "},{"color":"yellow","text":"PASSIVE"}],{"color":"gray","italic":false,"text":"Every 3 attacks grant you"},[{"color":"gray","italic":false,"text":"temporary speed and shield."}],[""],[{"color":"gold","italic":false,"text":"Weapon Wheel: "},{"color":"yellow","text":"SHIFT"}],{"color":"gray","italic":false,"text":"Hold shift to open up"},{"color":"gray","italic":false,"text":"a weapon wheel. Select"},{"color":"gray","italic":false,"text":"the weapon that you want"},{"color":"gray","italic":false,"text":"and release shift to swap"},{"color":"gray","italic":false,"text":"to it."}],unbreakable={},custom_data={KitItem:1b,LaiethWeapon:1b},attribute_modifiers=[{id:"damage.mainhand.laieth",type:"attack_damage",amount:6.5,operation:"add_value",slot:"mainhand"},{id:"speed.mainhand.laieth",type:"attack_speed",amount:20,operation:"add_value",slot:"mainhand"}]] 1
+
+scoreboard players set @s kits.ability1CD 100
+scoreboard players set @s kits.ability2CD 298
+scoreboard players set @s kits.ability3CD 298
+scoreboard players set @s kits.ability4CD 1498
+scoreboard players set @s kits.timer 2
+scoreboard players set @s kits.timer3 1

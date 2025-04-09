@@ -1,0 +1,23 @@
+## Jacket's Kit Selection
+# Give tags
+scoreboard players set @s kits.id 21
+tag @s add Jacket
+
+# Give items
+item replace entity @s armor.head with player_head[custom_name={"color":"#FF66FF","italic":false,"text":"Richard"},unbreakable={},custom_data={KitItem:1b},attribute_modifiers=[{id:"armor.head.jacket",type:"armor",amount:2,operation:"add_value",slot:"head"},{id:"tough.head.jacket",type:"armor_toughness",amount:3,operation:"add_value",slot:"head"}],profile={id:[I;-2084029785,-1738521132,-2138607524,-885930173],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzE5ZGZjYjI0NGVmZTJiMzU3ZGIwMmI5MzdkZjg5YTdjMTE2ZDE3ZjFiNTYxZGU5Nzk4NjUzMzExMTBmMjI2In19fQ=="}]}] 1
+item replace entity @s armor.chest with leather_chestplate[custom_name={"color":"#FF66FF","italic":false,"text":"Jacket"},unbreakable={},custom_data={KitItem:1b},attribute_modifiers=[{id:"armor.chest.jacket",type:"armor",amount:6,operation:"add_value",slot:"chest"},{id:"tough.chest.jacket",type:"armor_toughness",amount:3,operation:"add_value",slot:"chest"},{id:"kb.chest.jacket",type:"knockback_resistance",amount:0.2,operation:"add_value",slot:"chest"}],dyed_color=8006699] 1
+item replace entity @s armor.legs with leather_leggings[custom_name={"color":"#FF66FF","italic":false,"text":"Jeans"},unbreakable={},custom_data={KitItem:1b},attribute_modifiers=[{id:"armor.legs.jacket",type:"armor",amount:3,operation:"add_value",slot:"legs"},{id:"tough.legs.jacket",type:"armor_toughness",amount:1,operation:"add_value",slot:"legs"}],dyed_color=52423] 1
+item replace entity @s armor.feet with leather_boots[custom_name={"color":"#FF66FF","italic":false,"text":"Shoes"},unbreakable={},custom_data={KitItem:1b},attribute_modifiers=[{id:"armor.feet.jacket",type:"armor",amount:3,operation:"add_value",slot:"feet"},{id:"tough.feet.jacket",type:"armor_toughness",amount:1,operation:"add_value",slot:"feet"},{id:"speed.feet.jacket",type:"movement_speed",amount:0.05,operation:"add_value",slot:"feet"}],dyed_color=16777215] 1
+
+give @s carrot_on_a_stick[custom_name={"color":"#FF66FF","italic":false,"text":"Baseball Bat"},lore=[[""],[{"color":"gold","italic":false,"text":"Swing:"},{"color":"yellow","text":" SHIFT"}],{"color":"gray","italic":false,"text":"Swing your bat in front of you."},{"color":"gray","italic":false,"text":"It will reflect incoming projectiles."},{"color":"gray","italic":false,"text":"Reflecting a projectile will reset"},{"color":"gray","italic":false,"text":"this ability\'s cooldown."},[""],[{"color":"gold","italic":false,"text":"Pulverize:"},{"color":"dark_green","text":" "},{"color":"yellow","text":"PASSIVE"}],{"color":"gray","italic":false,"text":"Stunned enemies take extra damage"},[{"color":"gray","italic":false,"text":"from melee attacks with this bat."}],{"color":"gray","italic":false,"text":"If you land 3 melee attacks on a"},{"color":"gray","italic":false,"text":"single stunned target, your third"},{"color":"gray","italic":false,"text":"attack will deal immense damage."}],unbreakable={},custom_model_data={floats:[86]},custom_data={KitItem:1b},attribute_modifiers=[{id:"damage.mainhand.jacket",type:"attack_damage",amount:6,operation:"add_value",slot:"mainhand"},{id:"speed.mainhand.jacket",type:"attack_speed",amount:20,operation:"add_value",slot:"mainhand"}]] 1
+give @s carrot_on_a_stick[custom_name={"color":"aqua","italic":false,"text":"Pistol"},lore=[[""],[{"color":"gold","italic":false,"text":"Shoot:"},{"color":"yellow","text":" RIGHT CLICK"}],[{"color":"gray","italic":false,"text":"Fires a damaging bullet."}],[""],[{"color":"gold","italic":false,"text":"Throw:"},{"color":"dark_green","text":" "},{"color":"yellow","text":"SHIFT"}],{"color":"gray","italic":false,"text":"Shift to throw your weapon. Upon"},{"color":"gray","italic":false,"text":"throwing your weapon, you will"},{"color":"gray","italic":false,"text":"automatically switch to the next"},{"color":"gray","italic":false,"text":"weapon in a predetermined order."},{"color":"gray","italic":false,"text":"Thrown weapons will deal damage"},{"color":"gray","italic":false,"text":"and stun an enemy for 2 seconds"},{"color":"gray","italic":false,"text":"on collision."}],unbreakable={},custom_model_data={floats:[87]},custom_data={KitItem:1b,JacketThrownWeapon:1b}] 1
+
+# Scoreboard resets
+scoreboard players set @s kits.ability1CD 98
+scoreboard players set @s kits.ability2CD 98
+scoreboard players set @s kits.ability3CD 98
+
+scoreboard players set @s kits.timer 4
+scoreboard players set @s kits.timer2 4
+scoreboard players set @s kits.timer3 0
+scoreboard players set @s kits.timer4 0

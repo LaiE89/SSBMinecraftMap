@@ -1,2 +1,0 @@
-execute at @s if block ~-1 ~ ~ air if block ~-1 ~-1 ~ air if block ~-10 ~1 ~ air unless block ~-10 ~-1 ~ air run function datapack:labyrinth_functions/labyrinthmobabilities/prison/wendigojumpwest
-execute at @s if block ~1 ~ ~ air if block ~1 ~-1 ~ air if block ~10 ~1 ~ air unless block ~10 ~-1 ~ air run function datapack:labyrinth_functions/labyrinthmobabilities/prison/wendigojumpeast

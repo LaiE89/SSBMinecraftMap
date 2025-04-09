@@ -1,0 +1,1 @@
+tag @e[type=item,tag=DoomslayerArmorPackDelay] remove DoomslayerArmorPackDelay

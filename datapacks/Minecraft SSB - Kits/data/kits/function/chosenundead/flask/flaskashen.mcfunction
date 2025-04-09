@@ -1,0 +1,3 @@
+item replace entity @p[tag=ChosenUndead] weapon.mainhand with air 1
+item replace entity @p[tag=ChosenUndead] weapon.mainhand with potion[custom_name={"color":"aqua","italic":false,"text":"Ashen Estus Flask"},lore=[[""],["",{"color":"gold","italic":false,"text":"Switch Flasks:"},{"color":"yellow","italic":false,"text":" SHIFT"}],["",{"color":"gray","italic":false,"text":"Switch between Estus Flasks (HP)"}],["",{"color":"gray","italic":false,"text":"and Ashen Estus Flasks (FP). Kill"}],["",{"color":"gray","italic":false,"text":"enemies to restore up to 5 flasks."}]],enchantment_glint_override=true,custom_data={KitItem:1b,ChosenUndeadAshen:1b,ChosenUndeadFlask:1b},potion_contents={custom_color:3847130}] 1
+scoreboard players set @s kits.ability3CD 0

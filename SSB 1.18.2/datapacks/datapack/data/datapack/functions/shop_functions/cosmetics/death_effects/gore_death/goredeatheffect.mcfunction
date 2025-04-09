@@ -1,2 +1,0 @@
-execute at @a[tag=goredeatheffect,scores={Basic_Death=1..}] run playsound minecraft:block.anvil.break neutral @a[distance=..20] ~ ~ ~ 10 1 1
-execute at @a[tag=goredeatheffect,scores={Basic_Death=1..}] run particle minecraft:block minecraft:redstone_block ~ ~1 ~ 0.5 0.8 0.5 0 200

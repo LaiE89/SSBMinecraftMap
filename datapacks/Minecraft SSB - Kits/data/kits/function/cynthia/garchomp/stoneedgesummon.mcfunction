@@ -1,0 +1,3 @@
+summon block_display ~ ~-3 ~ {width:0f,height:0f,Tags:["GarchompStoneEdge"],transformation:{left_rotation:[0.3f,0.2f,0f,0.96f],right_rotation:[0f,0f,0f,1f],translation:[-1.5f,0f,-1.5f],scale:[0.75f,2f,0.75f]},block_state:{Name:"minecraft:granite"}}
+summon block_display ~ ~-3 ~ {width:0f,height:0f,Tags:["GarchompStoneEdge"],transformation:{left_rotation:[-0.3f,-0.5f,0f,0.83f],right_rotation:[0f,0f,0f,1f],translation:[-1f,-0.4f,1f],scale:[0.75f,2f,0.75f]},block_state:{Name:"minecraft:granite"}}
+summon block_display ~ ~-3 ~ {width:0f,height:0f,Tags:["GarchompStoneEdge"],transformation:{left_rotation:[-0.3f,0.6f,0f,0.8f],right_rotation:[0f,0f,0f,1f],translation:[0.3f,-0.3f,1f],scale:[0.75f,2f,0.75f]},block_state:{Name:"minecraft:granite"}}

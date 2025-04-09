@@ -1,3 +1,0 @@
-execute as @e[distance=..2,tag=!Abian,tag=!InLabyrinth,type=!experience_orb,type=!area_effect_cloud,type=!arrow,type=!armor_stand,type=!egg,type=!leash_knot,type=!trident,type=!painting,type=!snowball,type=!fireball,type=!small_fireball,type=!ender_pearl,type=!eye_of_ender,type=!experience_bottle,type=!item_frame,type=!item,type=!tnt,type=!falling_block,type=!firework_rocket,type=!shulker_bullet,type=!dragon_fireball,type=!evoker_fangs,type=!minecart,type=!chest_minecart,type=!furnace_minecart,type=!tnt_minecart,type=!hopper_minecart,type=!spawner_minecart,type=!llama_spit] at @s run effect give @s wither 2 9 true
-playsound minecraft:block.end_gateway.spawn neutral @a[distance=..50] ~ ~ ~ 2 0 1
-kill @s

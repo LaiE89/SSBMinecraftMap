@@ -1,2 +1,0 @@
-execute as @a[tag=shitparticles] at @s run particle minecraft:item minecraft:cocoa_beans ~ ~0.7 ~ 0.1 0.1 0.1 0 5
-execute as @a[tag=shitparticles,scores={RNG=90..}] at @s run particle minecraft:sneeze ^ ^0.7 ^-1 0.1 0.1 0.1 0.05 3

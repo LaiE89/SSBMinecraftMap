@@ -1,0 +1,1 @@
+#execute as @p[tag=Doomslayer,predicate=kits:items/doomslayer/shotgun] at @s run summon item ^ ^1 ^0.5 {Age:5990,PickupDelay:32767,Motion:[0.1,0.2,0.1],Item:{id:"minecraft:smoker",count:1}}

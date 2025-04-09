@@ -1,5 +1,0 @@
-data modify entity @e[type=minecraft:chest_minecart,tag=lobbymenu,limit=1,sort=nearest] Items insert 0 value {Slot:11b,id:"minecraft:compass",Count:1b,tag:{display:{Name:"[{\"text\":\"Stats\",\"italic\":false}]"},isMenu:1b,page:0,selection:1}}
-data modify entity @e[type=minecraft:chest_minecart,tag=lobbymenu,limit=1,sort=nearest] Items insert 0 value {Slot:13b,id:"minecraft:book",Count:1b,tag:{display:{Name:"[{\"text\":\"Quests\",\"italic\":false}]"},isMenu:1b,page:0,selection:2}}
-data modify entity @e[type=minecraft:chest_minecart,tag=lobbymenu,limit=1,sort=nearest] Items insert 0 value {Slot:15b,id:"minecraft:emerald",Count:1b,tag:{display:{Name:"[{\"text\":\"Shop\",\"italic\":false}]"},isMenu:1b,page:0,selection:3}}
-
-# {Slot:14b,id:"minecraft:cooked_chicken",Count:1b,tag:{isMenu:1b,page:0,selection:3}}

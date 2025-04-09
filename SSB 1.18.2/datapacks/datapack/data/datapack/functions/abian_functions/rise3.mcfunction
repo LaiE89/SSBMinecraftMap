@@ -1,6 +1,0 @@
-particle dust 0.1 0.1 0.1 3 ~ ~ ~ 0 5 0 0 30
-particle dust 0.1 0.1 0.1 2 ~ ~0.3 ~ 2 0 2 0 50
-item replace entity @p[tag=Abian,nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,AbianWeapon:1b,display:{Name:'[{"text":"Swap","italic":false,"color":"dark_purple"}]'}}}]}] hotbar.0 with carrot_on_a_stick{Unbreakable:1,AbianWeapon:1b,display:{Name:'[{"text":"Rise","italic":false,"color":"light_purple"}]',Lore:['[{"text":"Item Ability: | ","italic":false,"color":"gold"},{"text":"RIGHT CLICK","color":"yellow","bold":true},{"text":"","color":"dark_purple","bold":false}]','[{"text":"Summons a hydra to fight for you.","italic":false,"color":"gray"}]']},CustomModelData:68}
-clear @p[tag=Abian] carrot_on_a_stick{Unbreakable:1,AbianWeapon:1b,display:{Name:'[{"text":"Swap","italic":false,"color":"dark_purple"}]',Lore:['[{"text":"Item Ability: | ","italic":false,"color":"gold"},{"text":"RIGHT CLICK","color":"yellow","bold":true},{"text":"","color":"dark_purple","bold":false}]','[{"text":"You swap locations with your Hydra","italic":false,"color":"gray"},{"text":"","italic":false,"color":"dark_purple"}]','[{"text":"","italic":false,"color":"dark_purple"}]']},Enchantments:[{id:infinity,lvl:1}],HideFlags:33,CustomModelData:68}
-tag @p[tag=Abian] remove AbianCanSwap
-kill @s

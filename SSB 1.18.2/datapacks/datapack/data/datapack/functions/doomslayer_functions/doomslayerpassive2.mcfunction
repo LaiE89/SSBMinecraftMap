@@ -1,2 +1,0 @@
-particle dust 0 1 0 2 ~ ~ ~ 0 0 0 1 1
-execute positioned ~ ~-1.35 ~ unless entity @e[distance=..1.5,tag=!InLabyrinth,type=!armor_stand,type=!item,type=!arrow,type=!experience_orb,type=!firework_rocket,tag=!Doomslayer] positioned ^ ^ ^1 positioned ~ ~1.35 ~ run function datapack:doomslayer_functions/doomslayerpassive2

@@ -1,0 +1,10 @@
+tp @s[tag=kratosslash1,tag=kratosright] ^-1 ^ ^0.9
+tp @s[tag=kratosslash1,tag=kratosleft] ^1 ^ ^0.9
+tp @s[tag=kratosslash2,tag=kratosright] ^0.7 ^-0.35 ^0.7
+tp @s[tag=kratosslash2,tag=kratosleft] ^-0.7 ^-0.35 ^0.7
+tp @s[tag=kratosslash3,tag=kratosright] ^0.7 ^0.35 ^1
+tp @s[tag=kratosslash3,tag=kratosleft] ^1.15 ^0.35 ^1
+tp @s[tag=kratosslash4,tag=kratosright] ^0.7 ^0.45 ^0.7
+tp @s[tag=kratosslash4,tag=kratosleft] ^-0.7 ^0.45 ^0.7
+tp @s[tag=kratosslash5,tag=kratosright] ^-1.15 ^0.35 ^1
+tp @s[tag=kratosslash5,tag=kratosleft] ^-0.7 ^0.35 ^1

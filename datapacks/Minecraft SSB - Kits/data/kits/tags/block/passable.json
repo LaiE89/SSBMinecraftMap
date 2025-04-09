@@ -1,0 +1,19 @@
+{
+  "values":[
+    "minecraft:air",
+    "minecraft:cave_air",
+    "minecraft:void_air",
+    "minecraft:vine",
+    "#minecraft:flowers",
+    "minecraft:short_grass",
+    "minecraft:tall_grass",
+    "#minecraft:signs",
+    "minecraft:water",
+    "minecraft:fern",
+    "minecraft:large_fern",
+    "minecraft:snow",
+	  "minecraft:redstone_wire",
+	  "#minecraft:pressure_plates",
+	  "#minecraft:wool_carpets"
+  ]
+}

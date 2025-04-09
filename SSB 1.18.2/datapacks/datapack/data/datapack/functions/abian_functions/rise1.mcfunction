@@ -1,6 +1,0 @@
-playsound minecraft:entity.ender_dragon.shoot neutral @a[distance=..30] ~ ~ ~ 2 0 1
-particle dragon_breath ^ ^1.6 ^1.5 0.5 0.5 0.5 1 30
-tp @s ~ ~ ~ facing entity @e[tag=!Abian,tag=!InLabyrinth,type=!experience_orb,type=!area_effect_cloud,type=!armor_stand,type=!egg,type=!leash_knot,type=!trident,type=!painting,type=!snowball,type=!arrow,type=!fireball,type=!small_fireball,type=!ender_pearl,type=!eye_of_ender,type=!experience_bottle,type=!item_frame,type=!item,type=!tnt,type=!falling_block,type=!firework_rocket,type=!shulker_bullet,type=!dragon_fireball,type=!evoker_fangs,type=!minecart,type=!chest_minecart,type=!furnace_minecart,type=!tnt_minecart,type=!hopper_minecart,type=!spawner_minecart,type=!llama_spit,distance=..50,limit=1,sort=nearest]
-summon armor_stand ~ ~1 ~ {Tags:["AbianHydraFireball","projectile"],NoGravity:1b,Marker:1b,Small:1,Invisible:1,Invulnerable:1,ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;-1225913171,-641973974,-1611519566,338257277],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY5ZGE0ZTdiOGQ1NThhZjAyZTgwZTJlMTY2OWNlYjYwODQ4OThkYjU1OTA3ZWYzZTY2ZDlhMzI5MzI5ZTk0MSJ9fX0="}]}}},Count:1b}],DisabledSlots:2039583}
-tp @e[type=armor_stand,tag=AbianHydraFireball,distance=..3] @s
-scoreboard players set @s Timer 0

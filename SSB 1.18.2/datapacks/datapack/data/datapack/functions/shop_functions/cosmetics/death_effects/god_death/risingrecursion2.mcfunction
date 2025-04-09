@@ -1,1 +1,0 @@
-execute as @e[type=armor_stand,tag=goddeatheffectstand] at @s run function datapack:shop_functions/cosmetics/death_effects/god_death/risingrecursion3

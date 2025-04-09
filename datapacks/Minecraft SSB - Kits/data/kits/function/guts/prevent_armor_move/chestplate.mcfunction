@@ -1,0 +1,3 @@
+clear @s leather_chestplate[custom_name={"color":"dark_red","italic":false,"text":"Berserker Armor"}]
+kill @e[type=item,nbt={Item:{id:"minecraft:leather_chestplate",components:{"minecraft:custom_name":{"color":"dark_red","italic":false,"text":"Berserker Armor"}}}}]
+item replace entity @s armor.chest with leather_chestplate[custom_name={"color":"dark_red","italic":false,"text":"Berserker Armor"},unbreakable={},custom_data={KitItem:1b},attribute_modifiers=[{id:"armor.chest.guts",type:"armor",amount:15,operation:"add_value",slot:"chest"},{id:"tough.chest.guts",type:"armor_toughness",amount:12,operation:"add_value",slot:"chest"}],dyed_color=1908001] 1

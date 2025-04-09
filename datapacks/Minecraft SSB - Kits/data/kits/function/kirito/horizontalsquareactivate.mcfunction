@@ -1,0 +1,5 @@
+playsound minecraft:entity.breeze.deflect neutral @a[distance=..30] ~ ~ ~ 5 0.5 
+playsound minecraft:item.shield.break neutral @a[distance=..30] ~ ~ ~ 2 0.75 1
+effect give @s minecraft:instant_health 1 0 true
+execute as @e[distance=..15,type=!#kits:non_entity,tag=!Invincible,tag=!Kirito,tag=!InLabyrinth,limit=1,sort=nearest] at @s run function kits:kirito/horizontalsquaredamage
+function kits:kirito/horizontalsquareend

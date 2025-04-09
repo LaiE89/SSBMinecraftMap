@@ -1,0 +1,7 @@
+summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,ShowArms:1b,Marker:1b,NoBasePlate:1b,Tags:["AlucardBaskerville"],Pose:{Body:[52f,0f,0f],LeftArm:[335f,0f,0f],RightArm:[286f,0f,0f],LeftLeg:[119f,0f,0f],RightLeg:[55f,0f,360f],Head:[7f,0f,0f]},DisabledSlots:4144959,equipment:{feet:{id:"minecraft:leather_boots",count:1,components:{"minecraft:dyed_color":0}},legs:{id:"minecraft:leather_leggings",count:1,components:{"minecraft:dyed_color":0}},chest:{id:"minecraft:leather_chestplate",count:1,components:{"minecraft:dyed_color":0}},head:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY0MzIwNGE5ZDA3MjI4OGY3MmQyZmQwMmQxODljNWEzYjA0MTM4MzU4YzAyMmZiMmNkNTJlMTE1OTM4NDJmNyJ9fX0="}]}}}}}
+summon wandering_trader ~ ~ ~ {Silent:1b,Invulnerable:1b,Team:"Mobs",PersistenceRequired:1b,CanPickUpLoot:0b,Willing:0b,Tags:["AlucardBaskerville","InLabyrinth"],active_effects:[{id:"minecraft:invisibility",amplifier:0,duration:-1,show_particles:0b}],attributes:[{id:"minecraft:movement_speed",base:1.5}],Offers:{}}
+particle block{block_state:"minecraft:redstone_block"} ~ ~1 ~ 0.5 0.5 0.5 0 100 force
+particle smoke ~ ~1 ~ 0.4 1 0.4 0 100 force
+playsound minecraft:entity.phantom.death neutral @a[distance=..50] ~ ~ ~ 10 0 1
+scoreboard players remove @s kits.timer2 6
+scoreboard players set @s kits.ability3CD 0

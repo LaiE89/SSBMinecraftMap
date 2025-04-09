@@ -1,0 +1,3 @@
+clear @s minecraft:player_head[custom_name="Kakuja"]
+kill @e[type=item,nbt={Item:{id:"minecraft:player_head",components:{"minecraft:custom_name":'"Kakuja"'}}}]
+item replace entity @s armor.head with player_head[custom_name="Kakuja",custom_data={KitItem:1b},attribute_modifiers=[{id:"armor.head.kaneki",type:"armor",amount:2,operation:"add_value",slot:"head"}],profile={id:[I;-16977185,811288703,-1145564788,-520051058],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjU0ZWEzNTgzYTBhNmM1NGUxYTI3ZGI2MDI5YjgzMjkwM2Y5MGFiOTZjMTg1YjYwMjkwN2RjNGQxN2VmY2M2MSJ9fX0="}]}] 1

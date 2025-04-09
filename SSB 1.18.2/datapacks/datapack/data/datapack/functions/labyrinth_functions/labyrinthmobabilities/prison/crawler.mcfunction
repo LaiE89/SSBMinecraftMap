@@ -1,2 +1,0 @@
-execute as @e[type=zombie,tag=labyrinthcrawler] at @s unless entity @a[distance=..5] run function datapack:labyrinth_functions/labyrinthmobabilities/prison/crawlerinvisible
-execute as @e[type=zombie,tag=labyrinthcrawler_Appear] at @s if entity @a[distance=..5] run function datapack:labyrinth_functions/labyrinthmobabilities/prison/crawlervisible
