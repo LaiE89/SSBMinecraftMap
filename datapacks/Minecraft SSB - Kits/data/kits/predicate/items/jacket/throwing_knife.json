@@ -7,9 +7,9 @@
         "items": [
           "minecraft:iron_sword"
         ],
-"components": {
-  "minecraft:custom_name": "[{\"text\":\"Throwing Knife\",\"italic\":false,\"color\":\"aqua\"}]"
-}
+        "components": {
+          "minecraft:custom_name": {"color":"aqua","italic":false,"text":"Throwing Knife"}
+        }
       }
     }
   }

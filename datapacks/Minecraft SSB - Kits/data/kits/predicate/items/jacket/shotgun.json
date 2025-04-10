@@ -7,9 +7,9 @@
         "items": [
           "minecraft:carrot_on_a_stick"
         ],
-"components": {
-  "minecraft:custom_name": "[{\"text\":\"Shotgun\",\"italic\":false,\"color\":\"aqua\"}]"
-}
+        "components": {
+          "minecraft:custom_name": {"color":"aqua","italic":false,"text":"Shotgun"}
+        }
       }
     }
   }

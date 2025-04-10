@@ -7,9 +7,9 @@
         "items": [
           "minecraft:crossbow"
         ],
-"components": {
-  "minecraft:custom_name": "[{\"text\":\"Guts' Crossbow\",\"italic\":false,\"color\":\"dark_red\"}]"
-}
+        "components": {
+          "minecraft:custom_name": {"color":"dark_red","italic":false,"text":"Guts's Crossbow"}
+        }
       }
     }
   }

@@ -43,7 +43,7 @@ execute as @s[scores={kits.criterion.swordNetherite=1..}] at @s run function kit
 execute as @s[tag=GutsBerserker,scores={kits.criterion.kill=1..}] at @s run function kits:guts/prevent_armor_move/removearmor
 
 # Preventing removing Berserker Armor
-execute as @s[tag=GutsBerserker,tag=Guts] at @s unless entity @s[nbt={Inventory:[{id:"minecraft:player_head",Slot:103b,components:{"minecraft:custom_name":'"Berserker Armor"'}}]}] run function kits:guts/prevent_armor_move/helmet
-execute as @s[tag=GutsBerserker,tag=Guts] at @s unless entity @s[nbt={Inventory:[{id:"minecraft:leather_chestplate",Slot:102b,components:{"minecraft:custom_name":{"color":"dark_red","italic":false,"text":"Berserker Armor"}}}]}] run function kits:guts/prevent_armor_move/chestplate
-execute as @s[tag=GutsBerserker,tag=Guts] at @s unless entity @s[nbt={Inventory:[{id:"minecraft:netherite_leggings",Slot:101b,components:{"minecraft:custom_name":{"color":"dark_red","italic":false,"text":"Berserker Armor"}}}]}] run function kits:guts/prevent_armor_move/leggings
-execute as @s[tag=GutsBerserker,tag=Guts] at @s unless entity @s[nbt={Inventory:[{id:"minecraft:netherite_boots",Slot:100b,components:{"minecraft:custom_name":{"color":"dark_red","italic":false,"text":"Berserker Armor"}}}]}] run function kits:guts/prevent_armor_move/boots
+execute as @s[tag=GutsBerserker,tag=Guts] at @s unless items entity @s armor.head minecraft:player_head[custom_name="Berserker Armor"] run function kits:guts/prevent_armor_move/helmet
+execute as @s[tag=GutsBerserker,tag=Guts] at @s unless items entity @s armor.chest minecraft:leather_chestplate[custom_name={"color":"dark_red","italic":false,"text":"Berserker Armor"}] run function kits:guts/prevent_armor_move/chestplate
+execute as @s[tag=GutsBerserker,tag=Guts] at @s unless items entity @s armor.legs minecraft:netherite_leggings[custom_name={"color":"dark_red","italic":false,"text":"Berserker Armor"}] run function kits:guts/prevent_armor_move/leggings
+execute as @s[tag=GutsBerserker,tag=Guts] at @s unless items entity @s armor.feet minecraft:netherite_boots[custom_name={"color":"dark_red","italic":false,"text":"Berserker Armor"}] run function kits:guts/prevent_armor_move/boots
