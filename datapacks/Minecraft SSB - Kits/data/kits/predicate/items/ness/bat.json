@@ -7,9 +7,9 @@
         "items": [
           "minecraft:carrot_on_a_stick"
         ],
-"components": {
-  "minecraft:custom_name": "[{\"text\":\"Baseball Bat\",\"italic\":false,\"color\":\"gold\"}]"
-}
+        "components": {
+          "minecraft:custom_name": {"color":"gold","italic":false,"text":"Ness's Baseball Bat"}
+        }
       }
     }
   }

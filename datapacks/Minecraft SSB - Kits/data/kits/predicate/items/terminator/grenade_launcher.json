@@ -7,9 +7,9 @@
         "items": [
           "minecraft:carrot_on_a_stick"
         ],
-"components": {
-  "minecraft:custom_name": "[{\"text\":\"M79 Grenade Launcher\",\"italic\":false,\"color\":\"yellow\"}]"
-}
+        "components": {
+          "minecraft:custom_name": {"color":"yellow","italic":false,"text":"M79 Grenade Launcher"}
+        }
       }
     }
   }

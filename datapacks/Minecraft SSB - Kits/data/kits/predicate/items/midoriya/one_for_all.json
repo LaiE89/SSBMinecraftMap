@@ -7,9 +7,9 @@
         "items": [
           "minecraft:carrot_on_a_stick"
         ],
-"components": {
-  "minecraft:custom_name": "[{\"text\":\"One for All\",\"italic\":false,\"color\":\"green\"}]"
-}
+        "components": {
+          "minecraft:custom_name": {"color":"green","italic":false,"text":"One for All"}
+        }
       }
     }
   }

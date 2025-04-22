@@ -7,9 +7,9 @@
         "items": [
           "minecraft:carrot_on_a_stick"
         ],
-"components": {
-  "minecraft:custom_name": "[{\"text\":\"Yamato\",\"italic\":false,\"color\":\"white\"}]"
-}
+        "components": {
+          "minecraft:custom_name": {"color":"white","italic":false,"text":"Yamato"}
+        }
       }
     }
   }

@@ -42,7 +42,7 @@ execute at @s[gamemode=!spectator,tag=!ZedNoSwitch,scores={kits.criterion.shift=
 
 # Death Mark
 scoreboard players add @s[scores={kits.ability4CD=..499}] kits.ability4CD 1
-execute as @s[scores={kits.criterion.COS=1..},predicate=kits:items/zed/mark] at @s as @s[scores={kits.ability4CD=500..}] run function kits:zed/weapon2shift
+execute as @s[scores={kits.criterion.COS=1..},predicate=kits:items/zed/mark] at @s as @s[scores={kits.ability4CD=500..}] run function kits:zed/weapon3cos
 
 execute if entity @e[tag=ZedDeathmarked] run scoreboard players add @s kits.timer2 1
 execute at @e[tag=ZedDeathmarked] run particle block{block_state:"minecraft:redstone_block"} ~ ~1 ~ 0.4 0.4 0.4 0 5 force

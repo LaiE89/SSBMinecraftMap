@@ -1,6 +1,6 @@
 # Ability CDs
-title @s[scores={kits.timer3=21..}] actionbar ["",{"text":"Weapons: ","color":"white"},{"score":{"name":"@s","objective":"kits.ability1CD"},"color":"white"},{"text":"/30","color":"white"},{"text":" || ","color":"white"},{"text":"Necroplasm: ","color":"green"},{"score":{"name":"@s","objective":"kits.timer3"},"color":"green"},{"text":"/100","color":"green"}]
-title @s[scores={kits.timer3=..20}] actionbar ["",{"text":"Weapons: ","color":"white"},{"score":{"name":"@s","objective":"kits.ability1CD"},"color":"white"},{"text":"/30","color":"white"},{"text":" || ","color":"white"},{"text":"Necroplasm: ","color":"green"},{"score":{"name":"@s","objective":"kits.timer3"},"color":"red"},{"text":"/100","color":"red"}]
+title @s[scores={kits.timer3=1..}] actionbar ["",{"text":"Weapons: ","color":"white"},{"score":{"name":"@s","objective":"kits.ability1CD"},"color":"white"},{"text":"/30","color":"white"},{"text":" || ","color":"white"},{"text":"Necroplasm: ","color":"green"},{"score":{"name":"@s","objective":"kits.timer3"},"color":"green"},{"text":"/100","color":"green"}]
+title @s[scores={kits.timer3=..0}] actionbar ["",{"text":"Weapons: ","color":"white"},{"score":{"name":"@s","objective":"kits.ability1CD"},"color":"white"},{"text":"/30","color":"white"},{"text":" || ","color":"white"},{"text":"Necroplasm: ","color":"green"},{"score":{"name":"@s","objective":"kits.timer3"},"color":"red"},{"text":"/100","color":"red"}]
 
 # AK47
 scoreboard players add @s[scores={kits.ability1CD=..29}] kits.ability1CD 1
@@ -29,11 +29,13 @@ execute as @s[gamemode=!spectator,scores={kits.ability1CD=30..}] as @s[scores={k
 execute as @e[type=area_effect_cloud,tag=SpawnChains] at @s run function kits:spawn/chain
 
 # Necroplasm Passive
-execute if entity @s[scores={kits.criterion.carrot=1..}] run function kits:spawn/necroplasmeat
-execute as @s[gamemode=!spectator,scores={kits.timer3=..99},nbt=!{active_effects:[{id:"minecraft:regeneration"}]}] at @s if entity @e[distance=..5,type=!#kits:non_entity,tag=!Invincible,tag=!Spawn,tag=!InLabyrinth] run function kits:spawn/necroplasmregen
-execute as @s[gamemode=!spectator,scores={kits.timer3=..99},nbt={active_effects:[{id:"minecraft:regeneration"}]}] at @s if entity @e[distance=..8,type=!#kits:non_entity,tag=!Invincible,tag=!Spawn,tag=!InLabyrinth] run function kits:spawn/necroplasmregen2
+execute if score @s kits.criterion.carrot matches 1.. at @s run function kits:spawn/necroplasm {value: 30}
+execute if score @s kits.criterion.death matches 1.. at @s run function kits:spawn/necroplasm {value: 100}
+execute if score @s kits.criterion.kill matches 1.. at @s run function kits:spawn/necroplasm {value: 100}
+#execute as @s[gamemode=!spectator,scores={kits.timer3=..99},nbt=!{active_effects:[{id:"minecraft:regeneration"}]}] at @s if entity @e[distance=..5,type=!#kits:non_entity,tag=!Invincible,tag=!Spawn,tag=!InLabyrinth] run function kits:spawn/necroplasmregen
+#execute as @s[gamemode=!spectator,scores={kits.timer3=..99},nbt={active_effects:[{id:"minecraft:regeneration"}]}] at @s if entity @e[distance=..8,type=!#kits:non_entity,tag=!Invincible,tag=!Spawn,tag=!InLabyrinth] run function kits:spawn/necroplasmregen2
 execute at @s[nbt={active_effects:[{id:"minecraft:regeneration"}]}] run particle totem_of_undying ~ ~0.5 ~ 0.4 1 0.4 0 10 force
-effect give @s[scores={kits.timer3=..20}] minecraft:wither 1 9 true
+effect give @s[scores={kits.timer3=..0}] minecraft:wither 1 9 true
 
 # Heal
 scoreboard players add @s[scores={kits.ability2CD=..29}] kits.ability2CD 1

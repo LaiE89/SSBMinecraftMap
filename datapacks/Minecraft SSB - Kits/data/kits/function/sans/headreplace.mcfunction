@@ -1,3 +1,0 @@
-clear @s minecraft:player_head{display:{Name:"{\"text\":\"Sans\"}"}}
-kill @e[type=item,nbt={Item:{id:"minecraft:player_head",tag:{display:{Name:"{\"text\":\"Sans\"}"}}}}]
-item replace entity @s armor.head with player_head[custom_name="Sans",custom_data={KitItem:1b},attribute_modifiers=[{id:"armor",type:"max_health",amount:-18,operation:"add_value",slot:"head"}],profile={id:[I;945839257,1550467149,-2088408615,-1554862169],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDg2ODhhYzk2NjNkM2JjYjcxMmI1Y2MzNTExNjkxNjdkZmUyZTFhMDdlMDk1ZGM5ZWFlNjBmYjE5MTlkMzM1NiJ9fX0="}]}] 1

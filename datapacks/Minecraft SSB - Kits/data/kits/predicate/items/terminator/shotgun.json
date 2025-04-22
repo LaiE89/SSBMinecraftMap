@@ -7,9 +7,9 @@
         "items": [
           "minecraft:carrot_on_a_stick"
         ],
-"components": {
-  "minecraft:custom_name": "[{\"text\":\"SPAS-12\",\"italic\":false,\"color\":\"red\"}]"
-}
+        "components": {
+          "minecraft:custom_name": {"color":"red","italic":false,"text":"SPAS-12"}
+        }
       }
     }
   }

@@ -7,9 +7,9 @@
         "items": [
           "minecraft:carrot_on_a_stick"
         ],
-"components": {
-  "minecraft:custom_name": "[{\"text\":\"Necroplasmic Offensive Magic\",\"italic\":false,\"color\":\"dark_green\"}]"
-}
+        "components": {
+          "minecraft:custom_name": {"color":"dark_green","italic":false,"text":"Necroplasmic Offensive Magic"}
+        }
       }
     }
   }

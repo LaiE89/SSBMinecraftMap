@@ -5,7 +5,7 @@
     "slots": {
       "container.*": {
         "components": {
-          "minecraft:custom_name": "[{\"text\":\"Trident of the Oracle\",\"italic\":false,\"color\":\"aqua\"}]"
+          "minecraft:custom_name": {"color":"aqua","italic":false,"text":"Trident of the Oracle"}
         }
       }
     }

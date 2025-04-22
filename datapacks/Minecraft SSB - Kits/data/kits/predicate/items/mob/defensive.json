@@ -7,9 +7,9 @@
         "items": [
           "minecraft:carrot_on_a_stick"
         ],
-"components": {
-  "minecraft:custom_name": "[{\"text\":\"Defensive Telekinesis\",\"italic\":false}]"
-}
+        "components": {
+          "minecraft:custom_name": {"italic":false,"text":"Defensive Telekinesis"}
+        }
       }
     }
   }

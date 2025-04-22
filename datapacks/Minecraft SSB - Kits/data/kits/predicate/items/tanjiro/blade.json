@@ -7,9 +7,9 @@
         "items": [
           "minecraft:iron_sword"
         ],
-"components": {
-  "minecraft:custom_name": "[{\"text\":\"Nichirin Blade\",\"italic\":false}]"
-}
+        "components": {
+          "minecraft:custom_name": {"italic":false,"text":"Nichirin Blade"}
+        }
       }
     }
   }
