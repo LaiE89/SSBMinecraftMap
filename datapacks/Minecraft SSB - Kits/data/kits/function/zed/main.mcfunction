@@ -1,5 +1,5 @@
 # Ability CDs
-title @s actionbar ["",{"text":"Razor Shuriken:","color":"red"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"kits.ability1CD"},"color":"white"},{"text":"/100","color":"white"},{"text":" || ","color":"white"},{"text":"Living Shadow:","color":"dark_red"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"kits.ability3CD"},"color":"white"},{"text":"/300","color":"white"},{"text":" || ","color":"white"},{"text":"Shadow Slash:","color":"dark_gray"},{"text":" ","color":"aqua"},{"score":{"name":"@s","objective":"kits.ability2CD"},"color":"white"},{"text":"/50","color":"white"},{"text":" || ","color":"white"},{"text":"Death Mark:","color":"dark_purple"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"kits.ability4CD"},"color":"white"},{"text":"/500","color":"white"}]
+title @s actionbar ["",{"text":"Razor Shuriken:","color":"red"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"kits.ability1CD"},"color":"white"},{"text":"/100","color":"white"},{"text":" || ","color":"white"},{"text":"Shadow Slash:","color":"dark_gray"},{"text":" ","color":"aqua"},{"score":{"name":"@s","objective":"kits.ability2CD"},"color":"white"},{"text":"/50","color":"white"},{"text":" || ","color":"white"},{"text":"Living Shadow:","color":"dark_red"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"kits.ability3CD"},"color":"white"},{"text":"/300","color":"white"},{"text":" || ","color":"white"},{"text":"Death Mark:","color":"dark_purple"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"kits.ability4CD"},"color":"white"},{"text":"/500","color":"white"}]
 
 # Passive
 execute at @s if entity @e[distance=..8,type=!#kits:non_entity,tag=!Invincible,tag=!Zed,tag=!InLabyrinth] run function kits:zed/gethalfhealth
@@ -33,12 +33,9 @@ scoreboard players set @s[scores={kits.ability3CD=301..}] kits.ability3CD 300
 scoreboard players add @s[scores={kits.ability3CD=..299}] kits.ability3CD 1
 execute as @s[scores={kits.criterion.COS=1..},predicate=kits:items/zed/shadow] as @s[scores={kits.ability3CD=300..}] at @s run function kits:zed/weapon2cos
 
-execute at @s[gamemode=!spectator,tag=!ZedNoSwitch,scores={kits.criterion.shift=1..},predicate=kits:items/zed/shadow] run summon armor_stand ~ ~1 ~ {Invulnerable:1b,Invisible:1b,Tags:["zedshadow2"]}
-tp @e[type=armor_stand,tag=zedshadow2] @s
-execute at @s[gamemode=!spectator,tag=!ZedNoSwitch,scores={kits.criterion.shift=1..},predicate=kits:items/zed/shadow] run tp @s @e[type=armor_stand,tag=zedshadow,limit=1,sort=nearest]
-execute at @s[gamemode=!spectator,tag=!ZedNoSwitch,scores={kits.criterion.shift=1..},predicate=kits:items/zed/shadow] run tp @e[type=armor_stand,tag=zedshadow,limit=1,sort=nearest] @e[type=armor_stand,tag=zedshadow2,limit=1,sort=nearest]
-execute at @e[type=armor_stand,tag=zedshadow] if entity @e[type=armor_stand,tag=zedshadow2,distance=..2] run kill @e[type=armor_stand,tag=zedshadow2]
-execute at @s[gamemode=!spectator,tag=!ZedNoSwitch,scores={kits.criterion.shift=1..},predicate=kits:items/zed/shadow] run tag @s add ZedNoSwitch
+execute at @s[gamemode=!spectator,tag=!ZedNoSwitch,scores={kits.criterion.shift=1..},predicate=kits:items/zed/shadow] run function kits:zed/weapon2shift
+tp @e[type=area_effect_cloud,tag=zedshadow2] @s
+execute at @e[type=armor_stand,tag=zedshadow] if entity @e[type=area_effect_cloud,tag=zedshadow2,distance=..2] run kill @e[type=area_effect_cloud,tag=zedshadow2]
 
 # Death Mark
 scoreboard players add @s[scores={kits.ability4CD=..499}] kits.ability4CD 1
@@ -49,18 +46,11 @@ execute at @e[tag=ZedDeathmarked] run particle block{block_state:"minecraft:reds
 execute as @s[scores={kits.timer2=40..}] as @e[tag=ZedDeathmarked] at @s run function kits:zed/deathmarkdamage
 scoreboard players reset @s[scores={kits.timer2=40..}] kits.timer2
 
-execute at @s[gamemode=!spectator,tag=!ZedNoSwitch2,scores={kits.criterion.shift=1..},predicate=kits:items/zed/mark] run summon armor_stand ~ ~1 ~ {Invulnerable:1b,Invisible:1b,Tags:["ultshadow2"]}
-tp @e[type=armor_stand,tag=ultshadow2] @s
-execute at @s[gamemode=!spectator,tag=!ZedNoSwitch2,scores={kits.criterion.shift=1..},predicate=kits:items/zed/mark] run tp @s @e[type=armor_stand,tag=ultshadow,limit=1,sort=nearest]
-execute at @s[gamemode=!spectator,tag=!ZedNoSwitch2,scores={kits.criterion.shift=1..},predicate=kits:items/zed/mark] run tp @e[type=armor_stand,tag=ultshadow,limit=1,sort=nearest] @e[type=armor_stand,tag=ultshadow2,limit=1,sort=nearest]
-execute at @e[type=armor_stand,tag=ultshadow] run execute if entity @e[type=armor_stand,tag=ultshadow2,distance=..2] run kill @e[type=armor_stand,tag=ultshadow2]
-execute at @s[gamemode=!spectator,tag=!ZedNoSwitch2,scores={kits.criterion.shift=1..},predicate=kits:items/zed/mark] run tag @s add ZedNoSwitch2
+execute at @s[gamemode=!spectator,tag=!ZedNoSwitch2,scores={kits.criterion.shift=1..},predicate=kits:items/zed/mark] run function kits:zed/weapon3shift
+tp @e[type=area_effect_cloud,tag=ultshadow2] @s
+execute at @e[type=armor_stand,tag=ultshadow] run execute if entity @e[type=area_effect_cloud,tag=ultshadow2,distance=..2] run kill @e[type=area_effect_cloud,tag=ultshadow2]
 
 scoreboard players add @e[type=armor_stand,tag=zedshadow] kits.timer2 1
-scoreboard players add @e[type=armor_stand,tag=zedshadow2] kits.timer2 1
 kill @e[type=armor_stand,tag=zedshadow,scores={kits.timer2=150..}]
-kill @e[type=armor_stand,tag=zedshadow2,scores={kits.timer2=150..}]
 scoreboard players add @e[type=armor_stand,tag=ultshadow] kits.timer2 1
-scoreboard players add @e[type=armor_stand,tag=ultshadow2] kits.timer2 1
 kill @e[type=armor_stand,tag=ultshadow,scores={kits.timer2=150..}]
-kill @e[type=armor_stand,tag=ultshadow2,scores={kits.timer2=150..}]

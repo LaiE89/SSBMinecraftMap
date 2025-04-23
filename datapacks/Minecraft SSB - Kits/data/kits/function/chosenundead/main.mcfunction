@@ -8,7 +8,7 @@ title @s[tag=ChosenUndeadTired,scores={kits.timer5=1}] actionbar [{"text":"TIRED
 title @s[tag=ChosenUndeadTired,scores={kits.timer5=2}] actionbar [{"text":"TIRED: ","color":"gold","bold":true},{"score":{"name":"@s","objective":"kits.timer"},"color":"gold","bold":false},{"text":"/100","color":"gold","bold":false},{"text":" || ","color":"white","bold":false},{"text":"FP: ","color":"aqua","bold":false},{"score":{"name":"@s","objective":"kits.timer4"},"color":"aqua","bold":false},{"text":"/100","color":"aqua","bold":false},{"text":" || ","color":"white","bold":false},{"text":"Flasks: ","color":"red","bold":false},{"score":{"name":"@s","objective":"kits.timer3"},"color":"red","bold":false},{"text":"/5","color":"red","bold":false},{"text":" || ","color":"white","bold":false},{"text":"Tranquil Walk of Peace","color":"dark_red","bold":true}]
 
 # Stamina
-tag @s[tag=ChosenUndeadTired,scores={kits.timer=100..}] remove ChosenUndeadTired
+tag @s[tag=ChosenUndeadTired,scores={kits.timer=99..}] remove ChosenUndeadTired
 tag @s[tag=!ChosenUndeadTired,scores={kits.timer=..0}] add ChosenUndeadTired
 scoreboard players add @s[tag=!ChosenUndeadResting,scores={kits.timer=..99}] kits.timer 1
 scoreboard players add @s[tag=ChosenUndeadResting] kits.timer2 1
@@ -22,7 +22,6 @@ execute at @s run function kits:_main/inputs/wasd/main
 scoreboard players add @s[scores={kits.ability1CD=..9}] kits.ability1CD 1
 execute as @s[tag=!ChosenUndeadTired,tag=!ChosenUndeadSunlightSpear,scores={kits.ability1CD=10..},predicate=kits:items/chosenundead/claymore] at @s[gamemode=!spectator,scores={kits.criterion.COS=1..}] unless entity @e[type=area_effect_cloud,tag=ChosenUndeadStampSlash] run function kits:chosenundead/roll/roll
 execute at @s facing entity @e[type=minecraft:area_effect_cloud,tag=DarkSoulsRoll,limit=1,sort=nearest] eyes run function kits:chosenundead/roll/rolling
-#execute at @s if entity @e[type=minecraft:area_effect_cloud,tag=DarkSoulsRoll,distance=..1.5] run function kits:chosenundead/roll/rollend
 
 # Stamp 
 scoreboard players add @s[scores={kits.ability2CD=..9}] kits.ability2CD 1
@@ -50,3 +49,6 @@ execute if entity @e[type=area_effect_cloud,tag=ChosenUndeadWrathOfTheGods] as @
 
 execute as @s[tag=!ChosenUndeadSunlightSpear,tag=!ChosenUndeadStamp,scores={kits.ability5CD=20..},predicate=kits:items/chosenundead/talisman] at @s[scores={kits.criterion.COS=1..}] if score @s kits.timer5 matches 2 if score @s kits.timer4 matches 75.. unless entity @e[type=minecraft:area_effect_cloud,tag=DarkSoulsRoll] unless entity @e[type=area_effect_cloud,tag=ChosenUndeadStampSlash] run function kits:chosenundead/miracles/walkofpeace
 execute if entity @s[tag=ChosenUndeadTranquilWalk] at @s run function kits:chosenundead/miracles/walkofpeaceeffect
+
+# Attack
+execute as @s[scores={kits.criterion.attack=1..}] at @s run function kits:chosenundead/attack

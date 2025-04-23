@@ -1,6 +1,6 @@
 {
   "function": "minecraft:set_components",
   "components": {
-    "minecraft:item_name": "bruh"
+    "minecraft:blocks_attacks": {"block_delay_seconds":0,"disable_cooldown_scale":0,"block_sound":"entity.zombie.attack_iron_door"}
   }
 }

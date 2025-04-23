@@ -20,4 +20,4 @@ execute if score %SirisMagicChanges kits.y matches 1 run function kits:siris/bla
 # Number of data tracks
 scoreboard players remove @s kits.timer 1
 execute if score @s kits.timer matches ..0 run function kits:siris/blade/magic/identify/main
-particle dust{color:[1.000,1.000,1.000],scale:1} ^0 ^1.5 ^1 0 0 0  0 force
+particle dust{color:[1.000,1.000,1.000],scale:1} ^ ^1.5 ^1 0 0 0 0 1 force

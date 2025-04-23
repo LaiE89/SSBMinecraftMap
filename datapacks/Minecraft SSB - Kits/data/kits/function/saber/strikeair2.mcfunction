@@ -1,3 +1,4 @@
+effect give @s minecraft:resistance 1 1 true
 scoreboard players set @s kits.raycastTick 0
 execute at @s rotated ~ 0 positioned ~ ~ ~ run function kits:saber/saberpassive2
 execute at @s rotated ~ 0 run particle dust{color:[0.000,1.000,1.000],scale:1} ~ ~0.25 ~ 1.5 0 1.5 0 100 force

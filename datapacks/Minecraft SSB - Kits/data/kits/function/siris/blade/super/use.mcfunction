@@ -1,6 +1,7 @@
 ## When Super is Used
 # Summons points
-effect give @e[distance=..7,tag=!InLabyrinth,type=!#kits:non_entity] slowness 3 4 true
+effect give @e[distance=..7,tag=!Siris,tag=!InLabyrinth,tag=!Invincible,type=!#kits:non_entity] slowness 3 4 true
+effect give @s slowness 3 4 true
 summon area_effect_cloud ^ ^1.5 ^3 {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Duration:60,Tags:["SirisSuperPoint"]}
 execute as @e[limit=1,sort=nearest,tag=SirisSuperPoint,type=area_effect_cloud] at @s run tp @s ~ ~ ~ facing entity @p[tag=Siris]
 

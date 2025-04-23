@@ -11,6 +11,7 @@ execute at @s[scores={kits.raycastTick=2222}] run particle smoke ~ ~ ~ 0.5 1.3 0
 execute as @s[scores={kits.raycastTick=2222}] positioned ^ ^ ^ run tp @s @e[limit=1,sort=nearest,type=!#kits:non_entity,tag=!Invincible,tag=!Zed,tag=!InLabyrinth]
 execute as @s[scores={kits.raycastTick=2222}] positioned ^ ^ ^ run particle smoke ~ ~ ~ 1 1 1 1 1000 force
 execute as @s[scores={kits.raycastTick=2222}] positioned ^ ^ ^ run tag @e[limit=1,sort=nearest,type=!#kits:non_entity,tag=!Invincible,tag=!Zed,tag=!InLabyrinth] add ZedDeathmarked
+execute as @s[scores={kits.raycastTick=2222}] run scoreboard players set @s kits.timer2 0
 execute as @s[scores={kits.raycastTick=2222}] run scoreboard players set @s kits.ability4CD 0
 
 execute as @s[scores={kits.raycastTick=..19}] positioned ^ ^ ^0.5 run function kits:zed/zedpassive3

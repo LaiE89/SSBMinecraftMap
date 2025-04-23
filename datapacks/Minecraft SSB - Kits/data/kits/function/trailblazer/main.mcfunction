@@ -12,9 +12,9 @@ execute as @e[type=area_effect_cloud] at @s run function kits:trailblazer/assign
 execute as @e[type=armor_stand] at @s run function kits:trailblazer/assign_tasks/to_stands
 
 # Assigns Tasks to Self
-execute if entity @s[predicate=kits:items/trailblazer/bat,gamemode=!spectator] run function kits:trailblazer/use
-execute if entity @s[nbt={HurtTime:9s}] run function kits:trailblazer/talent/dmg_taken
-function kits:trailblazer/talent/detect
+execute if entity @s[predicate=kits:items/trailblazer/bat,gamemode=!spectator] at @s run function kits:trailblazer/use
+execute if entity @s[nbt={HurtTime:9s}] at @s run function kits:trailblazer/talent/dmg_taken
+execute at @s run function kits:trailblazer/talent/detect
 
 ## Essential Variables
 # kits.ability1CD = skill points
