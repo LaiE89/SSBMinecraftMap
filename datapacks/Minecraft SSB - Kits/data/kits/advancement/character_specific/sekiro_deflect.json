@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:iron_sword"
+                    ],
+                    "components": {
+                        "minecraft:custom_name": {"text":"Kusabimaru","italic":false,"color":"gold"}
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+      "function": "kits:sekiro/deflect/deflect"
+    }
+}

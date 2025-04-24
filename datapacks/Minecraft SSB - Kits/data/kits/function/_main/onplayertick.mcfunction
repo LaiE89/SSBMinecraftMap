@@ -46,6 +46,7 @@ execute if score @s kits.id matches 42 run function kits:terminator/main
 execute if score @s kits.id matches 43 run function kits:trailblazer/main
 execute if score @s kits.id matches 44 run function kits:vergil/main
 execute if score @s kits.id matches 45 run function kits:zed/main
+execute if score @s kits.id matches 46 run function kits:sekiro/main
 
 ## Criterion Scoreboards
 scoreboard players reset @s[scores={kits.criterion.death=1..}] kits.criterion.death

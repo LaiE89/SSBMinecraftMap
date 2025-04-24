@@ -7,6 +7,7 @@ execute if entity @s[tag=Itadori] run function kits:itadori/itadori/black_flash/
 execute if entity @s[tag=Vergil,tag=VergilDash,tag=!VergilInvis] run function kits:vergil/trickactivate
 execute if entity @s[tag=Kirito] run function kits:kirito/attack
 execute if entity @s[tag=Dragonborn] run function kits:dragonborn/attack
+execute if entity @s[tag=Sekiro] run function kits:sekiro/attack/attack
 
 # reset
 advancement revoke @s only kits:attack

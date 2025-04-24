@@ -1,0 +1,1 @@
+tag @p[tag=Sekiro] remove SekiroChasingSlice

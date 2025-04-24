@@ -1,0 +1,14 @@
+effect give @s minecraft:weakness 2 9 true
+effect give @s minecraft:slowness 2 2 true
+effect give @s minecraft:mining_fatigue 2 9 true
+scoreboard players set @s kits.specific.sekiroPosture 0
+
+playsound minecraft:item.shield.break neutral @a[distance=..30] ~ ~ ~ 5 0 1
+
+tag @s add SekiroPostureBroken
+
+execute if entity @s[tag=Sekiro,tag=SekiroMortalDraw] run function kits:sekiro/mortaldraw/reset
+clear @s[tag=Sekiro] iron_sword[custom_name={"text":"Kusabimaru","italic":false,"color":"gold"}]
+give @s[tag=Sekiro] iron_sword[custom_name={"text":"Kusabimaru","italic":false,"color":"gold"},lore=["",[{"text":"Deflect: ","italic":false,"color":"red"},{"text":"RIGHT CLICK","italic":false,"color":"yellow"}],[{"text":"Block attacks coming at you.","italic":false,"color":"gray"}],[{"text":"Block at the exact time to","italic":false,"color":"gray"}],[{"text":"perform a deflect. You cannot","italic":false,"color":"gray"}],[{"text":"block if your posture is broken.","italic":false,"color":"gray"}],"",[{"text":"Mortal Draw: ","italic":false,"color":"dark_red"},{"text":"SHIFT","italic":false,"color":"yellow"}],[{"text":"Costs 3 Spirit Emblems per Slash","italic":false,"color":"dark_gray"}],[{"text":"Hold shift to slash in front of you.","italic":false,"color":"gray"}],[{"text":"Keep holding shift to slash again.","italic":false,"color":"gray"}],"",[{"text":"Posture: ","italic":false,"color":"gold"},{"text":"PASSIVE","italic":false,"color":"yellow"}],[{"text":"Enemies you attack or deflect","italic":false,"color":"gray"}],[{"text":"take posture damage. Once their","italic":false,"color":"gray"}],[{"text":"posture is broken, your next attack","italic":false,"color":"gray"}],[{"text":"deals massive damage to them. You","italic":false,"color":"gray"}],[{"text":"also have a posture meter. Deflect","italic":false,"color":"gray"}],[{"text":"to avoid getting posture broken even","italic":false,"color":"gray"}],[{"text":"if your posture meter is full. ","italic":false,"color":"gray"}],"",[{"text":"Spirit Emblems:","italic":false,"color":"aqua"},{"text":" ","italic":false,"color":"dark_aqua"},{"text":"PASSIVE","italic":false,"color":"yellow"}],[{"text":"Kill enemies to recover Spirit","italic":false,"color":"gray"}],[{"text":"Emblems. You can also eat golden","italic":false,"color":"gray"}],[{"text":"carrots to recover Spirit Emblems.","italic":false,"color":"gray"}]],attribute_modifiers=[{type:attack_damage,amount:5,slot:mainhand,id:"damage.mainhand.sekiro",operation:add_value},{type:attack_speed,amount:-20,slot:mainhand,id:"speed.mainhand.sekiro",operation:add_value}],unbreakable={},custom_data={KitItem:1b},custom_model_data={floats:[63]}]
+execute if entity @s[tag=!Sekiro] run schedule function kits:sekiro/posture/posturerecover 2s replace
+execute if entity @s[tag=Sekiro] run schedule function kits:sekiro/posture/posturerecoversekiro 2s replace

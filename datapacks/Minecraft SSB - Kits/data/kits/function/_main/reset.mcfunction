@@ -66,6 +66,7 @@ tag @s remove Raiden
 tag @s remove Ryze
 tag @s remove Saber
 tag @s remove Sans
+tag @s remove Sekiro
 tag @s remove Siris
 tag @s remove Laieth
 tag @s remove Spawn
@@ -259,6 +260,11 @@ tag @s remove VergilJudgementCutEnd
 tag @s remove ZedDeathmarked
 tag @s remove ZedNoSwitch
 tag @s remove ZedNoSwitch2
+tag @s remove SekiroPerfectDeflect
+tag @s remove SekiroPostureBroken
+tag @s remove SekiroMortalDraw
+tag @s remove SekiroChasingSlice
+tag @s remove SekiroMistRaven
 
 # generic tags
 tag @s remove Invincible
@@ -290,6 +296,8 @@ scoreboard players reset @s kits.specific.ryzeFluxTick
 scoreboard players reset @s kits.specific.sirisDarkfire
 scoreboard players reset @s kits.specific.sirisDarkfire2
 scoreboard players reset @s kits.specific.laiethStun
+scoreboard players reset @s kits.specific.sekiroPosture
+scoreboard players reset @s kits.specific.sekiroPostureTimer
 
 # generic scoreboards
 scoreboard players reset @s kits.id

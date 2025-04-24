@@ -1,0 +1,1 @@
+scoreboard players reset @p[tag=Sekiro] kits.timer

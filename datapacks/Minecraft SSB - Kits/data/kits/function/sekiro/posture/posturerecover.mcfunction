@@ -1,0 +1,1 @@
+tag @e[tag=!Sekiro,tag=SekiroPostureBroken] remove SekiroPostureBroken

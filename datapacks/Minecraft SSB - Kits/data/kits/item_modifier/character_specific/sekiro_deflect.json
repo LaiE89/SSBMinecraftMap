@@ -1,0 +1,6 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:blocks_attacks": {"block_delay_seconds":0,"disable_cooldown_scale":1,"bypassed_by":"#no_impact","block_sound":"entity.zombie.attack_iron_door","disable_sound":"item.shield.break"}
+  }
+}

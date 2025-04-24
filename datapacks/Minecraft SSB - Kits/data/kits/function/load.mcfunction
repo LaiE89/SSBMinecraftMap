@@ -29,7 +29,7 @@ scoreboard objectives add kits.criterion.absorbDmg minecraft.custom:minecraft.da
 scoreboard objectives add kits.criterion.resistDmg minecraft.custom:minecraft.damage_resisted
 
 scoreboard objectives add kits.criterion.attack minecraft.custom:minecraft.damage_dealt
-scoreboard objectives add kits.kits.criterion.block minecraft.custom:minecraft.damage_blocked_by_shield
+scoreboard objectives add kits.criterion.block minecraft.custom:minecraft.damage_blocked_by_shield
 
 scoreboard objectives add kits.criterion.chest minecraft.custom:minecraft.open_chest
 scoreboard objectives add kits.criterion.carrot minecraft.used:minecraft.golden_carrot
@@ -103,3 +103,5 @@ scoreboard objectives add kits.specific.noctisBleed2 dummy
 scoreboard objectives add kits.specific.raidenCrescentTick dummy
 scoreboard objectives add kits.specific.ryzeFluxTick dummy
 scoreboard objectives add kits.specific.laiethStun dummy
+scoreboard objectives add kits.specific.sekiroPosture dummy
+scoreboard objectives add kits.specific.sekiroPostureTimer dummy
