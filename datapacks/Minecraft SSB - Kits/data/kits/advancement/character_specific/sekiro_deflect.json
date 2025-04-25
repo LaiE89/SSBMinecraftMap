@@ -15,6 +15,6 @@
         }
     },
     "rewards": {
-      "function": "kits:sekiro/deflect/deflect"
+      "function": "kits:char/sekiro/deflect/deflect"
     }
 }

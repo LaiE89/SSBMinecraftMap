@@ -1,4 +1,4 @@
-## On Player Death Location
+## On player death location
 # tp marker to death pos
 $tp @s $(posX) $(posY) $(posZ)
 

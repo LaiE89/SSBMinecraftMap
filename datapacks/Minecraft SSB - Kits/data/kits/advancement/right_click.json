@@ -12,6 +12,6 @@
     }
   },
   "rewards": {
-    "function": "kits:_main/inputs/right_click"
+    "function": "kits:generic/inputs/right_click"
   }
 }

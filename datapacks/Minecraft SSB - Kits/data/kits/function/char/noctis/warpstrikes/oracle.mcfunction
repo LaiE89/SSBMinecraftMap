@@ -1,0 +1,4 @@
+execute at @s positioned ~ ~1 ~ rotated ~ 0 if entity @e[distance=..4,type=!#kits:non_entity,tag=!Invincible,tag=!Noctis,tag=!InLabyrinth] run function kits:char/noctis/generatepoint
+execute at @s positioned ~ ~1 ~ rotated ~ 0 if entity @e[distance=..4,type=!#kits:non_entity,tag=!Invincible,tag=!Noctis,tag=!InLabyrinth] run execute at @s run summon area_effect_cloud ~ ~ ~ {Tags:["NoctisAfterimage"],Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Duration:30}
+execute at @s rotated ~ 0 positioned ^ ^1 ^1 if entity @e[distance=..4,type=!#kits:non_entity,tag=!Invincible,tag=!Noctis,tag=!InLabyrinth] run function kits:char/noctis/warpstrikes/oracleparticles
+execute at @s positioned ~ ~1 ~ as @e[distance=..4,type=!#kits:non_entity,tag=!Invincible,tag=!Noctis,tag=!InLabyrinth] at @s run damage @s 6 bypass:player_attack by @p[tag=Noctis]

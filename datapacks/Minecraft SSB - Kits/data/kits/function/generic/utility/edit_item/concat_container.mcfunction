@@ -1,0 +1,1 @@
+$data modify storage kits:edit_item item.slot set value "container.$(slot)"

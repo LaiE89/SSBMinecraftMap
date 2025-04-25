@@ -1,2 +1,2 @@
-## Executes a Function That Applies the Mask to the UI
+## Executes a function that applies the mask to the ui
 $$(mask)

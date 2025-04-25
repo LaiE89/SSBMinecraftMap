@@ -1,2 +1,2 @@
-## Assign Tasks to Minecarts
-execute if entity @s[tag=ui] run function system:utilities/ui/minecart/main
+## Assign tasks to minecarts
+execute if entity @s[tag=system.ui] run function system:utilities/ui/minecart/main

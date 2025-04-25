@@ -1,0 +1,2 @@
+## Execute at purple during combine phase
+function kits:generic/utility/frame_step/play {"frameRate":"1","maxFrames":"16","filepath":"kits:char/gojo/vfx/animate/purple_combine/f","end":"scoreboard players set @s kits.timer 17"}

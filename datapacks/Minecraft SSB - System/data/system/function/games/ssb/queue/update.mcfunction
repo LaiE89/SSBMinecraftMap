@@ -1,14 +1,14 @@
-## Updates Queue
+## Updates queue
 # reset current roles
-function system:games/ssb/queue/assign {"target":"tag=arena.inside","task":"role_reset"}
+function system:games/ssb/queue/assign {"target":"tag=system.arena.inside","task":"role_reset"}
 
-# tags 
-tag @a[x=-90,y=-5,z=-910,dx=180,dy=39,dz=-180] add arena.unassigned
-tag @a[x=-90,y=-5,z=-910,dx=180,dy=39,dz=-180] add arena.inside
+# add new tags
+tag @a[x=-90,y=-5,z=-910,dx=180,dy=39,dz=-180] add system.arena.unassigned
+tag @a[x=-90,y=-5,z=-910,dx=180,dy=39,dz=-180] add system.arena.inside
 
 # assign new roles
 execute store result score %arena.players system.global run execute if entity @a[x=-90,y=-5,z=-910,dx=180,dy=39,dz=-180]
-function system:games/ssb/queue/assign {"target":"tag=arena.unassigned,limit=1","task":"role_add"}
+function system:games/ssb/queue/assign {"target":"tag=system.arena.unassigned,limit=1","task":"role_add"}
 execute store result score %arena.players system.global run execute if entity @a[x=-90,y=-5,z=-910,dx=180,dy=39,dz=-180]
 
 # pending queue

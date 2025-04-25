@@ -1,2 +1,0 @@
-execute if entity @s[tag=SekiroPostureBroken] as @p[tag=Sekiro] at @s run function kits:sekiro/actionbar/enemyposturebroken
-execute if entity @s[tag=!SekiroPostureBroken] as @p[tag=Sekiro] at @s run function kits:sekiro/actionbar/enemynoposturebroken

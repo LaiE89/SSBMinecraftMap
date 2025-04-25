@@ -1,4 +1,4 @@
-## Refreshes UI
+## Refreshes ui
 # set the current page to the mask (specific UI);
 # if no mask exists, "current" remains unchanged
 data modify storage system.ui mask set from storage system.ui current

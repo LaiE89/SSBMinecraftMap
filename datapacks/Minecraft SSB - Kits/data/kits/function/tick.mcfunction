@@ -1,1 +1,1 @@
-execute as @a run function kits:_main/onplayertick
+execute as @a run function kits:onplayertick

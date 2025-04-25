@@ -1,7 +1,7 @@
-## Waiting for Players
+## Waiting for players
 # at players who are waiting
-title @a[tag=arena.inside] actionbar [{"text":"Players: ","color":"gold"},{"score":{"name":"%arena.players","objective":"system.global"},"color":"white"},{"text":"/10","color":"white"}]
-effect give @a[tag=arena.inside] resistance 1 4 true
+title @a[tag=system.arena.inside] actionbar [{"text":"Players: ","color":"gold"},{"score":{"name":"%arena.players","objective":"system.global"},"color":"white"},{"text":"/10","color":"white"}]
+effect give @a[tag=system.arena.inside] resistance 1 4 true
 
 # start requirement
 execute unless score %arena.players system.global matches 2.. run scoreboard players set %arena.queueCountdown system.global 0

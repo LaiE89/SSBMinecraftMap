@@ -1,4 +1,4 @@
-### When the UI Detects a Change
+### When the ui detects a change
 ## remove ui element items from players
 clear @a *[minecraft:custom_data~{ui_item:{}}]
 
@@ -13,7 +13,7 @@ data modify entity @s Items insert 0 from storage system.ui temp[]
 # store all items tagged {prev:1b} from the minecart
 data remove storage system.ui temp
 data modify storage system.ui temp append from entity @s Items[{components:{"minecraft:custom_data":{prev:1b}}}]
-# store only {prev:1b} items that contain a system.ui element
+# store only {prev:1b} items that contain a UI element
 data remove storage system.ui in
 data modify storage system.ui in append from storage system.ui temp[{components:{"minecraft:custom_data":{ui_item:{}}}}]
 # filter out items tagged as empty

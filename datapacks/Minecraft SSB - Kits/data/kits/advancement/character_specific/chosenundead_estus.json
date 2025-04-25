@@ -28,7 +28,7 @@
     }
   },
   "rewards": {
-    "function": "kits:chosenundead/flask/flaskestususe"
+    "function": "kits:char/chosenundead/flask/flaskestususe"
   }
 }
   

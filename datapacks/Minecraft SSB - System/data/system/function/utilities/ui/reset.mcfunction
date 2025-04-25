@@ -1,9 +1,10 @@
-## Resets All UI Data
+## Resets all ui data
 # storages
-data remove storage minecraft:ui current
-data remove storage minecraft:ui previous
+data remove storage system.ui current
+data remove storage system.ui previous
 data remove storage system.ui in
 data remove storage system.ui temp
+data remove storage system.ui mask
 
 # scores
 scoreboard players reset %global system.ui.id

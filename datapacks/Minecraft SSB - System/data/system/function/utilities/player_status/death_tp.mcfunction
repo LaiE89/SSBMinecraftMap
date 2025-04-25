@@ -1,2 +1,2 @@
-## Teleport Player to Death Location
+## Teleport player to death location
 $tp @s $(posX) $(posY) $(posZ)

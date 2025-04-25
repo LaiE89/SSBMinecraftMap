@@ -1,7 +1,6 @@
-## runs each tick
+## Runs each tick
 # assign tasks
 execute as @a at @s run function system:assign_tasks/to_players
-execute as @e[type=area_effect_cloud] at @s run function system:assign_tasks/to_aecs
 execute as @e[type=chest_minecart] at @s run function system:assign_tasks/to_carts
 
 # ssb game

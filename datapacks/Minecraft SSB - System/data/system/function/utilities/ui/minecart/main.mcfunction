@@ -1,5 +1,5 @@
-# note: runs each tick executed at system.ui minecart
-## Detects Any Changes in the Minecart
+# note: runs each tick executed at ui minecart
+## Detects any changes in the minecart
 # make a copy of current Items
 data modify storage system.ui current set from entity @s Items
 

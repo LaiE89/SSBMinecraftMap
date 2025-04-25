@@ -1,0 +1,1 @@
+$execute rotated $(rot_y) 0 positioned $(pos_x) $(pos_y) $(pos_z) run function kits:char/ekko/imageparticles

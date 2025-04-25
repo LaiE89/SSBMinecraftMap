@@ -1,4 +1,6 @@
 ## Kit System Setup
+tellraw @a ["",{"text":"Minecraft SSB:","color":"red"}," ",{"text":"Kits [","color":"gray"},{"text":"✔","color":"green"},{"text":"]","color":"gray"}]
+
 # general
 team add Mobs
 scoreboard objectives add kits.constant dummy
@@ -18,6 +20,9 @@ scoreboard objectives add kits.wasd.s dummy
 scoreboard objectives add kits.wasd.d dummy
 scoreboard objectives add kits.wasd.x dummy
 scoreboard objectives add kits.wasd.z dummy
+
+scoreboard objectives add kits.frame.index dummy
+scoreboard objectives add kits.frame.rate dummy
 
 scoreboard objectives add kits.id dummy
 
@@ -94,8 +99,6 @@ scoreboard objectives add kits.specific.dariusBleedTime dummy
 scoreboard objectives add kits.specific.dariusPassive dummy
 scoreboard objectives add kits.specific.ekkoPassiveTick dummy
 scoreboard objectives add kits.specific.ekkoResonance dummy
-scoreboard objectives add kits.specific.gojokits.raycastTick dummy
-scoreboard objectives add kits.specific.ireliaMarkTick dummy
 scoreboard objectives add kits.specific.itadorikits.raycastTick dummy
 scoreboard objectives add kits.specific.jacketStunTick dummy
 scoreboard objectives add kits.specific.noctisBleed dummy

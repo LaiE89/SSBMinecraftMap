@@ -1,4 +1,4 @@
 # besides stats
-## Resets All Player-Related Things
+## Resets all player-related things
 function system:games/ssb/reset_local
 function system:utilities/ui/give

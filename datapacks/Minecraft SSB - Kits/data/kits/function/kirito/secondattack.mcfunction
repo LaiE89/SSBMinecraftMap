@@ -1,3 +1,0 @@
-execute if entity @p[tag=Kirito,gamemode=!spectator] at @p[tag=Kirito] run execute as @e[distance=..15,type=!#kits:non_entity,tag=!Invincible,tag=!Kirito,tag=!InLabyrinth,limit=1,sort=nearest] at @s facing entity @p[tag=Kirito] eyes rotated ~ 0 positioned ^-1.75 ^2.75 ^0.25 run function kits:kirito/sliceparticles3
-execute if entity @p[tag=Kirito,gamemode=!spectator] as @p[tag=Kirito] at @s run damage @e[distance=..15,type=!#kits:non_entity,tag=!Invincible,tag=!Kirito,tag=!InLabyrinth,limit=1,sort=nearest] 4 bypass:player_attack by @s
-execute if entity @p[tag=Kirito,gamemode=!spectator] at @p[tag=Kirito] run playsound minecraft:entity.player.attack.knockback neutral @a[distance=..20] ~ ~ ~ 5 1.5 1

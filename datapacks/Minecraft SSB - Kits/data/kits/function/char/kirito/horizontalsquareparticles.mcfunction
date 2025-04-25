@@ -1,0 +1,4 @@
+execute rotated ~ 0 positioned ^ ^ ^2.5 run function kits:char/kirito/slash_crescent/play {"concavity":"80","thickness":"1","accuracy":"50","yaw":"90","pitch":"0","distance":"4","particle":"soul_fire_flame"}
+execute rotated ~90 0 positioned ^ ^ ^2.5 run function kits:char/kirito/slash_crescent/play {"concavity":"80","thickness":"1","accuracy":"50","yaw":"90","pitch":"0","distance":"4","particle":"flame"}
+execute rotated ~180 0 positioned ^ ^ ^2.5 run function kits:char/kirito/slash_crescent/play {"concavity":"80","thickness":"1","accuracy":"50","yaw":"90","pitch":"0","distance":"4","particle":"soul_fire_flame"}
+execute rotated ~270 0 positioned ^ ^ ^2.5 run function kits:char/kirito/slash_crescent/play {"concavity":"80","thickness":"1","accuracy":"50","yaw":"90","pitch":"0","distance":"4","particle":"flame"}

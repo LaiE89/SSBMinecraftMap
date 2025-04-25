@@ -1,2 +1,0 @@
-tag @s add DragonbornAttacked
-execute if entity @s[scores={kits.criterion.kill=1..},predicate=kits:items/dragonborn/dawnbreaker] at @s positioned ^ ^1.5 ^4 run function kits:dragonborn/dawnbreakerexplosion

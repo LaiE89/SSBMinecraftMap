@@ -13,6 +13,6 @@
     }
   },
   "rewards": {
-		"function": "kits:_main/on/attack"
+		"function": "kits:generic/on/attack"
   }
 }

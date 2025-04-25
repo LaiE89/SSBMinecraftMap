@@ -1,7 +1,7 @@
-## When Game Ends
+## When game ends
 # results
 execute if score %arena.playersAlive system.global matches 0 run function system:games/ssb/ingame/results/draw
-execute if score %arena.playersAlive system.global matches 1 run execute as @a[tag=arena.player] at @s run function system:games/ssb/ingame/results/win
+execute if score %arena.playersAlive system.global matches 1 run execute as @a[tag=system.arena.player] at @s run function system:games/ssb/ingame/results/win
 
 # reset
 function system:games/ssb/reset_global

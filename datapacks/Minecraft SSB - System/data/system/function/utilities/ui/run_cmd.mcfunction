@@ -1,2 +1,2 @@
-## Executes Any Command Based on the Clicked Item's Tag
+## Executes any command based on the clicked item's tag
 $$(cmd)

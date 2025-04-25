@@ -43,7 +43,7 @@ def recursiveMcFunctionIter(root: str):
                     content = file.readlines()
                 new_lines = []
                 for line in content:
-                    if ('function kits:' not in line and 'effect give' not in line) and ('give' in line or 'item replace entity' in line or 'particle' in line or 'summon' in line):
+                    if ('function kits:char/' not in line and 'effect give' not in line) and ('give' in line or 'item replace entity' in line or 'particle' in line or 'summon' in line):
                         converted_line = convertCommandLine(line.strip())
                         if converted_line is not None:
                             new_lines.append(converted_line + "\n")

@@ -7,9 +7,9 @@
         "items": [
           "minecraft:carrot_on_a_stick"
         ],
-"components": {
-  "minecraft:custom_name": "[{\"text\":\"Jujutsu: Special Abilities\",\"italic\":false,\"color\":\"dark_aqua\"}]"
-}
+        "components": {
+          "minecraft:custom_name": {"text":"Limitless","italic":false,"color":"dark_aqua"}
+        }
       }
     }
   }

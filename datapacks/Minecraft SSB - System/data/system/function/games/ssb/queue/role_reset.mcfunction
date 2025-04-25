@@ -1,2 +1,2 @@
-## Resets Player Number
-$tag @s remove arena.player$(index)
+## Resets player number
+$tag @s remove system.arena.player$(index)

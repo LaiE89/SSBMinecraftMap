@@ -28,6 +28,6 @@
     }
   },
   "rewards": {
-    "function": "kits:chosenundead/flask/flaskashenuse"
+    "function": "kits:char/chosenundead/flask/flaskashenuse"
   }
 }

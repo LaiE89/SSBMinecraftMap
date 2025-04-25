@@ -1,4 +1,4 @@
-## All Portals
+## All portals
 # from spawn
 execute if entity @s[x=5,y=1,z=-57,dx=-10,dy=23,dz=0] run function system:utilities/portals/spawn_to_arena
 execute if entity @s[x=5,y=1,z=57,dx=-10,dy=23,dz=0] run function system:utilities/portals/spawn_to_labyrinth

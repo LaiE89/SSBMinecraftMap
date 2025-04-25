@@ -1,16 +1,20 @@
-## System Setup
+## System setup
+# general
 scoreboard objectives add system.global dummy
+scoreboard objectives add system.local dummy
 
+# ssb
+scoreboard objectives add system.ssb.deathTimer dummy
+scoreboard objectives add system.ssb.lives dummy ["",{"text":"Lives","color":"green"}]
+
+# stats
 scoreboard objectives add system.stats.win dummy
 scoreboard objectives add system.stats.loss dummy
 
-scoreboard objectives add system.kits.id dummy
+# ui
+scoreboard objectives add system.kit.id dummy
 scoreboard objectives add system.ui.id dummy
 scoreboard objectives add system.ui dummy
-
-scoreboard objectives add system.death.timer dummy
-
-scoreboard objectives add system.lives dummy ["",{"text":"Lives","color":"green"}]
 
 # tied to a built-in action
 scoreboard objectives add system.criterion.death deathCount
