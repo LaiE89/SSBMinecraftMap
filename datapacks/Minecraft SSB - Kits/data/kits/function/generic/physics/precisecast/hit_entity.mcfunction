@@ -5,4 +5,4 @@ $execute if entity @s[type=#kits:humanoid] run function kits:generic/functions/p
 $execute if entity @s[type=!#kits:humanoid] run function kits:generic/functions/precisecast/hit_entity/body {"hitBody":"$(hitBody)"}
 
 # stop ray
-scoreboard players set @e[tag=genericPrecisecaster] kits.raycast.step 0
+scoreboard players set @e[tag=genericPrecisecaster] kits.raycastTick 0

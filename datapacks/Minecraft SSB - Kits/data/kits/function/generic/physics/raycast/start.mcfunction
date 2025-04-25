@@ -2,10 +2,10 @@
 # example call: function kits:generic/functions/raycast/start {"length":"100","hitEnd":"function","hitBlock":"function","hitEntity":"function","vfx":"function"}
 ## Raycast Start Function
 # run raycast
-$scoreboard players set @s kits.raycast.step $(length)
+$scoreboard players set @s kits.raycastTick $(length)
 tag @s add genericRaycaster
 $function kits:generic/functions/raycast/step {"hitEnd":"$(hitEnd)","hitBlock":"$(hitBlock)","hitEntity":"$(hitEntity)","vfx":"$(vfx)"}
 
 # reset
-scoreboard players reset @s kits.raycast.step
+scoreboard players reset @s kits.raycastTick
 tag @s remove genericRaycaster
