@@ -1,0 +1,3 @@
+execute if score @s kits.timer3 matches 40 run playsound minecraft:entity.zombie.attack_iron_door neutral @a[distance=..20] ~ ~ ~ 5 2 1
+execute if score @s kits.timer3 matches 40 run function kits:generic/utility/edit_item/modify/run {item:'{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_name":{"color":"aqua","italic":false,"text":"Reconstruction"}}}',newModifier:'"kits:character_specific/edward_anim"'}
+effect give @s[scores={kits.timer3=40..}] strength 1 0 true

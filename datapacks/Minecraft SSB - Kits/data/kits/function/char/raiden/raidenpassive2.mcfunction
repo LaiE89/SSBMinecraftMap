@@ -1,7 +1,7 @@
 scoreboard players add @s kits.raycastTick 1
 execute if entity @e[distance=..2,type=!#kits:non_entity,tag=!Invincible,tag=!Raiden,tag=!InLabyrinth] run scoreboard players set @s kits.raycastTick 2222
-execute unless block ^0.71 ^ ^ #kits:passable run scoreboard players set @s kits.raycastTick 3333
-execute unless block ^-0.71 ^ ^ #kits:passable run scoreboard players set @s kits.raycastTick 3333
+execute unless block ^0.71 ^0.01 ^ #kits:passable run scoreboard players set @s kits.raycastTick 3333
+execute unless block ^-0.71 ^0.01 ^ #kits:passable run scoreboard players set @s kits.raycastTick 3333
 execute unless block ~ ~ ~ #kits:passable run scoreboard players set @s kits.raycastTick 2222
 execute unless block ^ ^ ^0.71 #kits:passable run scoreboard players set @s kits.raycastTick 2222
 execute unless block ^ ^0.71 ^ #kits:passable run scoreboard players set @s kits.raycastTick 2222

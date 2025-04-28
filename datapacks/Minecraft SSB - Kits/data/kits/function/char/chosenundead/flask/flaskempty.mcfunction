@@ -1,2 +1,4 @@
-item replace entity @p[tag=ChosenUndead] weapon.mainhand with air 1
-item replace entity @p[tag=ChosenUndead] weapon.mainhand with glass_bottle[item_name={"color":"gold","text":"Empty Flask"},custom_data={KitItem:1b,ChosenUndeadFlask:1b},enchantment_glint_override=true] 1
+#item replace entity @p[tag=ChosenUndead] weapon.mainhand with air 1
+#item replace entity @p[tag=ChosenUndead] weapon.mainhand with glass_bottle[custom_name={\\"color\\":\\"gold\\",\\"text\\":\\"Empty Flask\\"},custom_data={KitItem:1b,ChosenUndeadFlask:1b},enchantment_glint_override=true] 1
+
+execute as @p[tag=ChosenUndead] at @s run function kits:generic/utility/edit_item/replace/run {item:'{id:"minecraft:potion",components:{"minecraft:custom_data":{ChosenUndeadFlask:1b}}}',newItem:'"gray_dye[custom_name={\\"color\\":\\"gold\\",\\"italic\\":false,\\"text\\":\\"Empty Flask\\"},item_model=\\"glass_bottle\\",custom_data={KitItem:1b,ChosenUndeadFlask:1b},enchantment_glint_override=true]"'}

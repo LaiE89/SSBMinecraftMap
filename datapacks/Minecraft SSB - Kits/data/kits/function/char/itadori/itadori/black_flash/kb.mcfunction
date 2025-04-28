@@ -1,8 +1,8 @@
 # Knocks Back Enemies Hit by Strong Black Flash
 scoreboard players add @s kits.specific.itadorikits.raycastTick 1
 execute if score @s kits.specific.itadorikits.raycastTick matches 1 run summon area_effect_cloud ^ ^1 ^-2 {Duration:10,Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Tags:["ItadoriBlackLightning"]}
-execute unless block ^0.71 ^ ^ #kits:passable run scoreboard players set @s kits.specific.itadorikits.raycastTick 3333
-execute unless block ^-0.71 ^ ^ #kits:passable run scoreboard players set @s kits.specific.itadorikits.raycastTick 3333
+execute unless block ^0.71 ^0.01 ^ #kits:passable run scoreboard players set @s kits.specific.itadorikits.raycastTick 3333
+execute unless block ^-0.71 ^0.01 ^ #kits:passable run scoreboard players set @s kits.specific.itadorikits.raycastTick 3333
 execute unless block ~ ~ ~ #kits:passable run scoreboard players set @s kits.specific.itadorikits.raycastTick 2222
 execute unless block ^ ^ ^-0.71 #kits:passable run scoreboard players set @s kits.specific.itadorikits.raycastTick 2222
 execute unless block ^ ^0.71 ^ #kits:passable run scoreboard players set @s kits.specific.itadorikits.raycastTick 2222

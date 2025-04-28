@@ -48,6 +48,7 @@ scoreboard objectives add kits.criterion.COSoff dummy
 scoreboard objectives add kits.criterion.COSon dummy
 
 scoreboard objectives add kits.criterion.run minecraft.custom:minecraft.sprint_one_cm
+scoreboard objectives add kits.criterion.jump minecraft.custom:minecraft.jump
 scoreboard objectives add kits.criterion.shift minecraft.custom:minecraft.sneak_time
 scoreboard objectives add kits.criterion.shiftOff dummy
 scoreboard objectives add kits.criterion.shiftOn dummy
@@ -108,3 +109,5 @@ scoreboard objectives add kits.specific.ryzeFluxTick dummy
 scoreboard objectives add kits.specific.laiethStun dummy
 scoreboard objectives add kits.specific.sekiroPosture dummy
 scoreboard objectives add kits.specific.sekiroPostureTimer dummy
+scoreboard objectives add kits.specific.sirisDarkfire dummy
+scoreboard objectives add kits.specific.sirisDarkfire2 dummy

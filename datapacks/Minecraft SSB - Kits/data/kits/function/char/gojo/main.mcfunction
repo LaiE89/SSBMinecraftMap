@@ -7,8 +7,8 @@ execute if score @s kits.ability2CD matches 10.. run scoreboard players add @s[s
 execute if score @s kits.ability2CD matches 10.. run scoreboard players set @s kits.ability2CD 0
 
 # cooldowns
-scoreboard players add @s[scores={kits.ability3CD=..19}] kits.ability3CD 1
-scoreboard players add @s[scores={kits.ability4CD=..19}] kits.ability4CD 1
+scoreboard players add @s[scores={kits.ability3CD=..29}] kits.ability3CD 1
+scoreboard players add @s[scores={kits.ability4CD=..29}] kits.ability4CD 1
 scoreboard players add @s[scores={kits.ability5CD=..19}] kits.ability5CD 1
 scoreboard players add @s[scores={kits.ability6CD=..199}] kits.ability6CD 1
 

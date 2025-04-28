@@ -46,6 +46,3 @@ execute if score @s kits.id matches 43 run function kits:char/trailblazer/kit
 execute if score @s kits.id matches 44 run function kits:char/vergil/kit
 execute if score @s kits.id matches 45 run function kits:char/zed/kit
 execute if score @s kits.id matches 46 run function kits:char/sekiro/kit
-
-# base items
-give @s golden_carrot 64

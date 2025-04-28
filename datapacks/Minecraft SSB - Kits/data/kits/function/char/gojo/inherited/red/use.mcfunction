@@ -4,5 +4,5 @@ summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:ai
 playsound entity.guardian.attack neutral @a[distance=..20] ~ ~ ~ 2 2 1
 
 # remove scores
-scoreboard players remove @s kits.ability1CD 50
+scoreboard players remove @s kits.ability1CD 30
 scoreboard players set @s kits.ability3CD 0

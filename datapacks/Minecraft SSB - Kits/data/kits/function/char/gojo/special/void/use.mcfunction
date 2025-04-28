@@ -2,6 +2,8 @@
 # trap nearby enemies in domain
 execute rotated ~ 0 positioned ^ ^1 ^7 run tag @e[type=!#kits:non_entity,tag=GojoUnlimitedVoidTrapped] remove GojoUnlimitedVoidTrapped
 execute rotated ~ 0 positioned ^ ^1 ^7 run tag @e[type=!#kits:non_entity,distance=..9] add GojoUnlimitedVoidTrapped
+execute if data entity @s {OnGround:0b} as @e[type=!#kits:non_entity,tag=GojoUnlimitedVoidTrapped] at @s run attribute @s minecraft:gravity modifier add gravity.domainexpansion.gojo -0.08 add_value
+execute if data entity @s {OnGround:0b} as @e[type=!#kits:non_entity,tag=GojoUnlimitedVoidTrapped] at @s run tp @s @s
 
 # expand domain
 summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Age:20,Tags:["GojoUnlimitedVoid"],Duration:100}

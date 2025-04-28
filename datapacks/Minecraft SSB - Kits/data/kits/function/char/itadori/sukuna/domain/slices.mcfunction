@@ -1,7 +1,7 @@
 ## Execute at Mass Slices
 # Damages targeted enemy
-execute as @e[distance=..5,tag=!Itadori,tag=!InLabyrinth,tag=!Invincible,type=!#kits:non_entity] at @s run function kits:char/itadori/sukuna/slice/hit
-execute positioned as @e[distance=..5,limit=1,sort=nearest,tag=!Itadori,tag=!InLabyrinth,tag=!Invincible,type=!#kits:non_entity] run tp @s ~ ~1 ~ ~ ~
+execute as @e[distance=..5,type=!#kits:non_entity,tag=!Itadori,tag=!InLabyrinth,tag=!Invincible,limit=1,sort=nearest] at @s run function kits:char/itadori/sukuna/slice/hit
+execute positioned as @e[distance=..5,type=!#kits:non_entity,limit=1,sort=nearest,tag=!Itadori,tag=!InLabyrinth,tag=!Invincible] run tp @s ~ ~1 ~ ~ ~
 
 # FX
 function kits:char/itadori/vfx/animations/domain/fps

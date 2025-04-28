@@ -32,7 +32,6 @@ tp @e[type=armor_stand,tag=kratosblade,sort=nearest,limit=2] @s
 scoreboard players set @s kits.raycastTick 0
 execute at @s rotated ~ 0 positioned ~ ~1.5 ~ run function kits:char/kratos/slashlocation
 
-effect give @s minecraft:weakness 1 9 true
 effect give @s minecraft:mining_fatigue 1 9 true
 data modify entity @e[type=armor_stand,tag=kratosblade,tag=kratosleft,sort=nearest,limit=1] Rotation[1] set value 0f
 data modify entity @e[type=armor_stand,tag=kratosblade,tag=kratosright,sort=nearest,limit=1] Rotation[1] set value 0f

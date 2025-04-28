@@ -66,6 +66,7 @@ scoreboard players reset @s[scores={kits.criterion.COS=1..}] kits.criterion.COS
 scoreboard players reset @s[scores={kits.criterion.kill=1..}] kits.criterion.kill
 scoreboard players reset @s[scores={kits.criterion.killPlayer=1..}] kits.criterion.killPlayer
 
+scoreboard players reset @s[scores={kits.criterion.jump=1..}] kits.criterion.jump
 scoreboard players set @s[scores={kits.criterion.run=1..}] kits.criterion.run 0
 scoreboard players set @s[scores={kits.criterion.shift=1..}] kits.criterion.shift 0
 

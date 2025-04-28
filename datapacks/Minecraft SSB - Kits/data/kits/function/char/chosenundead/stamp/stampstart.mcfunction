@@ -9,8 +9,6 @@ execute as @p[tag=ChosenUndeadStamp] at @s run playsound minecraft:entity.player
 execute as @p[tag=ChosenUndeadStamp] at @s run playsound minecraft:entity.player.attack.knockback neutral @a[distance=..20] ~ ~ ~ 2 0 1
 execute as @p[tag=ChosenUndeadStamp] at @s run playsound minecraft:item.axe.scrape neutral @a[distance=..30] ~ ~ ~ 2 1.5 1
 
-# scoreboard players set @p[tag=ChosenUndeadStamp] kits.raycastTick 0
-# execute as @p[tag=ChosenUndeadStamp] at @s rotated ~ 0 run function kits:char/chosenundead/stamp/stampraycast
 execute as @p[tag=ChosenUndeadStamp] run attribute @s minecraft:attack_damage modifier remove damage.stamp.chosenundead
 tag @e[tag=ChosenUndeadStampSlashed] remove ChosenUndeadStampSlashed
 tag @p[tag=ChosenUndeadStamp] remove ChosenUndeadStamp

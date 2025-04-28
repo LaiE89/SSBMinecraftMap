@@ -266,6 +266,8 @@ tag @s remove SekiroPostureBroken
 tag @s remove SekiroMortalDraw
 tag @s remove SekiroChasingSlice
 tag @s remove SekiroMistRaven
+tag @s remove SekiroJump
+tag @s remove GojoUnlimitedVoidTrapped
 
 # generic tags
 tag @s remove Invincible

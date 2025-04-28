@@ -1,8 +1,8 @@
 scoreboard players add @s kits.raycastTick 1
 execute unless block ~ ~ ~ #kits:passable run scoreboard players set @s kits.raycastTick 2222
 execute unless block ^ ^ ^0.71 #kits:passable run scoreboard players set @s kits.raycastTick 2222
-execute unless block ^0.71 ^ ^ #kits:passable run scoreboard players set @s kits.raycastTick 2222
-execute unless block ^-0.71 ^ ^ #kits:passable run scoreboard players set @s kits.raycastTick 2222
+execute unless block ^0.71 ^0.01 ^ #kits:passable run scoreboard players set @s kits.raycastTick 2222
+execute unless block ^-0.71 ^0.01 ^ #kits:passable run scoreboard players set @s kits.raycastTick 2222
 execute unless block ^ ^0.71 ^ #kits:passable run scoreboard players set @s kits.raycastTick 2222
 execute unless block ^0.49 ^0.22 ^ #kits:passable run scoreboard players set @s kits.raycastTick 2222
 execute unless block ^-0.49 ^0.22 ^ #kits:passable run scoreboard players set @s kits.raycastTick 2222

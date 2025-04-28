@@ -1,6 +1,6 @@
 ## When Darkfire is Used
 # Applies darkfire gem to blade
-tag @s add kits.specific.sirisDarkfire
+tag @s add SirisDarkfire
 
 # FX
 particle flash ~ ~1 ~ 0 0 0 0 1 force

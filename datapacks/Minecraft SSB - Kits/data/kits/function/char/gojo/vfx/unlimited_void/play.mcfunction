@@ -10,6 +10,7 @@ execute store result storage kits:vfx unlimitedVoid.accuracy int 1 run scoreboar
 execute store result storage kits:vfx unlimitedVoid.radius int 1 run scoreboard players get %unlimitedVoid.radius kits.constant
 execute store result storage kits:vfx unlimitedVoid.speed int 1 run scoreboard players get %unlimitedVoid.speed kits.constant
 data modify storage kits:vfx unlimitedVoid.particle set value "block_marker{block_state:{Name:black_concrete}}"
+execute rotated ~ 0 positioned ^ ^1 ^-3 run particle block_marker{block_state:{Name:black_concrete}} ~ ~ ~ 0 0 0 0 1 force
 execute rotated ~ 0 positioned ^ ^1 ^-3 run function kits:char/gojo/vfx/domain/play with storage kits:vfx unlimitedVoid
 
 # play

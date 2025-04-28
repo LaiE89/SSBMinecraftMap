@@ -4,7 +4,7 @@ function system:utilities/player_status/death {"tpPlayer":"1","onDeathPos":"func
 
 # set spectator duration
 gamemode spectator @s
-scoreboard players set @s system.ssb.deathTimer 5
+scoreboard players set @s system.ssb.deathTimer 60
 
 # run once
 scoreboard players reset @s system.criterion.death

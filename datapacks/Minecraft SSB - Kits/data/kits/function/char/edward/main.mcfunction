@@ -17,6 +17,5 @@ scoreboard players add @s[scores={kits.ability4CD=..199}] kits.ability4CD 1
 execute if entity @s[gamemode=!spectator,scores={kits.criterion.shift=1..},predicate=kits:items/edward/deconstruction] if entity @s[scores={kits.ability4CD=200..}] at @s run function kits:char/edward/weapon2shift
 execute as @s[tag=EdwardBreak] at @s run function kits:char/edward/breakeffects
 
-scoreboard players add @s kits.timer3 1
-execute at @s[scores={kits.timer3=30}] run playsound minecraft:entity.zombie.attack_iron_door neutral @a[distance=..20] ~ ~ ~ 5 2 1
-effect give @s[scores={kits.timer3=30..}] strength 1 0 true
+scoreboard players add @s[scores={kits.timer3=..40}] kits.timer3 1
+execute at @s[scores={kits.timer3=40..}] run function kits:char/edward/transmuteweapon

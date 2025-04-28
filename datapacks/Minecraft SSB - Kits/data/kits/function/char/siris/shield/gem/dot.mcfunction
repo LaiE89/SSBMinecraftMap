@@ -1,7 +1,7 @@
 ## Darkfire Damage Over Time
 # Damage
-damage @s 5 player_attack
-scoreboard players reset @s kits.specific.kits.specific.sirisDarkfire2
+damage @s 6 bypass:player_attack by @p[tag=Siris]
+scoreboard players reset @s kits.specific.sirisDarkfire2
 
 # FX
 execute positioned ~ ~1 ~ rotated as @p[tag=Siris] rotated ~90 ~45 run function kits:char/siris/vfx/particles/slash/type3

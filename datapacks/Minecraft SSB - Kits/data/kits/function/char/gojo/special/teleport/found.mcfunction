@@ -1,6 +1,6 @@
 ## If user is facing an enemy
 # teleports to enemy
-function kits:char/gojo/utilities/random_pos/start {"itt":"1","yaw":"180","pitch":"0","distMin":"5","distMax":"10","atPos":"tp @p[tag=Gojo] ~ ~ ~ facing entity @s"}
+function kits:char/gojo/utilities/random_pos/start {"itt":"1","yaw":"90","pitch":"0","distMin":"5","distMax":"10","atPos":"tp @p[tag=Gojo] ~ ~ ~ facing entity @s"}
 scoreboard players set @s kits.raycastTick 0
 
 # sfx

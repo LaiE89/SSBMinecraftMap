@@ -9,7 +9,7 @@
           ],
           "components": {
             "minecraft:custom_name": {"text":"Kusabimaru","italic":false,"color":"gold"},
-            "minecraft:custom_model_data": {"floats":[64]}
+            "minecraft:custom_model_data": {"floats":[37]}
           }
         }
       }

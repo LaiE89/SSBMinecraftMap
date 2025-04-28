@@ -3,7 +3,8 @@ effect give @s minecraft:slowness 2 2 true
 effect give @s minecraft:mining_fatigue 2 9 true
 scoreboard players set @s kits.specific.sekiroPosture 0
 
-playsound minecraft:item.shield.break neutral @a[distance=..30] ~ ~ ~ 5 0 1
+playsound minecraft:item.shield.break neutral @a[distance=..30] ~ ~ ~ 10 0 1
+playsound minecraft:entity.player.attack.strong neutral @a[distance=..30] ~ ~ ~ 10 0 1
 particle minecraft:crit ~ ~1 ~ 0.4 0.4 0.4 0.5 50 force
 
 tag @s add SekiroPostureBroken

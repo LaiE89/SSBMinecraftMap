@@ -6,8 +6,8 @@ particle campfire_cosy_smoke ~ ~ ~ 0 0 0 0 1 force
 scoreboard players add @s kits.raycastTick2 1
 
 # If ray collides with block, stops the ray and teleports terminator to ray end distance
-execute unless block ^0.71 ^ ^ #kits:passable run scoreboard players set @s kits.raycastTick2 3333
-execute unless block ^-0.71 ^ ^ #kits:passable run scoreboard players set @s kits.raycastTick2 3333
+execute unless block ^0.71 ^0.01 ^ #kits:passable run scoreboard players set @s kits.raycastTick2 3333
+execute unless block ^-0.71 ^0.01 ^ #kits:passable run scoreboard players set @s kits.raycastTick2 3333
 execute unless block ~ ~ ~ #kits:passable run scoreboard players set @s kits.raycastTick2 2222
 execute unless block ^ ^ ^-0.71 #kits:passable run scoreboard players set @s kits.raycastTick2 2222
 execute unless block ^ ^0.71 ^ #kits:passable run scoreboard players set @s kits.raycastTick2 2222

@@ -11,7 +11,8 @@ execute at @s[predicate=kits:items/siris/infinity_blade,gamemode=!spectator] run
 execute at @s[predicate=kits:items/siris/vile_shield,gamemode=!spectator] run function kits:char/siris/shield/use
 
 # Assigns Tasks to Entities
-execute as @e[tag=!Siris,tag=!InLabyrinth,tag=!Invincible,type=!#kits:non_entity] at @s run function kits:char/siris/assign_tasks/to_enemies
+execute if entity @s[tag=SirisDarkfire] at @s run function kits:char/siris/vfx/particles/darkfire
+execute as @e[type=!#kits:non_entity,tag=!Siris,tag=!InLabyrinth,tag=!Invincible] at @s run function kits:char/siris/assign_tasks/to_enemies
 execute as @e[type=area_effect_cloud] at @s run function kits:char/siris/assign_tasks/to_aecs
 execute if score @s kits.timer matches 1.. at @s run function kits:char/siris/blade/magic/track/main
 scoreboard players reset @s[nbt={HurtTime:9s},nbt=!{active_effects:[{id:"minecraft:resistance"}]}] kits.ability5CD

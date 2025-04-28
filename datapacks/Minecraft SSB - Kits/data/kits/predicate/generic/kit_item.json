@@ -2,10 +2,6 @@
   "condition": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
-    "predicates": {
-      "minecraft:custom_data": {
-        "KitItem": 1
-      }
-    }
+    "nbt": "{Item:{components:{\"minecraft:custom_data\":{KitItem:1b}}}}"
   }
 }

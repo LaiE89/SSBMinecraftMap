@@ -4,7 +4,7 @@ execute as @e[distance=..2,type=!#kits:non_entity,tag=!Invincible,tag=!Cynthia,t
 execute as @e[distance=..2,type=!#kits:non_entity,tag=!Invincible,tag=!Cynthia,tag=!InLabyrinth] at @s run playsound minecraft:entity.player.attack.sweep neutral @a[distance=..30] ~ ~ ~ 10 0.75 1
 execute as @e[distance=..2,type=!#kits:non_entity,tag=!Invincible,tag=!Cynthia,tag=!InLabyrinth] at @s run particle explosion ~ ~1 ~ 0 0 0 0 1 force
 
-execute unless block ^0.71 ^ ^ #kits:passable run scoreboard players set @s kits.raycastTick 3333
+execute unless block ^0.71 ^0.01 ^ #kits:passable run scoreboard players set @s kits.raycastTick 3333
 execute unless block ~ ~ ~ #kits:passable run scoreboard players set @s kits.raycastTick 2222
 execute unless block ^ ^ ^0.71 #kits:passable run scoreboard players set @s kits.raycastTick 2222
 execute unless block ^ ^0.71 ^ #kits:passable run scoreboard players set @s kits.raycastTick 2222

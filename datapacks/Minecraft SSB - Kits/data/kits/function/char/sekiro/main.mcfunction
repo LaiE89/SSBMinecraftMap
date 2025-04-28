@@ -7,15 +7,21 @@ execute if score @s kits.specific.sekiroPosture matches 1.. unless score @s kits
 execute if score @s kits.specific.sekiroPostureTimer matches 1.. run scoreboard players remove @s kits.specific.sekiroPostureTimer 1
 
 # Deflecting Detection
-execute if score @s kits.criterion.block matches 1.. if score @s kits.timer matches ..8 at @s run function kits:char/sekiro/deflect/perfectdeflect
-execute if score @s kits.criterion.block matches 1.. if score @s kits.timer matches 8.. at @s run function kits:char/sekiro/deflect/block
-#item modify entity @s[predicate=kits:items/sekiro/kusabimaru_alt,tag=!SekiroPerfectDeflect] weapon.mainhand kits:character_specific/sekiro_reset_anim 
+execute if score @s kits.criterion.block matches 1.. if score @s kits.timer matches 6.. at @s run function kits:char/sekiro/deflect/block
+execute if score @s kits.criterion.block matches 1.. if score @s kits.timer matches ..5 at @s run function kits:char/sekiro/deflect/perfectdeflect
 
 # Gain Posture Damage on Hurt
 execute if score @s kits.criterion.damage matches 1.. unless score @s kits.criterion.block matches 1.. at @s run function kits:char/sekiro/posture/posturegainhurt
 
 # Enemy Posture
-execute at @s as @e[distance=..30,type=!#kits:non_entity,tag=!Invincible,tag=!Sekiro,tag=!InLabyrinth,sort=nearest,limit=3] at @s run function kits:char/sekiro/posture/posturemeter
+execute at @s as @e[distance=..60,type=!#kits:non_entity,tag=!Invincible,tag=!Sekiro,tag=!InLabyrinth] at @s run function kits:char/sekiro/posture/posturemeter
+
+# Attack
+execute if score @s kits.criterion.swordIron matches 1.. unless score @s kits.criterion.block matches 1.. run function kits:char/sekiro/attack/attack
+
+# Jump on enemy
+execute if score @s[tag=!SekiroPostureBroken,tag=!SekiroMortalDraw,tag=!SekiroMistRaven] kits.criterion.jump matches 1.. at @s run function kits:char/sekiro/jump/start
+execute if entity @s[tag=SekiroJump,tag=!SekiroPostureBroken,tag=!SekiroMortalDraw,tag=!SekiroMistRaven] at @s run function kits:char/sekiro/jump/fall
 
 # Spirit Emblems Recovery
 execute if score @s kits.criterion.kill matches 1.. run function kits:char/sekiro/spiritemblems/gain {Emblems:10}

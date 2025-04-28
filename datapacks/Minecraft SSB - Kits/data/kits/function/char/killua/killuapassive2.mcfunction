@@ -12,8 +12,8 @@ execute as @e[distance=..2,type=!#kits:non_entity,tag=!Invincible,tag=!Killua,ta
 execute if entity @s[tag=KilluaGodspeed] as @e[distance=..2,type=!#kits:non_entity,tag=!Invincible,tag=!Killua,tag=!InLabyrinth] at @s run effect give @s minecraft:blindness 1 0 true
 execute if entity @s[tag=KilluaGodspeed] as @e[distance=..2,type=!#kits:non_entity,tag=!Invincible,tag=!Killua,tag=!InLabyrinth] at @s run effect give @s minecraft:slowness 1 9 true
 
-execute unless block ^0.71 ^ ^ #kits:passable run scoreboard players set @s kits.raycastTick 3333
-execute unless block ^-0.71 ^ ^ #kits:passable run scoreboard players set @s kits.raycastTick 3333
+execute unless block ^0.71 ^0.01 ^ #kits:passable run scoreboard players set @s kits.raycastTick 3333
+execute unless block ^-0.71 ^0.01 ^ #kits:passable run scoreboard players set @s kits.raycastTick 3333
 execute unless block ~ ~ ~ #kits:passable run scoreboard players set @s kits.raycastTick 2222
 execute unless block ^ ^ ^0.71 #kits:passable run scoreboard players set @s kits.raycastTick 2222
 execute unless block ^ ^0.71 ^ #kits:passable run scoreboard players set @s kits.raycastTick 2222

@@ -5,4 +5,4 @@ execute store result storage kits:kits ekko.chronobreak.chkpt.index int 1 run sc
 function kits:char/ekko/chronobreak/record_data with storage kits:kits ekko.chronobreak.chkpt
 
 # remove older checkpoints if too many
-execute if score @s kits.timer4 matches 8.. run function kits:char/ekko/chronobreak/replace_chkpt
+execute if score @s kits.timer4 matches 15.. run function kits:char/ekko/chronobreak/replace_chkpt

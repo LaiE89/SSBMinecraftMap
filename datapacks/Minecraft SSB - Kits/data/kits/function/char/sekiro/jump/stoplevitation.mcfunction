@@ -1,0 +1,1 @@
+effect clear @p[tag=Sekiro] minecraft:levitation

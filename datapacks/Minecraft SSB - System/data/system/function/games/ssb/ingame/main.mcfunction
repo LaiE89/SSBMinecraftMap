@@ -7,4 +7,4 @@ execute store result score %arena.playersAlive system.global run execute if enti
 execute if score %arena.playersAlive system.global matches ..1 run function system:games/ssb/ingame/end
 
 # low frequency checks
-schedule clear system:games/ssb/ingame/main
+#schedule clear system:games/ssb/ingame/main

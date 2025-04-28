@@ -1,0 +1,1 @@
+execute as @p[tag=Sekiro] at @s run function kits:char/sekiro/chasingslice/end

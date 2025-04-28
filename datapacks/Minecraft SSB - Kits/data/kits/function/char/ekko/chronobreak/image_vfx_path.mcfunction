@@ -1,1 +1,1 @@
-$execute rotated $(rot_y) 0 positioned $(pos_x) $(pos_y) $(pos_z) run particle dust{color:[0.000,1.000,1.000],scale:0.5} ~ ~0.1 ~ 0.2 0 0.2 0 50
+$execute rotated $(rot_y) 0 positioned $(pos_x) $(pos_y) $(pos_z) run particle dust{color:[0.000,1.000,1.000],scale:0.5} ~ ~0.1 ~ 0.2 0 0.2 0 5

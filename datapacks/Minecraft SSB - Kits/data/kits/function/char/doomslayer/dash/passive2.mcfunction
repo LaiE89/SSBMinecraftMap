@@ -1,7 +1,7 @@
 scoreboard players add @s kits.raycastTick4 1
 particle minecraft:cloud ~ ~0.25 ~ 0 0 0 0.1 1 force
-execute unless block ^0.71 ^ ^ #kits:passable run scoreboard players set @s kits.raycastTick4 3333
-execute unless block ^-0.71 ^ ^ #kits:passable run scoreboard players set @s kits.raycastTick4 3333
+execute unless block ^0.71 ^0.01 ^ #kits:passable run scoreboard players set @s kits.raycastTick4 3333
+execute unless block ^-0.71 ^0.01 ^ #kits:passable run scoreboard players set @s kits.raycastTick4 3333
 execute unless block ~ ~ ~ #kits:passable run scoreboard players set @s kits.raycastTick4 2222
 execute unless block ^ ^ ^0.71 #kits:passable run scoreboard players set @s kits.raycastTick4 2222
 execute unless block ^ ^0.71 ^ #kits:passable run scoreboard players set @s kits.raycastTick4 2222

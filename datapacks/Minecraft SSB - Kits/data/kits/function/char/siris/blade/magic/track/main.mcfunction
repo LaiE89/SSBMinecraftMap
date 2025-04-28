@@ -20,4 +20,4 @@ execute if score %SirisMagicChanges kits.y matches 1 run function kits:char/siri
 # Number of data tracks
 scoreboard players remove @s kits.timer 1
 execute if score @s kits.timer matches ..0 run function kits:char/siris/blade/magic/identify/main
-particle dust{color:[1.000,1.000,1.000],scale:1} ^ ^1.5 ^1 0 0 0 0 1 force
+execute anchored eyes run particle minecraft:electric_spark ^ ^ ^1.5 0 0 0 0 1 force
