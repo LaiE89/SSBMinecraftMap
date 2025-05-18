@@ -50,7 +50,7 @@ execute as @e[type=area_effect_cloud,tag=KiryuSalt] at @s run function kits:char
 
 ### Rush ###
 # Attacking increases your cooldown by 50
-effect give @s[tag=KiryuRush] minecraft:speed 1 2 true
+effect give @s[tag=KiryuRush] minecraft:speed 1 1 true
 execute if score @s[tag=KiryuRush] kits.criterion.attack matches 1.. run scoreboard players add @s[scores={kits.ability1CD=..99}] kits.ability1CD 50
 
 # Quickstep
@@ -77,8 +77,6 @@ execute as @s[gamemode=!spectator] at @s positioned ~ ~1 ~ if entity @e[tag=Kiry
 execute as @s[scores={kits.criterion.attack=1..}] at @s if entity @e[tag=KiryuGrabbed] run function kits:char/kiryu/wallcrush
 
 execute if entity @e[tag=KiryuGrabbed] run scoreboard players add @s kits.timer4 1
-execute if entity @s[scores={kits.criterion.death=1..}] run tag @e[tag=KiryuGrabbed] remove KiryuGrabbed
-scoreboard players set @s[scores={kits.criterion.death=1..}] kits.timer4 50
-execute if entity @s[scores={kits.timer4=50..}] run tag @e[tag=KiryuGrabbed] remove KiryuGrabbed
-scoreboard players reset @s[scores={kits.timer4=50..}] kits.timer4
-execute at @s unless entity @e[tag=KiryuGrabbed,distance=..10] run scoreboard players reset @s kits.timer4
+execute if entity @s[scores={kits.criterion.death=1..}] run function kits:char/kiryu/wallcrushend
+execute if entity @s[scores={kits.timer4=50..}] run function kits:char/kiryu/wallcrushend
+execute at @s unless entity @e[tag=KiryuGrabbed,distance=..10] run function kits:char/kiryu/wallcrushend

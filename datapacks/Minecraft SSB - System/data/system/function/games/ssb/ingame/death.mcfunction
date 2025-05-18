@@ -1,4 +1,7 @@
 ## When player dies
+# Death effects
+function system:cosmetics/handle_death
+
 # teleport to death pos
 function system:utilities/player_status/death {"tpPlayer":"1","onDeathPos":"function none"}
 

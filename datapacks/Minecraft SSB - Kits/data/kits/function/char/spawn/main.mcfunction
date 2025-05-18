@@ -1,39 +1,37 @@
 # Ability CDs
-title @s[scores={kits.timer3=1..}] actionbar ["",{"text":"Weapons: ","color":"white"},{"score":{"name":"@s","objective":"kits.ability1CD"},"color":"white"},{"text":"/30","color":"white"},{"text":" || ","color":"white"},{"text":"Necroplasm: ","color":"green"},{"score":{"name":"@s","objective":"kits.timer3"},"color":"green"},{"text":"/100","color":"green"}]
-title @s[scores={kits.timer3=..0}] actionbar ["",{"text":"Weapons: ","color":"white"},{"score":{"name":"@s","objective":"kits.ability1CD"},"color":"white"},{"text":"/30","color":"white"},{"text":" || ","color":"white"},{"text":"Necroplasm: ","color":"green"},{"score":{"name":"@s","objective":"kits.timer3"},"color":"red"},{"text":"/100","color":"red"}]
+title @s[scores={kits.timer3=1..}] actionbar ["",{"text":"Necroplasm: ","color":"green"},{"score":{"name":"@s","objective":"kits.timer3"},"color":"green"},{"text":"/100","color":"green"}]
+title @s[scores={kits.timer3=..0}] actionbar ["",{"text":"Necroplasm: ","color":"green"},{"score":{"name":"@s","objective":"kits.timer3"},"color":"red"},{"text":"/100","color":"red"}]
+
+# Chains
+execute as @s[scores={kits.ability1CD=20..}] as @s[scores={kits.criterion.COS=1..},predicate=kits:items/spawn/ak47] at @s run function kits:char/spawn/weapon1cos
+execute as @e[type=area_effect_cloud,tag=SpawnChainsProjectile] at @s run function kits:char/spawn/chain
 
 # AK47
 scoreboard players add @s[scores={kits.ability1CD=..29}] kits.ability1CD 1
-execute as @s[scores={kits.ability1CD=30..}] as @s[scores={kits.criterion.COS=1..},predicate=kits:items/spawn/ak47] at @s run function kits:char/spawn/weapon1cos
+execute as @s[gamemode=!spectator,scores={kits.ability1CD=20..}] as @s[scores={kits.criterion.shift=1..},predicate=kits:items/spawn/ak47] at @s run function kits:char/spawn/weapon1shift
 
 scoreboard players add @s[tag=SpawnShootingAK] kits.timer 1
 
 execute at @s[tag=SpawnShootingAK,scores={kits.timer=1}] run summon area_effect_cloud ^ ^ ^1 {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Duration:10,Tags:["AKBullet","projectile"]}
-execute at @s[tag=SpawnShootingAK,scores={kits.timer=1}] run particle cloud ^ ^1 ^0.5 0 0 0 0.5 10 force
+execute at @s[tag=SpawnShootingAK,scores={kits.timer=1}] run particle cloud ^ ^1 ^0.5 0 0 0 0.5 3 force
 execute at @s[tag=SpawnShootingAK,scores={kits.timer=1}] run playsound minecraft:entity.firework_rocket.large_blast neutral @a[distance=..20] ~ ~ ~ 3 2 1
 
 execute at @s[tag=SpawnShootingAK,scores={kits.timer=4}] run summon area_effect_cloud ^ ^ ^1 {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Duration:10,Tags:["AKBullet","projectile"]}
-execute at @s[tag=SpawnShootingAK,scores={kits.timer=4}] run particle cloud ^ ^1 ^0.5 0 0 0 0.5 10 force
+execute at @s[tag=SpawnShootingAK,scores={kits.timer=4}] run particle cloud ^ ^1 ^0.5 0 0 0 0.5 3 force
 execute at @s[tag=SpawnShootingAK,scores={kits.timer=4}] run playsound minecraft:entity.firework_rocket.large_blast neutral @a[distance=..20] ~ ~ ~ 3 2 1
 
 execute at @s[tag=SpawnShootingAK,scores={kits.timer=7}] run summon area_effect_cloud ^ ^ ^1 {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Duration:10,Tags:["AKBullet","AKFinalBullet","projectile"]}
-execute at @s[tag=SpawnShootingAK,scores={kits.timer=7}] run particle cloud ^ ^1 ^0.5 0 0 0 0.5 10 force
+execute at @s[tag=SpawnShootingAK,scores={kits.timer=7}] run particle cloud ^ ^1 ^0.5 0 0 0 0.5 3 force
 execute at @s[tag=SpawnShootingAK,scores={kits.timer=7}] run playsound minecraft:entity.firework_rocket.large_blast neutral @a[distance=..20] ~ ~ ~ 3 2 1
 
 execute as @e[type=area_effect_cloud,tag=AKBullet] at @s run function kits:char/spawn/bullet
 tag @s[tag=SpawnShootingAK,scores={kits.timer=8..}] remove SpawnShootingAK
 scoreboard players reset @s[scores={kits.timer=8..}] kits.timer
 
-# Chains
-execute as @s[gamemode=!spectator,scores={kits.ability1CD=30..}] as @s[scores={kits.criterion.shift=1..},predicate=kits:items/spawn/ak47] at @s run function kits:char/spawn/weapon1shift
-execute as @e[type=area_effect_cloud,tag=SpawnChains] at @s run function kits:char/spawn/chain
-
 # Necroplasm Passive
 execute if score @s kits.criterion.carrot matches 1.. at @s run function kits:char/spawn/necroplasm {value: 30}
 execute if score @s kits.criterion.death matches 1.. at @s run function kits:char/spawn/necroplasm {value: 100}
-execute if score @s kits.criterion.kill matches 1.. at @s run function kits:char/spawn/necroplasm {value: 100}
-#execute as @s[gamemode=!spectator,scores={kits.timer3=..99},nbt=!{active_effects:[{id:"minecraft:regeneration"}]}] at @s if entity @e[distance=..5,type=!#kits:non_entity,tag=!Invincible,tag=!Spawn,tag=!InLabyrinth] run function kits:char/spawn/necroplasmregen
-#execute as @s[gamemode=!spectator,scores={kits.timer3=..99},nbt={active_effects:[{id:"minecraft:regeneration"}]}] at @s if entity @e[distance=..8,type=!#kits:non_entity,tag=!Invincible,tag=!Spawn,tag=!InLabyrinth] run function kits:char/spawn/necroplasmregen2
+execute if score @s kits.criterion.kill matches 1.. at @s run function kits:char/spawn/necroplasm {value: 50}
 execute at @s[nbt={active_effects:[{id:"minecraft:regeneration"}]}] run particle totem_of_undying ~ ~0.5 ~ 0.4 1 0.4 0 10 force
 effect give @s[scores={kits.timer3=..0}] minecraft:wither 1 9 true
 

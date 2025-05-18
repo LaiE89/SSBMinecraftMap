@@ -7,11 +7,11 @@ give @s carrot_on_a_stick[custom_name={"color":"aqua","italic":false,"text":"Dar
 item replace entity @s armor.head with player_head[custom_name="Kirito",custom_data={KitItem:1b},attribute_modifiers=[{id:"armor.head.kirito",type:"armor",amount:2,operation:"add_value",slot:"head"}],profile={id:[I;-89796374,-1834592397,-1785461109,-2095674719],properties:[{name:"textures",value:"e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWE5ZTNkNTZhOGM2NDk3ZWY1OTYyNTc3ZjM2NzM4NjliYWJmM2E0NDFmMGIyZjQyY2E4MmMyOWEwZmJkN2Q5YyJ9fX0="}]}] 1
 item replace entity @s armor.chest with leather_chestplate[custom_name={"italic":false,"text":"The Real Black Swordsman\'s Shirt"},unbreakable={},custom_data={KitItem:1b},attribute_modifiers=[{id:"armor.chest.kirito",type:"armor",amount:11,operation:"add_value",slot:"chest"},{id:"tough.chest.kirito",type:"armor_toughness",amount:6,operation:"add_value",slot:"chest"}],dyed_color=0] 1
 item replace entity @s armor.legs with netherite_leggings[custom_name={"italic":false,"text":"The Real Black Swordsman\'s Pants"},unbreakable={},custom_data={KitItem:1b},attribute_modifiers=[{id:"armor.legs.kirito",type:"armor",amount:2,operation:"add_value",slot:"legs"}]] 1
-item replace entity @s armor.feet with leather_boots[custom_name={"italic":false,"text":"The Real Black Swordsman\'s Boots"},unbreakable={},custom_data={KitItem:1b},attribute_modifiers=[{id:"speed.feet.kirito",type:"movement_speed",amount:0.06,operation:"add_value",slot:"feet"}],dyed_color=0] 1
+item replace entity @s armor.feet with leather_boots[custom_name={"italic":false,"text":"The Real Black Swordsman\'s Boots"},unbreakable={},custom_data={KitItem:1b},attribute_modifiers=[{id:"speed.feet.kirito",type:"movement_speed",amount:0.05,operation:"add_value",slot:"feet"}],dyed_color=0] 1
 
 scoreboard players set @s kits.ability1CD 198
 scoreboard players set @s kits.ability2CD 198
-scoreboard players set @s kits.ability3CD 498
+scoreboard players set @s kits.ability3CD 698
 scoreboard players set @s kits.timer 0
 scoreboard players set @s kits.timer2 0
 scoreboard players set @s kits.timer3 0

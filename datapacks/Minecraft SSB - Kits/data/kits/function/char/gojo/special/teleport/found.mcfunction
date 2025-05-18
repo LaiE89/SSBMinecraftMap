@@ -7,5 +7,5 @@ scoreboard players set @s kits.raycastTick 0
 playsound entity.ghast.shoot neutral @a[distance=..20] ~ ~ ~ 0.5 1.5 0.5
 
 # remove scores
-scoreboard players remove @s kits.ability1CD 10
+scoreboard players remove @s kits.ability1CD 15
 scoreboard players set @s kits.ability5CD 0

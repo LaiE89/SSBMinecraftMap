@@ -16,9 +16,6 @@ execute if score @s kits.criterion.damage matches 1.. unless score @s kits.crite
 # Enemy Posture
 execute at @s as @e[distance=..60,type=!#kits:non_entity,tag=!Invincible,tag=!Sekiro,tag=!InLabyrinth] at @s run function kits:char/sekiro/posture/posturemeter
 
-# Attack
-execute if score @s kits.criterion.swordIron matches 1.. unless score @s kits.criterion.block matches 1.. run function kits:char/sekiro/attack/attack
-
 # Jump on enemy
 execute if score @s[tag=!SekiroPostureBroken,tag=!SekiroMortalDraw,tag=!SekiroMistRaven] kits.criterion.jump matches 1.. at @s run function kits:char/sekiro/jump/start
 execute if entity @s[tag=SekiroJump,tag=!SekiroPostureBroken,tag=!SekiroMortalDraw,tag=!SekiroMistRaven] at @s run function kits:char/sekiro/jump/fall

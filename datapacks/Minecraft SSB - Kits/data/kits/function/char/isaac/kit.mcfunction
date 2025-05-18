@@ -13,11 +13,10 @@ item replace entity @s armor.feet with netherite_boots[custom_name={"color":"aqu
 
 # Reset scores
 scoreboard players set @s kits.ability1CD 6
-scoreboard players set @s kits.ability2CD 0
+scoreboard players set @s kits.ability2CD 18
 scoreboard players set @s kits.ability3CD 0
 scoreboard players set @s kits.ability4CD 8
 scoreboard players set @s kits.ability5CD 0
-scoreboard players set @s kits.ability6CD 8
 scoreboard players set @s kits.timer 3
 scoreboard players set @s kits.timer2 3
 scoreboard players set @s kits.timer3 3

@@ -9,4 +9,4 @@ playsound minecraft:entity.zombie_villager.cure neutral @a[distance=..20] ~ ~ ~ 
 
 # Reset scores
 scoreboard players remove @s kits.timer4 1
-scoreboard players set @s kits.ability6CD 0
+scoreboard players set @s kits.ability2CD 0

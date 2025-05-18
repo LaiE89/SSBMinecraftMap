@@ -6,4 +6,4 @@ tag @s add IsaacObjectKinesisGrabbed
 tag @p[tag=Isaac] add IsaacKinesisGrabbing
 
 # Sound
-playsound minecraft:entity.illusioner.prepare_blindness neutral @a[distance=..20] ~ ~ ~ 1 1 1
+execute at @p[tag=Isaac] run playsound minecraft:block.trial_spawner.spawn_item_begin neutral @a[distance=..30] ~ ~ ~ 3 2 1

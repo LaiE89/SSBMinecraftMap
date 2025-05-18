@@ -1,6 +1,6 @@
 ## Execute at Enemy Hit by Shock Wave 100% AEC
 # Damage
-damage @s 12 bypass:player_attack by @p[tag=Midoriya]
+damage @s 15 bypass:player_attack by @p[tag=Midoriya]
 
 # Knockback
 tag @s add Midoriya100DelawareSmashKB

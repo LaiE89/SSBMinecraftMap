@@ -1,6 +1,6 @@
 scoreboard players add @s kits.timer 1
 execute if entity @e[distance=..2,type=!#kits:non_entity,tag=!Invincible,tag=!Cynthia,tag=!InLabyrinth] run function kits:char/cynthia/lucario/auraspheredamage
-execute unless block ~ ~1.5 ~ air run function kits:char/cynthia/lucario/auraspheredamage
+execute unless block ~ ~1.5 ~ #kits:passable run function kits:char/cynthia/lucario/auraspheredamage
 execute positioned ~ ~1.5 ~ run function kits:char/cynthia/lucario/aurasphereparticles
 
 tp @s[scores={kits.timer=..19}] ^ ^ ^0.7

@@ -5,6 +5,7 @@ title @s actionbar [{"text":"Cursed Energy: ","color":"aqua"},{"score":{"name":"
 scoreboard players add @s kits.ability2CD 1
 execute if score @s kits.ability2CD matches 10.. run scoreboard players add @s[scores={kits.ability1CD=..99}] kits.ability1CD 1
 execute if score @s kits.ability2CD matches 10.. run scoreboard players set @s kits.ability2CD 0
+execute if score @s kits.criterion.death matches 1.. run function kits:char/gojo/passives/death
 
 # cooldowns
 scoreboard players add @s[scores={kits.ability3CD=..29}] kits.ability3CD 1

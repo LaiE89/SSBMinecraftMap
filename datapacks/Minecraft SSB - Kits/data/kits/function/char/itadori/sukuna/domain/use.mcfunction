@@ -4,7 +4,7 @@ summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:ai
 execute rotated ~ 0 run tp @e[limit=1,sort=nearest,tag=ItadoriShrine,type=area_effect_cloud] ^ ^ ^-2 ~ 0
 
 # FX
-effect give @e[distance=..20,tag=!InLabyrinth,type=!#kits:non_entity] darkness 2 0 true
+effect give @e[distance=..20,type=!#kits:non_entity,tag=!InLabyrinth,tag=!Invincible] darkness 2 0 true
 playsound block.sculk_shrieker.shriek neutral @a[distance=..20] ~ ~ ~ 2 1 1
 
 # Updates scores

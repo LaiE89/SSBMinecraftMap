@@ -11,7 +11,7 @@ particle flame ~ ~0.5 ~ 0 0 0 1 100 force
 particle flash ~ ~0.5 ~ 0 0 0 0 2 force
 
 # Sound
-playsound minecraft:entity.generic.explode neutral @a[distance=..20] ~ ~ ~ 2 0 1
+playsound minecraft:entity.generic.explode neutral @a[distance=..40] ~ ~ ~ 2 0 1
 
 # Kills explosive
 kill @s

@@ -138,9 +138,9 @@ tag @s remove GarchompEarthquake
 tag @s remove GarchompRushKB
 tag @s remove GutsBerserker
 tag @s remove GutsBleeding
-tag @s remove GutsCleaved
 tag @s remove GutsCleavedDmg
 tag @s remove GutsPivotSwing
+tag @s remove GutsDragonslayerSmashed
 tag @s remove IreliaBladesurge
 tag @s remove IreliaBladesurging
 tag @s remove IreliaDefiantDance
@@ -255,6 +255,7 @@ tag @s remove VergilCharge
 tag @s remove VergilDash
 tag @s remove VergilDevilTrigger
 tag @s remove VergilEnded
+tag @s remove VergilForceEdgeKB
 tag @s remove VergilForceEdgeKBWall
 tag @s remove VergilInvis
 tag @s remove VergilJudgementCut

@@ -8,8 +8,8 @@ execute at @s[scores={kits.health2=..3}] as @e[distance=..8,limit=1,sort=nearest
 # Dash
 execute at @s run function kits:generic/inputs/wasd/main
 scoreboard players add @s[scores={kits.ability5CD=..2}] kits.ability6CD 1
-scoreboard players add @s[scores={kits.ability6CD=50..}] kits.ability5CD 1
-scoreboard players reset @s[scores={kits.ability6CD=50..}] kits.ability6CD
+scoreboard players add @s[scores={kits.ability6CD=60..}] kits.ability5CD 1
+scoreboard players reset @s[scores={kits.ability6CD=60..}] kits.ability6CD
 
 execute as @s[gamemode=!spectator,scores={kits.criterion.shift=1..},predicate=kits:items/doomslayer/shotgun] at @s[tag=!DoomslayerDashCD,scores={kits.ability5CD=1..}] run function kits:char/doomslayer/dash/passive1
 execute as @s[gamemode=!spectator,scores={kits.criterion.shift=1..},predicate=kits:items/doomslayer/shotgun] at @s if entity @s[scores={kits.health2=..3}] as @e[distance=..8,limit=1,sort=nearest,type=!#kits:non_entity,tag=!Invincible,tag=!Doomslayer,tag=!InLabyrinth] at @s run function kits:char/doomslayer/glorykill
@@ -39,7 +39,7 @@ scoreboard players add @s[scores={kits.ability4CD=..499}] kits.ability4CD 1
 execute as @s[scores={kits.criterion.COS=1..}] as @s[scores={kits.ability4CD=500..},predicate=kits:items/doomslayer/bfg] at @s run function kits:char/doomslayer/weapon3cos
 
 # Equipment Launcher
-execute if entity @s[gamemode=!spectator,scores={kits.timer=3..}] run function kits:char/doomslayer/equipmentlauncher
+execute if entity @s[gamemode=!spectator,scores={kits.timer=5..}] run function kits:char/doomslayer/equipmentlauncher
 
 # Blood Punch
 scoreboard players set @s[scores={kits.ability7CD=101..}] kits.ability7CD 100

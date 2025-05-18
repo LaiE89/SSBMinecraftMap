@@ -6,7 +6,7 @@ tag @s add VergilJudgementCutEnd
 tag @s add Invincible
 effect give @s minecraft:resistance 3 4 true
 effect give @s minecraft:levitation 1 0 true
-attribute @s minecraft:movement_speed modifier add speed.judgementcut.vergil -0.08 add_value
+attribute @s minecraft:movement_speed modifier add speed.judgementcut.vergil -1 add_multiplied_total
 attribute @s minecraft:attack_damage modifier add damage.judgementcut.vergil -20 add_value
 playsound minecraft:entity.evoker.prepare_attack neutral @a[distance=..30] ~ ~ ~ 3 2 1
 playsound minecraft:block.respawn_anchor.set_spawn neutral @a[distance=..30] ~ ~ ~ 3 1.5 1

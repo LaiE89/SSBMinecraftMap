@@ -1,6 +1,5 @@
 ## When Pyrokinesis is Used
 # Summons pyrokinesis
-effect give @s instant_health 1 0 true
 summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Duration:40,Tags:["ItadoriPyrokinesis"]}
 tp @e[limit=1,sort=nearest,tag=ItadoriPyrokinesis,type=area_effect_cloud] ~ ~1 ~ ~ 0
 

@@ -1,4 +1,5 @@
 schedule clear kits:char/sekiro/chasingslice/ensure
+execute if entity @s[tag=!SekiroPostureBroken] run function kits:char/sekiro/enabledeflect
 kill @e[type=area_effect_cloud,tag=SekiroChasingSliceDestination]
 attribute @s minecraft:gravity modifier remove gravity.chasingslice.sekiro
 playsound minecraft:entity.player.attack.sweep neutral @a[distance=..20] ~ ~ ~ 3 1 1

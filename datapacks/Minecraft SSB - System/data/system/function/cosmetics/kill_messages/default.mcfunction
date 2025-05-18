@@ -1,0 +1,1 @@
+tellraw @a ["",{"selector":"@p[tag=system.cosmetics.death]","color":"dark_red"},{"text":" was killed by "},{"selector":"@s","color":"red"}]

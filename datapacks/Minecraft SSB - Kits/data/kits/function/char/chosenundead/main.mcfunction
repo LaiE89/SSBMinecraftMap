@@ -20,7 +20,7 @@ execute at @s run function kits:generic/inputs/wasd/main
 
 # Roll
 scoreboard players add @s[scores={kits.ability1CD=..9}] kits.ability1CD 1
-execute as @s[tag=!ChosenUndeadTired,tag=!ChosenUndeadSunlightSpear,scores={kits.ability1CD=10..},predicate=kits:items/chosenundead/claymore] at @s[gamemode=!spectator,scores={kits.criterion.COS=1..}] unless entity @e[type=area_effect_cloud,tag=ChosenUndeadStampSlash] run function kits:char/chosenundead/roll/roll
+execute as @s[tag=!ChosenUndeadTired,tag=!ChosenUndeadSunlightSpear,scores={kits.ability1CD=10..},predicate=kits:items/chosenundead/claymore] at @s[gamemode=!spectator,scores={kits.criterion.COS=1..},nbt={OnGround:1b}] unless entity @e[type=area_effect_cloud,tag=ChosenUndeadStampSlash] run function kits:char/chosenundead/roll/roll
 execute at @s facing entity @e[type=minecraft:area_effect_cloud,tag=DarkSoulsRoll,limit=1,sort=nearest] eyes run function kits:char/chosenundead/roll/rolling
 
 # Stamp 

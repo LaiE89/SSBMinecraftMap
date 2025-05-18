@@ -12,4 +12,4 @@ particle dust{color:[0.000,1.000,1.000],scale:0.5} ^0.2 ^-0.1 ^ 0 0 0 0 1 force
 particle dust{color:[0.000,1.000,1.000],scale:0.5} ^-0.2 ^-0.1 ^ 0 0 0 0 1 force
 
 # Ray travels 0.5 blocks repeatedly until it meets conditions
-execute if score @s kits.raycastTick matches ..20 if block ~ ~ ~ air positioned ^ ^ ^0.5 run function kits:char/isaac/plasma_cutter/plasma_cut/loop
+execute if score @s kits.raycastTick matches ..20 if block ~ ~ ~ #kits:passable positioned ^ ^ ^0.5 run function kits:char/isaac/plasma_cutter/plasma_cut/loop

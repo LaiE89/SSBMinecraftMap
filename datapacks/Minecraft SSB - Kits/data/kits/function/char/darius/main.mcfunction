@@ -1,5 +1,5 @@
 # Ability CDs
-title @s actionbar ["",{"text":"Crippling Strike:","color":"red"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"kits.ability3CD"},"color":"white"},{"text":"/50","color":"white"},{"text":" || ","color":"white"},{"text":"Decimate:","color":"gold"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"kits.ability1CD"},"color":"white"},{"text":"/100","color":"white"},{"text":" || ","color":"white"},{"text":"Apprehend:","color":"yellow"},{"text":" ","color":"aqua"},{"score":{"name":"@s","objective":"kits.ability2CD"},"color":"white"},{"text":"/150","color":"white"},{"text":" || ","color":"white"},{"text":"Noxian Guillotine:","color":"dark_red"},{"text":" ","color":"aqua"},{"score":{"name":"@s","objective":"kits.ability4CD"},"color":"white"},{"text":"/500","color":"white"}]
+title @s actionbar ["",{"text":"Crippling Strike:","color":"red"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"kits.ability3CD"},"color":"white"},{"text":"/100","color":"white"},{"text":" || ","color":"white"},{"text":"Decimate:","color":"gold"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"kits.ability1CD"},"color":"white"},{"text":"/100","color":"white"},{"text":" || ","color":"white"},{"text":"Apprehend:","color":"yellow"},{"text":" ","color":"aqua"},{"score":{"name":"@s","objective":"kits.ability2CD"},"color":"white"},{"text":"/150","color":"white"},{"text":" || ","color":"white"},{"text":"Noxian Guillotine:","color":"dark_red"},{"text":" ","color":"aqua"},{"score":{"name":"@s","objective":"kits.ability4CD"},"color":"white"},{"text":"/500","color":"white"}]
 
 # Passive
 execute at @s[scores={kits.criterion.attack=1..}] run execute as @e[tag=!Darius,distance=..8,limit=1,sort=nearest,nbt={HurtTime:10s}] at @s run function kits:char/darius/applystacks
@@ -24,8 +24,8 @@ scoreboard players add @s[scores={kits.ability2CD=..149}] kits.ability2CD 1
 execute as @s[gamemode=!spectator,scores={kits.ability2CD=150..},predicate=kits:items/darius/skills] as @s[scores={kits.criterion.COS=1..}] at @s rotated ~ 0 run function kits:char/darius/weapon2cos
 
 # Crippling Strike
-scoreboard players add @s[scores={kits.ability3CD=..49}] kits.ability3CD 1
-execute as @s[scores={kits.ability3CD=50..},predicate=kits:items/darius/axe] as @s[scores={kits.criterion.COS=1..}] at @s run function kits:char/darius/weapon1cos
+scoreboard players add @s[scores={kits.ability3CD=..99}] kits.ability3CD 1
+execute as @s[scores={kits.ability3CD=100..},predicate=kits:items/darius/axe] as @s[scores={kits.criterion.COS=1..}] at @s run function kits:char/darius/weapon1cos
 
 # Noxian Guillotine
 scoreboard players reset @s[scores={kits.criterion.kill=1..}] kits.timer

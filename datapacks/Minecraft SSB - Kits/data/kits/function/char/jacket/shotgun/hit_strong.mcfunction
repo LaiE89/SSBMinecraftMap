@@ -1,6 +1,6 @@
 ## Execute at Entity Hit by Shotgun Bullet (Close Ranged)
 # Damage
-damage @s 2 bypass:player_attack by @p[tag=Jacket]
+damage @s 1.5 bypass:player_attack by @p[tag=Jacket]
 
 # Resets stun kits.timer when stunned again
 scoreboard players reset @s kits.specific.jacketStunTick

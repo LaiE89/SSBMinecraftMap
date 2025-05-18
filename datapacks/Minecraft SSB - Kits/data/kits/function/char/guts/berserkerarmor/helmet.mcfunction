@@ -1,0 +1,3 @@
+clear @s minecraft:player_head[custom_name="Berserker Armor"]
+kill @e[type=item,nbt={Item:{id:"minecraft:player_head",components:{"minecraft:custom_name":"Berserker Armor"}}}]
+item replace entity @s armor.head with player_head[custom_name="Berserker Armor",custom_data={KitItem:1b},attribute_modifiers=[{id:"armor.head.guts",type:"armor",amount:5,operation:"add_value",slot:"head"},{id:"attackspeed.head.guts",type:"attack_speed",amount:1.5,operation:"add_value",slot:"head"}],profile={id:[I;342476256,1676427335,-1077575036,1046140064],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTAyYTkwNTQ3NGYzNDNkYjFmNGI4MTNjZTFmMjYzZTRiMTM3M2IzM2U0ZmExYzk2MmMyYmUwMjJhZmQ5ZTg3OCJ9fX0="}]}] 1

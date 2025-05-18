@@ -11,7 +11,7 @@ execute unless score @s kits.timer4 matches 2.. run scoreboard players add @s ki
 # Rate of Fire
 scoreboard players add @s[scores={kits.ability1CD=..7}] kits.ability1CD 1
 scoreboard players add @s[scores={kits.ability4CD=..9}] kits.ability4CD 1
-scoreboard players add @s[scores={kits.ability6CD=..9}] kits.ability6CD 1
+scoreboard players add @s[scores={kits.ability2CD=..19}] kits.ability2CD 1
 
 ## Using Conditions
 execute if entity @s[scores={kits.criterion.attack=1..}] as @e[nbt={HurtTime:10s},limit=1,sort=nearest] at @s run function kits:char/isaac/attack

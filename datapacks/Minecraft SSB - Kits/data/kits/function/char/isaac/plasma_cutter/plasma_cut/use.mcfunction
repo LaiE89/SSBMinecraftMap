@@ -10,3 +10,6 @@ playsound minecraft:entity.zombie_villager.cure neutral @a[distance=..20] ~ ~ ~ 
 # Reset scores
 scoreboard players remove @s kits.timer 1
 scoreboard players set @s kits.ability1CD 0
+
+# Reload
+execute if entity @s[scores={kits.timer=..0}] as @s[scores={kits.timer2=1..}] run function kits:char/isaac/plasma_cutter/plasma_cut/reloadstart

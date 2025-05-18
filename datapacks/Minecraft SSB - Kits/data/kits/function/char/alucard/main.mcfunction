@@ -1,5 +1,5 @@
 # Souls
-execute as @e[type=item,tag=AlucardSoul] at @s run function kits:char/alucard/souls
+execute as @e[type=armor_stand,tag=AlucardSoul] at @s run function kits:char/alucard/souls
 
 # Ability CDs
 title @s[tag=!AlucardReloading] actionbar ["",{"text":"Jackal:","color":"dark_red"},{"text":" "},{"score":{"name":"@s","objective":"kits.timer3"},"color":"dark_red"},{"text":"/5","color":"dark_red"},{"text":" || "},{"text":"Souls: ","color":"gold"},{"score":{"name":"@s","objective":"kits.timer2"},"color":"gold"},{"text":"/10","color":"gold"},{"text":" || "},{"text":"Shadow Wraith:","color":"red"},{"text":" "},{"score":{"name":"@s","objective":"kits.ability2CD"}},{"text":"/500","color":"white"}]

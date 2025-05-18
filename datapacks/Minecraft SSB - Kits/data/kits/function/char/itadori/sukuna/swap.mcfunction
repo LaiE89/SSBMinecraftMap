@@ -9,7 +9,7 @@ effect clear @s speed
 # FX
 particle squid_ink ~ ~1 ~ 0 0 0 0.5 10 force
 playsound entity.generic.extinguish_fire neutral @a[distance=..20] ~ ~ ~ 0.5 0.75 0.5
-effect give @s minecraft:regeneration 2 2 true
+effect give @s minecraft:regeneration 3 1 true
 
 scoreboard players set @s kits.timer 0
 scoreboard players set @s kits.ability3CD 0

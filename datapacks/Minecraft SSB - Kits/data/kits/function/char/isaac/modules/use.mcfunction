@@ -12,4 +12,4 @@ scoreboard players reset @s[scores={kits.criterion.shiftOff=2..}] kits.criterion
 scoreboard players reset @s[scores={kits.criterion.shiftOff=2..}] kits.criterion.shiftOff
 
 ## Stasis
-execute if entity @s[scores={kits.criterion.COS=1..}] as @s[scores={kits.ability6CD=10..}] as @s[scores={kits.timer4=1..}] run function kits:char/isaac/modules/stasis/use
+execute if entity @s[scores={kits.criterion.COS=1..}] as @s[scores={kits.ability2CD=20..}] as @s[scores={kits.timer4=1..}] run function kits:char/isaac/modules/stasis/use

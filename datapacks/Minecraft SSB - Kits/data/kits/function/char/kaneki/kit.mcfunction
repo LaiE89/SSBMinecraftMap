@@ -12,6 +12,6 @@ give @s carrot_on_a_stick[custom_name={"color":"red","italic":false,"text":"Kane
 scoreboard players set @s kits.timer 0
 scoreboard players set @s kits.timer2 0
 scoreboard players set @s kits.ability1CD 3
-scoreboard players set @s kits.ability2CD 98
+scoreboard players set @s kits.ability2CD 18
 scoreboard players set @s kits.ability3CD 698
 scoreboard players set @s kits.ability4CD 8

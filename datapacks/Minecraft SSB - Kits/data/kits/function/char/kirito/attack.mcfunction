@@ -12,5 +12,5 @@ scoreboard players set @s[scores={kits.ability1CD=201..}] kits.ability1CD 200
 scoreboard players add @s[scores={kits.ability2CD=..199}] kits.ability2CD 20
 scoreboard players set @s[scores={kits.ability2CD=201..}] kits.ability2CD 200
 
-scoreboard players add @s[scores={kits.ability3CD=..499}] kits.ability3CD 20
-scoreboard players set @s[scores={kits.ability3CD=501..}] kits.ability3CD 500
+scoreboard players add @s[scores={kits.ability3CD=..699}] kits.ability3CD 20
+scoreboard players set @s[scores={kits.ability3CD=701..}] kits.ability3CD 700

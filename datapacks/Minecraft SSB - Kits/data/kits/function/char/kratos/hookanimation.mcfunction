@@ -11,5 +11,5 @@ execute if entity @s[scores={kits.timer=3}] run playsound minecraft:item.trident
 execute if entity @s[scores={kits.timer=3}] run particle minecraft:item{item:"minecraft:sand"} ~ ~2 ~ 0 0 0 0.1 50 force
 execute if entity @s[scores={kits.timer=10}] run function kits:char/kratos/hookpull
 effect give @p[tag=KratosPull] levitation 1 0 true
-execute at @p[tag=KratosPull] facing entity @s eyes run tp @p[tag=KratosPull] ^ ^0.35 ^1.25
+execute at @p[tag=KratosPull] facing entity @s eyes run tp @p[tag=KratosPull] ^ ^0.35 ^1.5
 execute positioned ~ ~1 ~ if entity @p[tag=KratosPull,distance=..3] run function kits:char/kratos/hookend

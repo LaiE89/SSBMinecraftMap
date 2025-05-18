@@ -8,7 +8,7 @@ scoreboard players add @s[scores={kits.ability5CD=..9}] kits.ability5CD 1
 scoreboard players remove @s[scores={kits.ability4CD=1..}] kits.ability4CD 1
 
 # Using Conditions
-execute if entity @s[scores={kits.ability1CD=4..},predicate=kits:items/abian/kusarigama,gamemode=!spectator,tag=!AbianInputsDelay] as @s[scores={kits.ability2CD=40..}] at @s run function kits:char/abian/inputs/get/root
+execute if entity @s[scores={kits.ability1CD=3..},predicate=kits:items/abian/kusarigama,gamemode=!spectator,tag=!AbianInputsDelay] as @s[scores={kits.ability2CD=40..}] at @s run function kits:char/abian/inputs/get/root
 execute if entity @s[scores={kits.ability5CD=10..},predicate=kits:items/abian/teleportation,gamemode=!spectator] at @s run function kits:char/abian/teleportation/use
 execute if entity @s[scores={kits.criterion.attack=1..}] at @s run function kits:char/abian/attack
 

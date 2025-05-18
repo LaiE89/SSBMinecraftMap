@@ -1,5 +1,2 @@
-execute store result score @p[tag=Alucard] kits.timer5 run random value 0..2
-
-execute if score @p[tag=Alucard] kits.timer5 matches 0 run summon item ~ ~1 ~ {Tags:["AlucardSoul"],Motion:[0.0,0.2,0.1],Item:{id:"minecraft:crimson_roots",Count:1b},Age:5900,PickupDelay:32767}
-execute if score @p[tag=Alucard] kits.timer5 matches 1 run summon item ~ ~1 ~ {Tags:["AlucardSoul"],Motion:[-0.1,0.2,-0.1],Item:{id:"minecraft:crimson_roots",Count:1b},Age:5900,PickupDelay:32767}
-execute if score @p[tag=Alucard] kits.timer5 matches 2 run summon item ~ ~1 ~ {Tags:["AlucardSoul"],Motion:[0.1,0.2,-0.1],Item:{id:"minecraft:crimson_roots",Count:1b},Age:5900,PickupDelay:32767}
+summon armor_stand ~ ~1 ~ {Invulnerable:1b,Small:1b,Invisible:1b,NoBasePlate:1b,Tags:["AlucardSoul","AlucardSoulMotion"],Pose:{Head:[0f,0f,180f]},DisabledSlots:4144959,equipment:{head:{id:"minecraft:crimson_roots",Count:1}}}
+execute as @e[type=armor_stand,limit=1,sort=nearest,tag=AlucardSoulMotion] at @s run function kits:char/alucard/randommotion

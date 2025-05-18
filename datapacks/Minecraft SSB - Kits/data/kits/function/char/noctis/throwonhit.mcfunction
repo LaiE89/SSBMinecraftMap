@@ -13,6 +13,6 @@ execute at @s run data modify entity @e[type=armor_stand,tag=NoctisThrownWeapon,
 execute at @s run data modify entity @e[type=armor_stand,tag=NoctisThrownWeapon,sort=nearest,limit=1] Pose.Head[0] set from entity @s Rotation[1]
 execute as @e[type=armor_stand,tag=NoctisThrownWeapon,sort=nearest,limit=1] at @s rotated ~ 0 run tp @s ^ ^2.5 ^
 #execute at @s rotated ~ 0 positioned ^ ^-50 ^ run execute as @e[type=armor_stand,tag=NoctisThrownWeapon,sort=nearest,limit=1] at @s rotated ~ 0 run tp @s ^ ^50.5 ^
-schedule function kits:char/noctis/throw 1t replace
-#function kits:char/noctis/throw
+#schedule function kits:char/noctis/throw 1t replace
+function kits:char/noctis/throw
 scoreboard players set @s kits.ability1CD 0

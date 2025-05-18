@@ -7,8 +7,9 @@ scoreboard players reset @s[scores={kits.timer=5..}] kits.timer
 #scoreboard players reset @s[scores={kits.timer3=3..}] kits.timer3
 execute if entity @s[scores={kits.timer2=..20}] as @e[type=!#kits:non_entity,tag=!Invincible,tag=!VergilEnded,tag=!Vergil,distance=..7,tag=!InLabyrinth] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["judgementcutendvictimpos"],Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Duration:60}
 execute if entity @s[scores={kits.timer2=..20}] as @e[type=!#kits:non_entity,tag=!Invincible,tag=!VergilEnded,tag=!Vergil,distance=..7,tag=!InLabyrinth] at @s run tag @s add VergilEnded
-effect give @e[tag=VergilEnded] minecraft:weakness 1 9 true
-effect give @e[tag=VergilEnded] minecraft:levitation 1 0 true
+execute as @e[tag=VergilEnded] at @s run attribute @s minecraft:attack_damage modifier add damage.judgementcutend.vergil -50 add_value
+execute as @e[tag=VergilEnded] at @s run attribute @s minecraft:gravity modifier add gravity.judgementcutend.vergil -1 add_multiplied_total
+execute as @e[tag=VergilEnded] at @s run tp @s @s
 execute at @e[tag=VergilEnded] run particle item{item:"redstone_block"} 0 0 0.05 1 0 0 0.05 1 force
 execute as @e[type=area_effect_cloud,tag=judgementcutendvictimpos] at @s run tp @e[tag=VergilEnded,limit=1,sort=nearest] ~ ~ ~
 

@@ -1,6 +1,6 @@
-scoreboard players set @s kits.ability1CD 98
-execute at @s positioned ^ ^1.25 ^1 run execute as @e[distance=1.6..5,type=!#kits:non_entity,tag=!Invincible,tag=!Guts,tag=!InLabyrinth] at @s run function kits:char/guts/cannondamage
-execute at @s positioned ^ ^1.25 ^1 run execute as @e[distance=..1.5,type=!#kits:non_entity,tag=!Invincible,tag=!Guts,tag=!InLabyrinth] at @s run function kits:char/guts/cannondamage2
+scoreboard players set @s kits.ability2CD 98
+execute at @s positioned ^ ^1.25 ^1 run execute as @e[distance=1.6..5,type=!#kits:non_entity,tag=!Invincible,tag=!Guts,tag=!InLabyrinth] at @s run function kits:char/guts/cannon/damage
+execute at @s positioned ^ ^1.25 ^1 run execute as @e[distance=..1.5,type=!#kits:non_entity,tag=!Invincible,tag=!Guts,tag=!InLabyrinth] at @s run function kits:char/guts/cannon/damage2
 
 particle explosion_emitter ^ ^1.25 ^2 0 0 0 0 1 force
 particle cloud ^ ^1.250 ^1.5 0 0 0 0.1 10 force
@@ -54,9 +54,7 @@ playsound minecraft:block.fire.ambient neutral @a[distance=..20] ~ ~ ~ 2 1 1
 playsound minecraft:block.fire.extinguish neutral @a[distance=..20] ~ ~ ~ 2 2 1
 playsound minecraft:entity.generic.explode neutral @a[distance=..20] ~ ~ ~ 2 1 1
 execute at @s[nbt={OnGround:0b}] run particle sweep_attack ~ ~1.25 ~ 0.5 0.5 0.5 0 10 force
-#scoreboard players set @s[nbt={OnGround:0b}] kits.raycastTick3 0
-#execute at @s[nbt={OnGround:0b}] positioned ~ ~1.5 ~ run function kits:char/guts/gutspassive4
 scoreboard players set @s kits.raycastTick3 0
-execute at @s positioned ~ ~1.5 ~ run function kits:char/guts/gutspassive4
+execute at @s positioned ~ ~1.5 ~ run function kits:char/guts/cannon/raycast
 tag @s add GutsPivotSwing
-scoreboard players set @s kits.ability2CD 0
+scoreboard players set @s kits.ability3CD 0

@@ -9,4 +9,4 @@ execute if score @s kits.timer3 matches 15.. run function kits:char/isaac/plasma
 particle flash ~ ~0.5 ~ 0 0 0 0 1 force
 
 # Sound
-playsound minecraft:block.note_block.pling neutral @a[distance=..20] ~ ~ ~ 0.25 2 1
+playsound minecraft:block.note_block.pling neutral @a[distance=..40] ~ ~ ~ 0.5 2 0.5

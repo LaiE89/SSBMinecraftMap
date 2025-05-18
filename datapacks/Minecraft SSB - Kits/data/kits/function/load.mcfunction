@@ -77,6 +77,7 @@ scoreboard objectives add kits.timer6 dummy
 scoreboard objectives add kits.timer7 dummy
 scoreboard objectives add kits.timer8 dummy
 scoreboard objectives add kits.timer9 dummy
+scoreboard objectives add kits.timer10 dummy
 
 scoreboard objectives add kits.raycastTick dummy
 scoreboard objectives add kits.raycastTick2 dummy

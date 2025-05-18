@@ -7,4 +7,4 @@ execute if entity @s[tag=!IsaacKinesisGrabbing] positioned ~ ~0.5 ~ as @e[distan
 execute if entity @s[tag=IsaacKinesisGrabbing] run tp @e[limit=1,sort=nearest,tag=IsaacObjectKinesisGrabbed,type=armor_stand] ^ ^ ^-0.5
 
 # Ray travels 0.5 blocks repeatedly until it meets conditions
-execute if score @s kits.raycastTick2 matches ..40 if block ~ ~ ~ air positioned ^ ^ ^0.5 run function kits:char/isaac/modules/kinesis/pull
+execute if score @s kits.raycastTick2 matches ..45 if block ~ ~ ~ #kits:passable positioned ^ ^ ^0.5 run function kits:char/isaac/modules/kinesis/pull

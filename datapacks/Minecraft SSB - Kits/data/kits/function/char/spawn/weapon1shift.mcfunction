@@ -1,4 +1,3 @@
-summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Duration:60,Tags:["SpawnChains"]}
-tp @e[type=area_effect_cloud,tag=SpawnChains] @s
-playsound minecraft:item.armor.equip_chain neutral @a[distance=..20] ~ ~ ~ 3 0 1
+tag @s add SpawnShootingAK
+effect give @s minecraft:mining_fatigue 1 9 true
 scoreboard players set @s kits.ability1CD 0
