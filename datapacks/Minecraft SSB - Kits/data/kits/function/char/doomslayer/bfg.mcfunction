@@ -3,6 +3,6 @@ execute as @e[distance=..10,type=!#kits:non_entity,tag=!Invincible,tag=!Doomslay
 scoreboard players add @s kits.timer 1
 execute as @s[scores={kits.timer=50..}] at @s run function kits:char/doomslayer/bfgexplosion
 
-tp @s[tag=!castedbfg] ~ ~ ~ facing entity @p[tag=Doomslayer]
-tp @s[tag=castedbfg] ^ ^ ^-0.5
-tag @s[tag=!castedbfg] add castedbfg
+tp @s[tag=!castedDoomslayerBfg] ~ ~ ~ facing entity @p[tag=Doomslayer]
+tp @s[tag=castedDoomslayerBfg] ^ ^ ^-0.5
+tag @s[tag=!castedDoomslayerBfg] add castedDoomslayerBfg

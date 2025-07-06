@@ -20,7 +20,7 @@ execute as @s[gamemode=!spectator,scores={kits.criterion.shift=1..}] as @s[score
 execute as @s[scores={kits.timer6=1}] as @s[scores={kits.timer7=1}] as @s[scores={kits.timer8=1}] at @s run tag @s add BradBusterPunches
 
 scoreboard players add @s[tag=BradBusterPunches] kits.timer 1
-effect give @s[tag=BradBusterPunches] minecraft:strength 1 1 true
+effect give @s[tag=BradBusterPunches] minecraft:strength 1 0 true
 execute at @s[tag=BradBusterPunches,scores={kits.criterion.attack=1..}] as @e[distance=..6,limit=1,sort=nearest,type=!#kits:non_entity,tag=!Invincible,tag=!Brad,tag=!InLabyrinth,nbt={HurtTime:10s}] at @s run function kits:char/brad/busterpunches
 tag @s[tag=BradBusterPunches,scores={kits.timer=60..}] remove BradBusterPunches
 scoreboard players reset @s[scores={kits.timer=60..}] kits.timer
@@ -58,7 +58,7 @@ execute at @s[tag=BradCry] run particle falling_water ^-0.2 ^1.6 ^0.4 0 0 0 0 1 
 execute at @s[tag=BradCry] run particle falling_water ^0.2 ^1.6 ^0.4 0 0 0 0 1 force
 effect clear @s[tag=BradCry,scores={kits.timer3=1}]
 effect give @s[tag=BradCry,scores={kits.timer3=1}] minecraft:fire_resistance 3 9 true
-effect give @s[tag=BradCry,scores={kits.timer3=1}] minecraft:speed 3 1 true
+effect give @s[tag=BradCry,scores={kits.timer3=1}] minecraft:speed 3 0 true
 effect give @s[tag=BradCry,scores={kits.timer3=1}] minecraft:regeneration 3 1 true
 effect give @s[tag=BradCry,scores={kits.timer3=1}] minecraft:night_vision 3 0 true
 effect give @s[tag=BradCry,scores={kits.timer3=1}] minecraft:saturation 3 9 true
@@ -83,7 +83,7 @@ scoreboard players add @s[tag=BradHorsestance] kits.timer4 1
 execute at @s[tag=BradHorsestance] run particle cloud ~ ~ ~ 0 1 0 0.2 10 force
 effect give @s[tag=BradHorsestance,scores={kits.timer4=1}] minecraft:resistance 3 1 true
 effect give @s[tag=BradHorsestance,scores={kits.timer4=1}] minecraft:slowness 3 2 true
-effect give @s[tag=BradHorsestance,scores={kits.timer4=1}] minecraft:absorption 3 1 true
+effect give @s[tag=BradHorsestance,scores={kits.timer4=1}] minecraft:absorption 3 2 true
 effect clear @s[tag=BradHorsestance,scores={kits.timer4=60..}]
 tag @s[tag=BradHorsestance,scores={kits.timer4=60..}] remove BradHorsestance
 scoreboard players reset @s[scores={kits.timer4=60..}] kits.timer4
@@ -102,7 +102,7 @@ execute as @s[scores={kits.timer8=3..}] at @s run playsound minecraft:entity.moo
 scoreboard players add @s[tag=BradJoy] kits.timer5 1
 execute at @s[tag=BradJoy] run particle dust{color:[0.000,1.000,1.000],scale:1} ~ ~0.5 ~ 0.4 1 0.4 0 50 force
 effect give @s[tag=BradJoy,scores={kits.timer5=1}] minecraft:instant_health
-effect give @s[tag=BradJoy,scores={kits.timer5=1}] minecraft:speed 3 6 true
+effect give @s[tag=BradJoy,scores={kits.timer5=1}] minecraft:speed 3 3 true
 effect give @s[tag=BradJoy,scores={kits.timer5=1}] minecraft:nausea 8 0 true
 effect give @s[tag=BradJoy,scores={kits.timer5=1}] minecraft:strength 3 0 true
 

@@ -6,7 +6,7 @@ execute if data entity @s {OnGround:0b} as @e[type=!#kits:non_entity,tag=GojoUnl
 execute if data entity @s {OnGround:0b} as @e[type=!#kits:non_entity,tag=GojoUnlimitedVoidTrapped] at @s run tp @s @s
 
 # expand domain
-summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Age:20,Tags:["GojoUnlimitedVoid"],Duration:100}
+summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Tags:["GojoUnlimitedVoid"],Duration:100}
 execute rotated ~ 0 run tp @e[type=area_effect_cloud,limit=1,sort=nearest,tag=GojoUnlimitedVoid] ^ ^1 ^7 0 0
 function kits:char/gojo/vfx/unlimited_void/play
 

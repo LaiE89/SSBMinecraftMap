@@ -8,8 +8,8 @@ item replace entity @s armor.chest with leather_chestplate[custom_name={"color":
 item replace entity @s armor.legs with leather_leggings[custom_name={"color":"dark_blue","italic":false,"text":"Ryze\'s Pants"},unbreakable={},custom_data={KitItem:1b},attribute_modifiers=[{id:"tough.legs.ryze",type:"armor_toughness",amount:6,operation:"add_value",slot:"legs"}],dyed_color=4673384] 1
 item replace entity @s armor.feet with leather_boots[custom_name={"color":"dark_blue","italic":false,"text":"Ryze\'s Boots"},unbreakable={},custom_data={KitItem:1b},attribute_modifiers=[{id:"kb.feet.ryze",type:"knockback_resistance",amount:0.2,operation:"add_value",slot:"feet"}],dyed_color=7882533] 1
 
-scoreboard players set @s kits.ability1CD 98
-scoreboard players set @s kits.ability2CD 98
+scoreboard players set @s kits.ability1CD 48
+scoreboard players set @s kits.ability2CD 48
 scoreboard players set @s kits.ability3CD 18
 scoreboard players set @s kits.ability4CD 298
 scoreboard players set @s kits.timer2 30

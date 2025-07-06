@@ -2,6 +2,7 @@
 # spawn
 clear @s
 tp @s 0 1 0 facing 0 1.05 -1
+gamemode adventure @s
 
 # local scores
 scoreboard players reset @s system.kit.id

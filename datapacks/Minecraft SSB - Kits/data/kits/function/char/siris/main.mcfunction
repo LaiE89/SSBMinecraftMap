@@ -8,7 +8,7 @@ scoreboard players add @s[scores={kits.ability4CD=..99}] kits.ability4CD 1
 
 # Using Conditions
 execute at @s[predicate=kits:items/siris/infinity_blade,gamemode=!spectator] run function kits:char/siris/blade/use
-execute at @s[predicate=kits:items/siris/vile_shield,gamemode=!spectator] run function kits:char/siris/shield/use
+execute at @s[gamemode=!spectator] run function kits:char/siris/shield/use
 
 # Assigns Tasks to Entities
 execute if entity @s[tag=SirisDarkfire] at @s run function kits:char/siris/vfx/particles/darkfire

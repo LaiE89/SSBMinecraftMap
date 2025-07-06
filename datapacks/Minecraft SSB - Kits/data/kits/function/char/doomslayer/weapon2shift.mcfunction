@@ -1,5 +1,5 @@
-summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Duration:40,Tags:["meathook","projectile"]}
-tp @e[type=area_effect_cloud,tag=meathook] @s
+summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Duration:40,Tags:["DoomslayerMeathook","projectile"]}
+tp @e[type=area_effect_cloud,tag=DoomslayerMeathook] @s
 
 playsound minecraft:item.trident.riptide_3 neutral @a[distance=..20] ~ ~ ~ 2 2 1
 scoreboard players add @s kits.timer 1

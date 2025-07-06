@@ -2,6 +2,8 @@ schedule clear kits:char/sekiro/prosthetic/mistravendelaychasingslice
 schedule clear kits:char/sekiro/chasingslice/reset
 schedule clear kits:char/sekiro/prosthetic/mistravenreset
 
+execute if entity @s[tag=SekiroPostureBroken] run function kits:char/sekiro/posture/posturerecoversekiro
+
 particle minecraft:squid_ink ~ ~1 ~ 0.3 0.3 0.3 0.1 20
 effect give @s minecraft:invisibility 1 0 true
 attribute @s minecraft:gravity modifier add gravity.mistraven.sekiro -1 add_multiplied_total

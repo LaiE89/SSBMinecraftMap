@@ -7,7 +7,7 @@ execute as @s[scores={kits.raycastTick3=2222}] positioned ^ ^ ^ run execute as @
 execute as @s[scores={kits.raycastTick3=2222}] as @p[tag=Ryze] at @s run summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Duration:20,Tags:["RyzeFluxBall"]}
 execute at @s[scores={kits.raycastTick3=2222}] run playsound minecraft:entity.illusioner.prepare_mirror neutral @a[distance=..8]
 execute as @s[scores={kits.raycastTick3=2222}] run scoreboard players add @s kits.timer3 1
-execute as @s[scores={kits.raycastTick3=2222}] run scoreboard players set @s kits.ability1CD 99
+execute as @s[scores={kits.raycastTick3=2222}] run scoreboard players set @s kits.ability1CD 49
 execute as @s[scores={kits.raycastTick3=2222}] run scoreboard players set @s[scores={kits.timer2=5..}] kits.ability3CD 0
 execute as @s[scores={kits.raycastTick3=2222}] run scoreboard players remove @s[scores={kits.timer2=5..}] kits.timer2 5
 

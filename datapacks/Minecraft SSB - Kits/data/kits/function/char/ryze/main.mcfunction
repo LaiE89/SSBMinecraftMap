@@ -1,3 +1,6 @@
+# Ability CDs
+title @s actionbar ["",{"text":"Overload:","color":"light_purple"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"kits.ability1CD"},"color":"white"},{"text":"/50","color":"white"},{"text":" || ","color":"white"},{"text":"Rune Prison:","color":"dark_blue"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"kits.ability2CD"},"color":"white"},{"text":"/50","color":"white"},{"text":" || ","color":"white"},{"text":"Spell Flux:","color":"dark_aqua"},{"text":" ","color":"aqua"},{"score":{"name":"@s","objective":"kits.ability3CD"},"color":"white"},{"text":"/20","color":"white"},{"text":" || ","color":"white"},{"text":"Realm Warp:","color":"dark_purple"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"kits.ability4CD"},"color":"white"},{"text":"/300","color":"white"},{"text":" || ","color":"white"},{"text":"Mana: ","color":"aqua"},{"score":{"name":"@s","objective":"kits.timer2"},"color":"aqua"},{"text":"/30","color":"aqua"}]
+
 # Mana bar
 scoreboard players add @s[scores={kits.timer2=..29}] kits.timer 1
 execute as @s[scores={kits.timer=15..}] as @s[scores={kits.timer2=..29}] at @s run scoreboard players add @s kits.timer2 1
@@ -5,17 +8,14 @@ execute as @s[scores={kits.timer=..14}] as @s[scores={kits.timer2=..29}] at @s[s
 scoreboard players reset @s[scores={kits.timer=15..}] kits.timer
 scoreboard players set @s[scores={kits.timer2=31..}] kits.timer2 30
 
-# Ability CDs
-title @s actionbar ["",{"text":"Overload:","color":"light_purple"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"kits.ability1CD"},"color":"white"},{"text":"/100","color":"white"},{"text":" || ","color":"white"},{"text":"Rune Prison:","color":"dark_blue"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"kits.ability2CD"},"color":"white"},{"text":"/100","color":"white"},{"text":" || ","color":"white"},{"text":"Spell Flux:","color":"dark_aqua"},{"text":" ","color":"aqua"},{"score":{"name":"@s","objective":"kits.ability3CD"},"color":"white"},{"text":"/20","color":"white"},{"text":" || ","color":"white"},{"text":"Realm Warp:","color":"dark_purple"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"kits.ability4CD"},"color":"white"},{"text":"/300","color":"white"},{"text":" || ","color":"white"},{"text":"Mana: ","color":"aqua"},{"score":{"name":"@s","objective":"kits.timer2"},"color":"aqua"},{"text":"/30","color":"aqua"}]
-
 # Rune Prison
-scoreboard players add @s[scores={kits.ability2CD=..99}] kits.ability2CD 1
-execute as @s[gamemode=!spectator,scores={kits.ability2CD=100..}] as @s[scores={kits.timer2=10..}] as @s[scores={kits.criterion.shift=1..},predicate=kits:items/ryze/scroll] at @s run function kits:char/ryze/weapon2shift
+scoreboard players add @s[scores={kits.ability2CD=..49}] kits.ability2CD 1
+execute as @s[gamemode=!spectator,scores={kits.ability2CD=50..}] as @s[scores={kits.timer2=10..}] as @s[scores={kits.criterion.shift=1..},predicate=kits:items/ryze/scroll] at @s run function kits:char/ryze/weapon2shift
 execute as @e[type=area_effect_cloud,tag=RyzePrison] at @s run function kits:char/ryze/prison
 
 # Overload
-scoreboard players add @s[scores={kits.ability1CD=..99}] kits.ability1CD 1
-execute as @s[scores={kits.ability1CD=100..},gamemode=!spectator,predicate=kits:items/ryze/book] as @s[scores={kits.criterion.COS=1..}] at @s[scores={kits.timer2=2..}] run function kits:char/ryze/weapon1cos
+scoreboard players add @s[scores={kits.ability1CD=..49}] kits.ability1CD 1
+execute as @s[scores={kits.ability1CD=50..},gamemode=!spectator,predicate=kits:items/ryze/book] as @s[scores={kits.criterion.COS=1..}] at @s[scores={kits.timer2=2..}] run function kits:char/ryze/weapon1cos
 execute as @e[type=area_effect_cloud,tag=overload] at @s run function kits:char/ryze/overload
 
 # Flux

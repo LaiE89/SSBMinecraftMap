@@ -1,0 +1,7 @@
+scoreboard players add @s kits.raycastTick2 1
+execute unless block ~ ~ ~ #kits:passable run scoreboard players set @s kits.raycastTick2 2222
+
+execute as @s[scores={kits.raycastTick2=2222..}] positioned ~ ~0.5 ~ run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Tags:["ZedShadow"],DisabledSlots:2047807,equipment:{feet:{id:"minecraft:leather_boots",Count:1b,components:{dyed_color:0}},legs:{id:"minecraft:leather_leggings",Count:1b,components:{dyed_color:0}},chest:{id:"minecraft:leather_chestplate",Count:1b,components:{dyed_color:0}},head:{id:"minecraft:player_head",Count:1b,components:{profile:{id:[I;844911766,-109258656,-790211895,-1250175385],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTU1NGEzMTQ2MWZhOTBiNmE3Y2ZjZmRmN2IxNzE2MTg5Y2YzZTdiMTczNDQ0ODg1NmU5YmFhZTc0ZTQ1In19fQ=="}]}}}}}
+execute as @s[scores={kits.raycastTick2=2222..}] positioned ~ ~0.5 ~ run particle smoke ^ ^1 ^ 0.5 0.5 0.5 0 100 force
+execute as @s[scores={kits.raycastTick2=2222..}] positioned ~ ~0.5 ~ run playsound minecraft:entity.generic.extinguish_fire neutral @a[distance=..20] ~ ~ ~ 1 0.5 1
+execute as @s[scores={kits.raycastTick2=..1111}] positioned ~ ~-0.5 ~ run function kits:char/zed/livingshadow/down

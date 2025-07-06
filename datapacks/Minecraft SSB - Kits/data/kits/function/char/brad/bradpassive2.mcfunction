@@ -7,5 +7,5 @@ execute unless block ^ ^0.71 ^ #kits:passable run scoreboard players set @s kits
 
 execute as @s[scores={kits.raycastTick=2222}] positioned ^ ^ ^-0.5 run summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Duration:40,Tags:["Bradheadbuttplace"]}
 execute as @s[scores={kits.raycastTick=3333}] positioned ^ ^ ^ run summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Duration:40,Tags:["Bradheadbuttplace"]}
-execute if entity @s[scores={kits.raycastTick=18}] positioned ^ ^ ^ run summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Duration:40,Tags:["Bradheadbuttplace"]}
-execute as @s[scores={kits.raycastTick=..17}] positioned ^ ^ ^0.5 run function kits:char/brad/bradpassive2
+execute if entity @s[scores={kits.raycastTick=30}] positioned ^ ^ ^ run summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Duration:40,Tags:["Bradheadbuttplace"]}
+execute as @s[scores={kits.raycastTick=..29}] positioned ^ ^ ^0.5 run function kits:char/brad/bradpassive2

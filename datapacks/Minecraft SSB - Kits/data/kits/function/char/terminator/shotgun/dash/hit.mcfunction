@@ -1,6 +1,7 @@
 ## Execute at Enemies Hit by Dash
 # Status effect
 damage @s 4 minecraft:player_attack by @p[tag=Terminator]
+effect give @s minecraft:slowness 1 3 true
 
 # Particles
 particle flash ~ ~1 ~ 0 0 0 0 1 force

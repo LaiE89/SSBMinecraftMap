@@ -4,7 +4,7 @@ title @s[scores={kits.timer3=1..}] actionbar ["",{"text":"Smash: ","color":"dark
 
 # Smash
 scoreboard players add @s[scores={kits.ability1CD=..99}] kits.ability1CD 1
-execute as @s[scores={kits.criterion.COS=1..}] as @s[scores={kits.ability1CD=100..},predicate=kits:items/guts/dragonslayer] unless entity @e[type=area_effect_cloud,tag=GutsDragonslayerCleave] at @s run function kits:char/guts/weapon1cos
+execute as @s[scores={kits.criterion.COS=1..}] as @s[scores={kits.ability1CD=100..},predicate=kits:items/guts/dragonslayer] at @s run function kits:char/guts/weapon1cos
 execute as @e[type=area_effect_cloud,tag=GutsDragonslayerSmash] at @s run function kits:char/guts/smash/main
 
 # Cleave

@@ -1,3 +1,2 @@
-execute if entity @p[tag=Doomslayer,distance=..4] run function kits:char/doomslayer/shotguncloserange
-execute if entity @p[tag=Doomslayer,distance=4.1..10] run function kits:char/doomslayer/shotgunfarrange
-execute if entity @p[tag=Doomslayer,distance=10.1..] run damage @s 0.25 bypass:player_attack_no_kb by @p[tag=Doomslayer]
+execute if entity @e[type=area_effect_cloud,tag=DoomslayerSuperShotgunOrigin,distance=..6] run function kits:char/doomslayer/shotguncloserange
+execute if entity @e[type=area_effect_cloud,tag=DoomslayerSuperShotgunOrigin,distance=6.1..] run function kits:char/doomslayer/shotgunfarrange

@@ -4,5 +4,5 @@ function kits:char/arcueid/chain_vfx/play {"LowestSliceLength":"30","Inaccuracy"
 execute if entity @p[tag=Arcueid,scores={kits.timer2=5}] run tp @e[tag=ArcueidChained] ~ ~-1 ~
 execute if entity @p[tag=Arcueid,scores={kits.timer2=6..}] run tp @e[tag=ArcueidChained] ~ ~-1 ~
 
-execute if entity @p[tag=Arcueid,scores={kits.timer2=50..}] run tag @e[tag=ArcueidChained] remove ArcueidChained
-execute if entity @p[tag=Arcueid,scores={kits.timer2=50..}] run kill @s
+execute if entity @p[tag=Arcueid,scores={kits.timer2=40..}] run tag @e[tag=ArcueidChained] remove ArcueidChained
+execute if entity @p[tag=Arcueid,scores={kits.timer2=40..}] run kill @s

@@ -1,7 +1,7 @@
 ## Red upon collision
 # damage
 execute if score @s kits.timer matches ..20 rotated as @p[tag=Gojo] run tp @s ~ ~ ~ ~ ~
-execute at @s run summon area_effect_cloud ^ ^ ^-5 {Particle:{type:"block",block_state:"minecraft:air"},Age:20,Tags:["GojoRedKbMarker"],Duration:0}
+execute at @s run summon area_effect_cloud ^ ^ ^-5 {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Tags:["GojoRedKbMarker"],Duration:0}
 execute as @e[type=!#kits:non_entity,distance=..5,tag=!Gojo,tag=!InLabyrinth,tag=!Invincible] at @s run function kits:char/gojo/inherited/red/hit
 
 # fx

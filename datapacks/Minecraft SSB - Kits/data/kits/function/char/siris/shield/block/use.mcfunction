@@ -1,6 +1,6 @@
 ## When Block is Being Used
 # When right-click is held or released
-execute if score @s kits.criterion.COSon matches 1.. run function kits:char/siris/shield/block/hold
+execute if score @s[predicate=kits:items/siris/vile_shield] kits.criterion.COSon matches 1.. run function kits:char/siris/shield/block/hold
 execute if score @s kits.criterion.COSoff matches 1.. run function kits:char/siris/shield/block/release
 
 # Makes right-click 20 hertz

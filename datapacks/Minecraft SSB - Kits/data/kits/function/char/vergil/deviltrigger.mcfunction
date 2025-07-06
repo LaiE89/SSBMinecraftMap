@@ -1,5 +1,5 @@
 scoreboard players add @s kits.timer2 1
-effect give @s minecraft:speed 1 1 true
+effect give @s minecraft:speed 1 0 true
 effect clear @s[scores={kits.timer2=200..}] minecraft:speed
 execute at @s[scores={kits.timer2=200..}] run particle dust{color:[0.000,1.000,1.000],scale:1} ~ ~1 ~ 0.5 0.5 0.5 1 200 force
 clear @s[scores={kits.timer2=200..}] minecraft:player_head[custom_name="Devil Trigger"]

@@ -1,4 +1,4 @@
-tag @s add ArcueidRed
+tag @s add ArcueidMysticEyes
 execute as @e[distance=..7,type=!#kits:non_entity,tag=!Invincible,tag=!Arcueid,tag=!InLabyrinth] at @s run function kits:char/arcueid/fear
 particle squid_ink ~ ~1 ~ 0 0 0 0.2 100 force
 clear @s minecraft:player_head[custom_name="Arcueid"]

@@ -27,6 +27,6 @@ execute store result score %vfxSlashEncircle.fx kits.x run data get entity @s Ro
 execute store result score %vfxSlashEncircle.fy kits.y run data get entity @s Rotation[1] 1
 
 # summon
-summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Age:20,Tags:["vfx","vfxSlashEncircle"],Duration:0}
+summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Tags:["vfx","vfxSlashEncircle"],Duration:0}
 tp @e[type=area_effect_cloud,limit=1,sort=nearest,tag=vfxSlashEncircle] ~ ~ ~ ~ ~
 execute as @e[type=area_effect_cloud,limit=1,sort=nearest,tag=vfxSlashEncircle] at @s run function kits:char/gojo/vfx/slash_encircle/run

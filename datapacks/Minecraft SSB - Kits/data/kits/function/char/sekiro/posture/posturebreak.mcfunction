@@ -1,5 +1,5 @@
 effect give @s minecraft:weakness 2 9 true
-effect give @s minecraft:slowness 2 2 true
+effect give @s minecraft:slowness 2 3 true
 effect give @s minecraft:mining_fatigue 2 9 true
 scoreboard players set @s kits.specific.sekiroPosture 0
 

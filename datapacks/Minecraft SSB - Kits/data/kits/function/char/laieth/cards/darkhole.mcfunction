@@ -1,5 +1,6 @@
-execute as @e[distance=..10,type=!#kits:non_entity,tag=!Invincible,tag=!Laieth,tag=!InLabyrinth] at @s run damage @s 6 bypass:player_attack by @p[tag=Laieth]
-execute as @e[distance=..10,type=!#kits:non_entity,tag=!Invincible,tag=!Laieth,tag=!InLabyrinth] at @s run effect give @s minecraft:wither 2 9 true
+execute as @e[distance=..8,type=!#kits:non_entity,tag=!Invincible,tag=!Laieth,tag=!InLabyrinth] at @s run damage @s 4 bypass:player_attack by @p[tag=Laieth]
+execute as @e[distance=..8,type=!#kits:non_entity,tag=!Invincible,tag=!Laieth,tag=!InLabyrinth] at @s run effect give @s minecraft:wither 2 9 true
+execute as @e[distance=..8,type=!#kits:non_entity,tag=!Invincible,tag=!Laieth,tag=!InLabyrinth] at @s run effect give @s minecraft:slowness 2 2 true
 playsound minecraft:block.respawn_anchor.set_spawn neutral @a[distance=..30] ~ ~ ~ 5 1.5 1
 particle flash ~ ~ ~ 0 0 0 0 10 force
 

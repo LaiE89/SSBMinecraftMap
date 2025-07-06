@@ -14,6 +14,6 @@ execute if entity @s[scores={kits.timer=150..}] run tag @e[tag=LaiethGettingRitu
 execute if entity @s[scores={kits.timer=150..}] run summon minecraft:lightning_bolt ~ ~ ~
 execute if entity @s[scores={kits.timer=150..}] run kill @e[type=area_effect_cloud,tag=LaiethGettingRitualedDamage]
 
-execute if entity @s[scores={kits.timer=..99}] run effect give @e[distance=..6,type=!#kits:non_entity,tag=!Invincible,tag=!Laieth,tag=!InLabyrinth] minecraft:slowness 1 2 true
+execute if entity @s[scores={kits.timer=..99}] run effect give @e[distance=..6,type=!#kits:non_entity,tag=!Invincible,tag=!Laieth,tag=!InLabyrinth] minecraft:slowness 1 3 true
 execute if entity @s[scores={kits.timer=100..}] unless entity @e[tag=LaiethGettingRitualed] as @e[distance=..6,sort=nearest,limit=1,type=!#kits:non_entity,tag=!Invincible,tag=!Laieth,tag=!InLabyrinth] at @s run function kits:char/laieth/ritualdamage
 execute if entity @s[scores={kits.timer=100..}] if entity @e[tag=LaiethGettingRitualed] unless entity @e[type=area_effect_cloud,tag=LaiethGettingRitualedDamage] run summon area_effect_cloud ~ ~ ~ {Tags:["LaiethGettingRitualedDamage"],Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Duration:150}

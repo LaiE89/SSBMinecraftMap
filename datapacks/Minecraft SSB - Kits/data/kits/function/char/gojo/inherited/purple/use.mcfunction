@@ -1,6 +1,6 @@
 ## When purple is used
 # cast purple
-summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Age:20,Tags:["GojoPurple"],Duration:50}
+summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Tags:["GojoPurple"],Duration:50}
 execute rotated as @p[tag=Gojo] run tp @e[type=area_effect_cloud,limit=1,sort=nearest,tag=GojoPurple] ~ ~ ~ ~ ~
 
 # fx

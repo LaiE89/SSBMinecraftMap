@@ -18,6 +18,6 @@ execute store result storage kits:vfx radialForkedLightning.branchLengthMax int 
 $data modify storage kits:vfx radialForkedLightning.particle set value "$(particle)"
 
 # summon
-summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Age:20,Tags:["vfx","vfxRadialForkedLightning"],Duration:0}
+summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Tags:["vfx","vfxRadialForkedLightning"],Duration:0}
 execute as @e[type=area_effect_cloud,limit=1,sort=nearest,tag=vfxRadialForkedLightning] at @s run function kits:char/gojo/vfx/radial_forked_lightning/start with storage kits:vfx radialForkedLightning
 function kits:char/gojo/vfx/radial_forked_lightning/end

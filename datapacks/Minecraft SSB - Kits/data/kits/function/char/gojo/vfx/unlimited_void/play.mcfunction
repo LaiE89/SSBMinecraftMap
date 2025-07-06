@@ -14,7 +14,7 @@ execute rotated ~ 0 positioned ^ ^1 ^-3 run particle block_marker{block_state:{N
 execute rotated ~ 0 positioned ^ ^1 ^-3 run function kits:char/gojo/vfx/domain/play with storage kits:vfx unlimitedVoid
 
 # play
-summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Age:20,Tags:["vfx","vfxUnlimitedVoid"],Duration:80}
+summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,WaitTime:0,Tags:["vfx","vfxUnlimitedVoid"],Duration:80}
 execute rotated ~ 0 run tp @e[type=area_effect_cloud,limit=1,sort=nearest,tag=vfxUnlimitedVoid] ^ ^1 ^7 0 0
 schedule function kits:char/gojo/vfx/unlimited_void/schedule 40t append
 schedule function kits:char/gojo/vfx/unlimited_void/schedule 55t append

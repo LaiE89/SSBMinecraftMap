@@ -5,11 +5,12 @@ clear @s player_head[custom_name="Yuji Itadori"]
 tag @s[tag=ItadoriBlackflash] remove ItadoriBlackflash
 effect clear @s resistance
 effect clear @s speed
+effect give @s minecraft:regeneration 3 1 true
+attribute @s minecraft:attack_damage modifier add damage.dismantle.itadori -0.5 add_multiplied_total
 
 # FX
 particle squid_ink ~ ~1 ~ 0 0 0 0.5 10 force
 playsound entity.generic.extinguish_fire neutral @a[distance=..20] ~ ~ ~ 0.5 0.75 0.5
-effect give @s minecraft:regeneration 3 1 true
 
 scoreboard players set @s kits.timer 0
 scoreboard players set @s kits.ability3CD 0

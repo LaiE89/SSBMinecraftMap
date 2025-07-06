@@ -86,7 +86,7 @@ tag @s remove AbianRepeatedMove
 tag @s remove AlucardWraith
 tag @s remove AlucardReloading
 tag @s remove ArcueidChained
-tag @s remove ArcueidRed
+tag @s remove ArcueidMysticEyes
 tag @s remove BradBusterPunches
 tag @s remove BradCry
 tag @s remove BradHorsestance
@@ -106,6 +106,7 @@ tag @s remove CynthiaJustSwitched
 tag @s remove CynthiaSwitched
 tag @s remove DariusDecimated
 tag @s remove DariusNoxianMight
+tag @s remove DariusNoxianGuillotine
 tag @s remove DariusRage
 tag @s remove DenjiChained
 tag @s remove DenjiChainedGrab

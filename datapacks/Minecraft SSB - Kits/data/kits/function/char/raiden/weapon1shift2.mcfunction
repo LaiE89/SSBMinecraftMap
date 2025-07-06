@@ -5,7 +5,7 @@ summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:ai
 tp @e[type=area_effect_cloud,tag=raidencrescent] @s
 execute as @e[type=area_effect_cloud,tag=raidencrescent2] at @s run tp @s ~ ~ ~ facing ^ ^ ^-1
 execute as @e[type=area_effect_cloud,tag=raidencrescent] at @s run tp @s ~ ~ ~ ~ 90
-execute as @e[type=area_effect_cloud,tag=raidencrescent] at @s run function kits:char/raiden/crescentparticles
+execute as @e[type=area_effect_cloud,tag=raidencrescent] at @s positioned ~ ~1.75 ~ run function kits:char/raiden/crescentparticles
 tag @e[distance=..5,type=!#kits:non_entity,tag=!Invincible,tag=!Raiden,tag=!InLabyrinth] add RaidenCrescentSliced 
 execute as @e[tag=RaidenCrescentSliced] run function kits:char/raiden/damage
 tag @s add RaidenAirCrescent

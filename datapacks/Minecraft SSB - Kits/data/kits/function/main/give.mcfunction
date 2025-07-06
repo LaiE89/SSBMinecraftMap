@@ -1,4 +1,5 @@
 ## Gives a Kit Based on the Assigned Tag
+# Unused IDs: 18, 28, 37
 # kits
 execute if score @s kits.id matches 1 run function kits:char/2b/kit
 execute if score @s kits.id matches 2 run function kits:char/abian/kit
@@ -17,7 +18,6 @@ execute if score @s kits.id matches 14 run function kits:char/edward/kit
 execute if score @s kits.id matches 15 run function kits:char/ekko/kit
 execute if score @s kits.id matches 16 run function kits:char/gojo/kit
 execute if score @s kits.id matches 17 run function kits:char/guts/kit
-execute if score @s kits.id matches 18 run function kits:char/irelia/kit
 execute if score @s kits.id matches 19 run function kits:char/isaac/kit
 execute if score @s kits.id matches 20 run function kits:char/itadori/kit
 execute if score @s kits.id matches 21 run function kits:char/jacket/kit
@@ -27,7 +27,6 @@ execute if score @s kits.id matches 24 run function kits:char/killua/kit
 execute if score @s kits.id matches 25 run function kits:char/kirito/kit
 execute if score @s kits.id matches 26 run function kits:char/kiryu/kit
 execute if score @s kits.id matches 27 run function kits:char/kratos/kit
-execute if score @s kits.id matches 28 run function kits:char/lucina/kit
 execute if score @s kits.id matches 29 run function kits:char/luffy/kit
 execute if score @s kits.id matches 30 run function kits:char/midoriya/kit
 execute if score @s kits.id matches 31 run function kits:char/mob/kit
@@ -36,7 +35,6 @@ execute if score @s kits.id matches 33 run function kits:char/noctis/kit
 execute if score @s kits.id matches 34 run function kits:char/raiden/kit
 execute if score @s kits.id matches 35 run function kits:char/ryze/kit
 execute if score @s kits.id matches 36 run function kits:char/saber/kit
-execute if score @s kits.id matches 37 run function kits:char/sans/kit
 execute if score @s kits.id matches 38 run function kits:char/siris/kit
 execute if score @s kits.id matches 39 run function kits:char/laieth/kit
 execute if score @s kits.id matches 40 run function kits:char/spawn/kit

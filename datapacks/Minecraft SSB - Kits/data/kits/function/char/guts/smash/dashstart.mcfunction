@@ -1,4 +1,4 @@
-execute as @e[distance=..2,type=!#kits:non_entity,tag=!Invincible,tag=!Guts,tag=!InLabyrinth] at @s run effect give @s[type=!minecraft:player] minecraft:weakness 1 1 true
+execute as @e[distance=..2.5,type=!#kits:non_entity,tag=!Invincible,tag=!Guts,tag=!InLabyrinth] at @s run effect give @s[type=!minecraft:player] minecraft:weakness 1 1 true
 attribute @s minecraft:gravity modifier add gravity.smash.guts -1 add_multiplied_total
 tp @s @s
 execute at @s run particle block{block_state:"minecraft:sand"} ~ ~0.2 ~ 2 0 2 0 50 force

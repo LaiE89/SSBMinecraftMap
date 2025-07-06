@@ -32,4 +32,4 @@ scoreboard players reset @s[scores={kits.criterion.kill=1..}] kits.timer
 
 scoreboard players add @s[scores={kits.ability4CD=..499}] kits.ability4CD 1
 execute as @s[scores={kits.ability4CD=500..},predicate=kits:items/darius/skills] as @s[scores={kits.criterion.shift=1..}] at @s run function kits:char/darius/weapon2shift
-scoreboard players set @s[scores={kits.criterion.kill=1..}] kits.ability4CD 495
+execute if entity @s[tag=DariusNoxianGuillotine,scores={kits.criterion.kill=1..}] run function kits:char/darius/guillotinereset
