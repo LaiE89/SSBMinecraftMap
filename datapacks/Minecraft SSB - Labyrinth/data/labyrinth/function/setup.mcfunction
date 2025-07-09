@@ -1,38 +1,17 @@
-## System setup
-# general
-scoreboard objectives add system.global dummy
-scoreboard objectives add system.local dummy
+## Labyrinth setup
+# teams
+team add LabyrinthMobs
 
-# ssb
-scoreboard objectives add system.ssb.deathTimer dummy
-scoreboard objectives add system.ssb.lives dummy ["",{"text":"Lives","color":"green"}]
+# scoreboards
+scoreboard objectives add labyrinth.constant dummy
+scoreboard objectives add labyrinth.math dummy
 
-# stats
-scoreboard objectives add system.stats.win dummy
-scoreboard objectives add system.stats.loss dummy
+scoreboard objectives add labyrinth.cd dummy
+scoreboard objectives add labyrinth.cdMax dummy
 
-# ui
-scoreboard objectives add system.kit.id dummy
-scoreboard objectives add system.ui.id dummy
-scoreboard objectives add system.ui dummy
+scoreboard objectives add labyrinth.entity dummy
+scoreboard objectives add labyrinth.entityMax dummy
 
-# cosmetics
-scoreboard objectives add system.cosmetics.killEffectId dummy
-scoreboard objectives add system.cosmetics.killMessageId dummy
+scoreboard objectives add labyrinth.spawner.id dummy
 
-# tied to a built-in action
-scoreboard objectives add system.criterion.death deathCount
-scoreboard objectives add system.criterion.drop minecraft.custom:minecraft.drop
-scoreboard objectives add system.criterion.leave custom:minecraft.leave_game
-
-# Gamerules
-gamerule keepInventory true
-gamerule commandBlockOutput false
-gamerule randomTickSpeed 0
-gamerule doImmediateRespawn true
-gamerule doInsomnia false
-gamerule showDeathMessages false
-gamerule spawnRadius 0
-gamerule mobGriefing false
-gamerule disableRaids true
-gamerule doMobSpawning false
+scoreboard objectives add labyrinth.dy dummy

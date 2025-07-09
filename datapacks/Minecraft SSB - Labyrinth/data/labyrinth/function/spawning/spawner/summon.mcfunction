@@ -1,0 +1,4 @@
+# example call: function labyrinth:spawning/spawner/summon {"detectVert":"5","detectHorz":"20","spawnDelay":"10","spawnRadius":"10","entityLimit":"5","entityNum":"1","entity":"zombie","entityID":"1","spawnerID":"1"}
+## Summons spawner marker
+summon marker ~ ~ ~ {Tags:["labyrinth.spawner"]}
+$execute as @e[type=marker,limit=1,sort=nearest,tag=labyrinth.spawner] at @s run function labyrinth:spawning/spawner/merge_data {"detectVert":"$(detectVert)","detectHorz":"$(detectHorz)","spawnDelay":"$(spawnDelay)","spawnRadius":"$(spawnRadius)","entityLimit":"$(entityLimit)","entityNum":"$(entityNum)","entity":"$(entity)","entityID":"$(entityID)","spawnerID":"$(spawnerID)"}

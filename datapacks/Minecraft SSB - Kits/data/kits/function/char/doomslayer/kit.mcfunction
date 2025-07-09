@@ -12,7 +12,7 @@ item replace entity @s armor.feet with netherite_boots[custom_name={"color":"dar
 
 scoreboard players set @s kits.ability1CD 23
 scoreboard players set @s kits.ability2CD 48
-scoreboard players set @s kits.ability3CD 198
+scoreboard players set @s kits.ability3CD 98
 scoreboard players set @s kits.ability4CD 498
 scoreboard players set @s kits.ability5CD 2
 scoreboard players set @s kits.ability6CD 1

@@ -1,0 +1,39 @@
+{
+  "values":[
+    "#minecraft:air",
+    "#minecraft:replaceable",
+
+    "#minecraft:all_hanging_signs",
+    "#minecraft:all_signs",
+
+    "#minecraft:banners",
+    "#minecraft:candles",
+    "#minecraft:wool_carpets",
+
+    "#minecraft:climbable",
+    "#minecraft:coral_plants",
+    "#minecraft:crops",
+    "#minecraft:flowers",
+    "#minecraft:saplings",
+
+    "#minecraft:buttons",
+    "#minecraft:pressure_plates",
+    "#minecraft:rails",
+
+    "#minecraft:portals",
+
+    "minecraft:redstone_wire",
+    "minecraft:repeater",
+    "minecraft:comparator",
+    "minecraft:tripwire",
+    "minecraft:tripwire_hook",
+
+    "minecraft:torch",
+    "minecraft:redstone_torch",
+    "minecraft:soul_torch",
+    
+    "minecraft:wall_torch",
+    "minecraft:redstone_wall_torch",
+    "minecraft:soul_wall_torch"
+  ]
+}

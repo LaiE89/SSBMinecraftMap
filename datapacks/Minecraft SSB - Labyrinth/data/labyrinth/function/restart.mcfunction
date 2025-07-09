@@ -1,30 +1,23 @@
-## Resets everything in system
+## Resets everything in labyrinth
 # message
-tellraw @a ["",{"text":"restarting system...","color":"red"}]
+tellraw @a ["",{"text":"restarting labyrinth...","color":"red"}]
 
-# reset
-kill @e[type=!player]
-function system:utilities/ui/reset
-function system:games/ssb/ingame/end
-execute as @a at @s run function system:utilities/player_status/reset
+# remove teams
+team remove LabyrinthMobs
 
-# remove system scoreboards
-scoreboard objectives remove system.global
-scoreboard objectives remove system.local
+# remove storages
+data remove storage labyrinth spawner
 
-scoreboard objectives remove system.ssb.deathTimer
-scoreboard objectives remove system.ssb.lives
+# remove scoreboards
+scoreboard objectives remove labyrinth.constant
+scoreboard objectives remove labyrinth.math
 
-scoreboard objectives remove system.stats.win
-scoreboard objectives remove system.stats.loss
+scoreboard objectives remove labyrinth.cd
+scoreboard objectives remove labyrinth.cdMax
 
-scoreboard objectives remove system.kit.id
-scoreboard objectives remove system.ui.id
-scoreboard objectives remove system.ui
+scoreboard objectives remove labyrinth.entity
+scoreboard objectives remove labyrinth.entityMax
 
-scoreboard objectives remove system.cosmetics.killEffectId
-scoreboard objectives remove system.cosmetics.killMessageId
+scoreboard objectives remove labyrinth.spawner.id
 
-scoreboard objectives remove system.criterion.death
-scoreboard objectives remove system.criterion.drop
-scoreboard objectives remove system.criterion.leave
+scoreboard objectives remove labyrinth.dy

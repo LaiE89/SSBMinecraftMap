@@ -2,7 +2,6 @@
 tellraw @a ["",{"text":"Minecraft SSB:","color":"red"}," ",{"text":"Kits [","color":"gray"},{"text":"✔","color":"green"},{"text":"]","color":"gray"}]
 
 # general
-team add Mobs
 scoreboard objectives add kits.constant dummy
 scoreboard objectives add kits.math dummy
 

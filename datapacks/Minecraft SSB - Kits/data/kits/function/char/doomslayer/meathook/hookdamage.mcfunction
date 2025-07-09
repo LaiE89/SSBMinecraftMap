@@ -1,4 +1,4 @@
-damage @s 6 bypass:player_attack_no_kb by @e[type=area_effect_cloud,tag=DoomslayerMeathook,limit=1,sort=nearest] from @p[tag=Doomslayer]
+damage @s 2 bypass:player_attack_no_kb by @e[type=area_effect_cloud,tag=DoomslayerMeathook,limit=1,sort=nearest] from @p[tag=Doomslayer]
 effect give @s minecraft:slowness 1 9 true
 effect give @s[type=!minecraft:player] minecraft:weakness 1 1 true
 tag @s add DoomslayerHooked

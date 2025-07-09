@@ -1,5 +1,5 @@
 # Ability CDs
-title @s actionbar ["",{"text":"Ballista:","color":"red"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"kits.ability2CD"},"color":"white"},{"text":"/50","color":"white"},{"text":" || ","color":"white"},{"text":"Meat Hook:","color":"dark_red"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"kits.ability3CD"},"color":"white"},{"text":"/200","color":"white"},{"text":" || ","color":"white"},{"text":"BFG:","color":"dark_green"},{"text":" ","color":"gold"},{"score":{"name":"@s","objective":"kits.ability4CD"},"color":"white"},{"text":"/500","color":"white"},{"text":" || ","color":"white"},{"text":"Blood Punch: ","color":"red"},{"score":{"name":"@s","objective":"kits.ability7CD"},"color":"red"},{"text":"/100","color":"red"},{"text":" || ","color":"white"},{"text":"Dash Charges: ","color":"gold"},{"score":{"name":"@s","objective":"kits.ability5CD"},"color":"gold"},{"text":"/3","color":"gold"}]
+title @s actionbar ["",{"text":"Ballista:","color":"red"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"kits.ability2CD"},"color":"white"},{"text":"/50","color":"white"},{"text":" || ","color":"white"},{"text":"Meat Hook:","color":"dark_red"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"kits.ability3CD"},"color":"white"},{"text":"/100","color":"white"},{"text":" || ","color":"white"},{"text":"BFG:","color":"dark_green"},{"text":" ","color":"gold"},{"score":{"name":"@s","objective":"kits.ability4CD"},"color":"white"},{"text":"/500","color":"white"},{"text":" || ","color":"white"},{"text":"Blood Punch: ","color":"red"},{"score":{"name":"@s","objective":"kits.ability7CD"},"color":"red"},{"text":"/100","color":"red"},{"text":" || ","color":"white"},{"text":"Dash Charges: ","color":"gold"},{"score":{"name":"@s","objective":"kits.ability5CD"},"color":"gold"},{"text":"/3","color":"gold"}]
 
 # Glory Kill
 execute store result score @s kits.health2 run data get entity @e[type=!#kits:non_entity,tag=!Invincible,tag=!Doomslayer,limit=1,sort=nearest] Health
@@ -28,8 +28,8 @@ scoreboard players add @s[scores={kits.ability2CD=..49}] kits.ability2CD 1
 execute as @s[scores={kits.criterion.COS=1..}] as @s[scores={kits.ability2CD=50..},predicate=kits:items/doomslayer/ballista] at @s run function kits:char/doomslayer/weapon2cos
 
 # Meat Hook
-scoreboard players add @s[scores={kits.ability3CD=..199}] kits.ability3CD 1
-execute as @s[gamemode=!spectator,scores={kits.criterion.shift=1..}] as @s[scores={kits.ability3CD=200..},predicate=kits:items/doomslayer/ballista] at @s run function kits:char/doomslayer/weapon2shift
+scoreboard players add @s[scores={kits.ability3CD=..99}] kits.ability3CD 1
+execute as @s[gamemode=!spectator,scores={kits.criterion.shift=1..}] as @s[scores={kits.ability3CD=100..},predicate=kits:items/doomslayer/ballista] at @s run function kits:char/doomslayer/weapon2shift
 execute at @s if entity @e[tag=DoomslayerHooked,limit=1,sort=nearest] as @s at @s facing entity @e[tag=DoomslayerHooked,limit=1,sort=nearest] eyes run tp @s ^ ^ ^2
 execute at @s if entity @e[tag=DoomslayerHooked,distance=..4] run tag @e[tag=DoomslayerHooked] remove DoomslayerHooked
 execute as @e[type=item,tag=DoomslayerArmorPack] at @s run function kits:char/doomslayer/meathook/armorpack

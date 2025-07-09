@@ -1,4 +1,4 @@
-team join Mobs @s[team=!Mob,type=!player]
+team join LabyrinthMobs @s[team=!LabyrinthMobs,type=!player]
 
 data modify storage kits:kits alucard.pos set value [I;0,0,0]
 execute store result storage kits:kits alucard.pos[0] int 1 run data get entity @s Pos[0]
