@@ -6,7 +6,6 @@ execute store result score @s kits.health2 run data get entity @e[type=!#kits:no
 execute at @s[scores={kits.health2=..3}] as @e[distance=..8,limit=1,sort=nearest,type=!#kits:non_entity,tag=!Invincible,tag=!Doomslayer,tag=!InLabyrinth] at @s run particle dust{color:[1.000,0.000,0.000],scale:1} ~ ~1 ~ 0.3 0.5 0.3 0 5 force
 
 # Dash
-execute at @s run function kits:generic/inputs/wasd/main
 scoreboard players add @s[scores={kits.ability5CD=..2}] kits.ability6CD 1
 scoreboard players add @s[scores={kits.ability6CD=60..}] kits.ability5CD 1
 scoreboard players reset @s[scores={kits.ability6CD=60..}] kits.ability6CD

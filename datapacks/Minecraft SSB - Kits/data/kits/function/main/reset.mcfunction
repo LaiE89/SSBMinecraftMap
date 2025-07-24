@@ -328,7 +328,6 @@ scoreboard players reset @s kits.raycastTick3
 scoreboard players reset @s kits.raycastTick4
 
 scoreboard players reset @s kits.direction
-function kits:generic/inputs/wasd/reset
 
 # Advancements
 advancement revoke @s only kits:character_specific/sekiro_deflect

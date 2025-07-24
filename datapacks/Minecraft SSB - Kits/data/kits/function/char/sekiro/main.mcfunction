@@ -49,7 +49,6 @@ execute if score @s kits.timer4 matches 0 if score @s kits.ability3CD matches 5.
 execute as @e[type=area_effect_cloud,tag=SekiroShuriken] at @s run function kits:char/sekiro/prosthetic/shurikenprojectile
 
 # Mist Raven, Costs 2 Spirit Emblems. Gain resistance. If you get hit, dash in a direction. If no direction is input, dash up. On dash, leaves an explosive trail 
-execute at @s[tag=SekiroMistRaven] run function kits:generic/inputs/wasd/main
 scoreboard players add @s[scores={kits.ability4CD=..24}] kits.ability4CD 1
 execute if score @s kits.timer4 matches 1 if score @s kits.ability4CD matches 25.. if score @s kits.timer3 matches 2.. if entity @s[tag=!SekiroMortalDraw,tag=!SekiroMistRaven,predicate=kits:items/sekiro/prosthetic,scores={kits.criterion.COS=1..}] at @s run function kits:char/sekiro/prosthetic/mistraven
 execute as @s[tag=SekiroMistRaven,scores={kits.criterion.resistDmg=1..}] at @s run function kits:char/sekiro/prosthetic/mistravenactivate

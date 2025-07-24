@@ -26,7 +26,6 @@ scoreboard players reset @s[scores={kits.criterion.shiftOn=40..}] kits.criterion
 scoreboard players reset @s[scores={kits.criterion.shiftOff=3..}] kits.criterion.shiftOff
 
 # Dash
-execute at @s run function kits:generic/inputs/wasd/main
 scoreboard players add @s[scores={kits.ability2CD=..99}] kits.ability2CD 1
 execute as @s[scores={kits.criterion.COS=1..}] as @s[scores={kits.ability2CD=100..},predicate=kits:items/luffy/fist] at @s run function kits:char/luffy/weapon1cos
 

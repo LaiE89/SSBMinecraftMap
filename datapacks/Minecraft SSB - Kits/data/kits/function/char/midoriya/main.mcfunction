@@ -19,7 +19,6 @@ execute as @s[scores={kits.criterion.shift=1..},predicate=kits:items/midoriya/on
 execute as @s[scores={kits.criterion.shift=1..},predicate=kits:items/midoriya/one_for_all,gamemode=!spectator] as @s[scores={kits.ability3CD=10..}] as @s[scores={kits.timer3=1..}] if entity @s[scores={kits.timer=100},tag=!MidoriyaCharging] at @s run function kits:char/midoriya/one_for_all/delaware_smash/delay
 
 ## Assigns Tasks to Entities
-execute at @s[scores={kits.timer=..99}] run function kits:generic/inputs/wasd/main
 execute as @e[tag=MidoriyaDelawareSmashShockwave,type=area_effect_cloud] at @s run function kits:char/midoriya/one_for_all/delaware_smash/determine_strength
 execute if entity @s[scores={kits.timer4=100..}] at @s rotated ~ 0 run function kits:char/midoriya/full_cowl/energy_accumulation/cont_full_indication
 execute if entity @s[scores={kits.timer=100}] at @s positioned ~ ~1 ~ rotated ~ 0 run function kits:char/midoriya/full_cowl/energy_focus/100percent/passive/main

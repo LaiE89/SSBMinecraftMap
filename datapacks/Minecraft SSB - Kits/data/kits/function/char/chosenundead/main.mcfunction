@@ -15,9 +15,6 @@ scoreboard players add @s[tag=ChosenUndeadResting] kits.timer2 1
 tag @s[tag=ChosenUndeadResting,scores={kits.timer2=10..}] remove ChosenUndeadResting
 scoreboard players reset @s[scores={kits.timer2=10..}] kits.timer2
 
-# wasd detection
-execute at @s run function kits:generic/inputs/wasd/main
-
 # Roll
 scoreboard players add @s[scores={kits.ability1CD=..9}] kits.ability1CD 1
 execute as @s[tag=!ChosenUndeadTired,tag=!ChosenUndeadSunlightSpear,scores={kits.ability1CD=10..},predicate=kits:items/chosenundead/claymore] at @s[gamemode=!spectator,scores={kits.criterion.COS=1..},nbt={OnGround:1b}] unless entity @e[type=area_effect_cloud,tag=ChosenUndeadStampSlash] run function kits:char/chosenundead/roll/roll

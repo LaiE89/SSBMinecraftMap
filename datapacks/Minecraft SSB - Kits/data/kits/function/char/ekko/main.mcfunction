@@ -12,7 +12,6 @@ execute at @s[scores={kits.criterion.attack=1..}] run scoreboard players add @e[
 execute if entity @e[tag=EkkoPassiveCD] as @e[tag=EkkoPassiveCD] at @s run function kits:char/ekko/passive/cooldown
 
 # Phase Dive
-execute at @s run function kits:generic/inputs/wasd/main
 scoreboard players add @s[scores={kits.ability2CD=..99}] kits.ability2CD 1
 execute as @s[gamemode=!spectator,scores={kits.ability2CD=100..}] as @s[scores={kits.criterion.shift=1},predicate=kits:items/ekko/bat] at @s run function kits:char/ekko/weapon1shift
 execute at @s facing entity @e[type=minecraft:area_effect_cloud,tag=EkkoDivePosition,limit=1,sort=nearest] eyes run function kits:char/ekko/phasedive/rolling

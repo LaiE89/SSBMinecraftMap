@@ -13,7 +13,6 @@ data remove storage kits:vfx radialForkedLightning
 data remove storage kits:vfx slashCrescent
 data remove storage kits:vfx slashEncircle
 data remove storage kits:vfx unlimitedVoid
-data remove storage kits:wasd Pos
 data remove storage kits:edit_item item
 
 # Global Variables

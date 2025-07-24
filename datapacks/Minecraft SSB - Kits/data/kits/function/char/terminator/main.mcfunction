@@ -8,7 +8,6 @@ scoreboard players add @s[scores={kits.ability4CD=..9}] kits.ability4CD 1
 scoreboard players add @s[scores={kits.ability5CD=..199}] kits.ability5CD 1
 
 # Using Conditions
-execute at @s run function kits:generic/inputs/wasd/main
 execute if entity @s[predicate=kits:items/terminator/shotgun,gamemode=!spectator] at @s run function kits:char/terminator/shotgun/use
 execute if entity @s[scores={kits.timer=..0}] at @s run function kits:char/terminator/shotgun/shoot/reloading
 execute if entity @s[predicate=kits:items/terminator/grenade_launcher,gamemode=!spectator] at @s run function kits:char/terminator/grenade_launcher/use

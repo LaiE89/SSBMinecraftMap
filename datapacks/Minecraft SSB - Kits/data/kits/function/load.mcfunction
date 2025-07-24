@@ -12,14 +12,6 @@ scoreboard objectives add kits.dx dummy
 scoreboard objectives add kits.dy dummy
 scoreboard objectives add kits.dz dummy
 
-scoreboard objectives add kits.wasd dummy
-scoreboard objectives add kits.wasd.w dummy
-scoreboard objectives add kits.wasd.a dummy
-scoreboard objectives add kits.wasd.s dummy
-scoreboard objectives add kits.wasd.d dummy
-scoreboard objectives add kits.wasd.x dummy
-scoreboard objectives add kits.wasd.z dummy
-
 scoreboard objectives add kits.frame.index dummy
 scoreboard objectives add kits.frame.rate dummy
 

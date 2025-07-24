@@ -54,7 +54,6 @@ effect give @s[tag=KiryuRush] minecraft:speed 1 1 true
 execute if score @s[tag=KiryuRush] kits.criterion.attack matches 1.. run scoreboard players add @s[scores={kits.ability1CD=..99}] kits.ability1CD 50
 
 # Quickstep
-execute at @s[tag=KiryuRush] run function kits:generic/inputs/wasd/main
 execute as @s[tag=KiryuRush,scores={kits.ability1CD=100..},predicate=kits:items/kiryu/fist] as @s[scores={kits.criterion.COS=1..}] as @s[scores={kits.timer2=..9}] at @s run function kits:char/kiryu/quickstep
 
 # The Knee
